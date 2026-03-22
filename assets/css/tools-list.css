@@ -1,0 +1,108 @@
+/* --- Tools Directory Page --- */
+.tools-directory {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.directory-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.directory-header h1 {
+    color: #002f5d;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.directory-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+/* --- The Grid --- */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* --- Individual Tool Card --- */
+.tool-item {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 35px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(0, 47, 93, 0.15);
+    border-color: #002f5d;
+}
+
+.tool-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.tool-content h3 {
+    color: #0f172a;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.tool-content p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    min-height: 70px; /* Keeps card heights somewhat consistent */
+}
+
+/* --- Card Launch Button --- */
+.tool-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #f8fafc;
+    color: #002f5d;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 2px solid #e2e8f0;
+    transition: 0.3s ease;
+}
+
+.tool-item:hover .tool-btn {
+    background: #002f5d;
+    color: #ffffff;
+    border-color: #002f5d;
+}
+
+/* --- Responsive Fix --- */
+@media (max-width: 600px) {
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+    .directory-header h1 {
+        font-size: 2rem;
+    }
+}

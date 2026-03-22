@@ -1,0 +1,346 @@
+/* --- 1. Global Reset & Base Styles --- */
+:root {
+    --primary: #002f5d;
+    --secondary: #E31837;
+    --text: #374151;
+    --bg: #f9fafb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9fafb;
+}
+
+.width, .post-width, .tool-width {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Accessibility: Visible focus state for keyboard users */
+a:focus,
+button:focus {
+    outline: 3px solid #E31837;
+    outline-offset: 2px;
+}
+
+/* --- 2. Header & Navigation --- */
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.site-brand a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #002f5d;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu-item a {
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.menu-item a:hover {
+    color: #E31837;
+}
+
+/* Dropdown Logic */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    /* Hidden by default */
+    border-radius: 4px;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* --- 3. Hero Section --- */
+.hero {
+    background: linear-gradient(135deg, #002f5d, #001f3f);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero a {
+    display: inline-block;
+    background: #E31837;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hero a:hover {
+    background: #c1122f;
+    transform: translateY(-2px);
+}
+
+/* Tools Page Layout */
+.tool-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin: 40px auto;
+}
+
+/* Tools Card */
+.tools-card {
+    /* background: white; */
+    /* padding: 30px; */
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
+}
+
+/* Tools Page Sidebar */
+aside section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-top: 4px solid var(--primary);
+}
+
+aside h3 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- 4. Main Content Sections --- */
+section {
+    padding: 60px 0;
+}
+
+#tools-heading,
+#guides-heading {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-left: 5px solid #002f5d;
+    padding-left: 15px;
+    color: #002f5d;
+}
+
+.guide-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* --- 5. Semantic Article Cards --- */
+article.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 4px solid #002f5d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+article.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border-top-color: #E31837;
+}
+
+article.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+article.card h3 a {
+    color: #002f5d;
+}
+
+article.card p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* Special styling for the 4th item as requested */
+.latest-tools article.card:nth-child(4) {
+    background: #fff5f7;
+    border-top-color: #E31837;
+}
+
+/* --- 6. About Section --- */
+.about {
+    background: #002f5d;
+    color: white;
+    text-align: center;
+}
+
+.about h2 {
+    border: none;
+    color: #fff;
+    padding-left: 0;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #e5e7eb;
+}
+
+/* --- 7. Footer --- */
+.site-footer {
+    background: #f3f4f6;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-container p {
+    margin-bottom: 15px;
+    color: #6b7280;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+    color: #002f5d;
+    text-decoration: underline;
+}
+
+/* --- 8. Mobile Responsiveness --- */
+.menu-toggle {
+    display: none;
+    /* Hidden on desktop */
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #002f5d;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .site-nav {
+        display: none;
+        /* Requires JS to toggle 'active' class */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .post-width, .tool-width {
+        padding: 0;
+    }
+}

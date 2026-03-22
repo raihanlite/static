@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC GPA Calculator & Grading System in Bangladesh</title>
+    <meta name="title" content="SSC GPA Calculator & Grading System in Bangladesh">
+    <meta name="description"
+        content="Using SSC GPA Calculator you can calculate your GPA without doing any complex math and Learn about New SSC Grading System System in Bangladesh">
+    <meta name="keywords"
+        content="SSC GPA Calculator, SSC Result Calculator, SSC GPA Calculator with 4th Subject, Education Board SSC GPA Calculator, SSC marks to GPA converter">
+    <meta name="author" content="Study Koro">
+
+    <meta name="geo.region" content="BD" />
+    <meta name="geo.placename" content="Dhaka" />
+    <meta name="category" content="Education, Calculator, High School" />
+    <meta name="subject" content="SSC GPA Calculator for Bangladesh Education Boards" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Study Koro">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="True" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studykoro.com/tools/ssc-gpa-calculator.html">
+    <meta property="og:title" content="SSC GPA Calculator">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://studykoro.com/tools/ssc-gpa-calculator.html">
+    <meta property="twitter:title" content="SSC GPA Calculator">
+    <meta property="twitter:description"
+        content="Calculate your SSC GPA instantly with our free online tool. Supports the official 5.00 scale and 4th subject logic for all Bangladesh Education Boards.">
+    <meta property="twitter:image" content="/images/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SSC GPA Calculator",
+      "operatingSystem": "Any",
+      "applicationCategory": "EducationalApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BDT"
+      },
+      "description": "Calculate SSC GPA based on the official Bangladeshi education board grading system (5.00 scale)."
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+    <link rel="canonical" href="https://studykoro.com/tools/ssc-gpa-calculator.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/tools.css">
+    <link rel="stylesheet" href="/assets/css/ssc-gpa-calculator.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="site-brand">
+                <a href="/" rel="home">Study Koro</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
+                <ul class="menu">
+                    <li class="menu-item"><a href="/">Home</a></li>
+                    <li class="menu-item"><a href="/posts/">Blog</a></li>
+                    <li class="menu-item"><a href="/tools" aria-haspopup="true">Tools</a></li>
+                    <li class="menu-item"><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="tool-width">
+                <h1>SSC GPA Calculator</h1>
+                <p>Official Grading System (Scale of 5.00)</p>
+            </div>
+        </section>
+
+        <section class="tool-width">
+            <div class="tools-card">
+                <div class="container">
+                    <h2 style="text-align:center; margin-top:0;">SSC GPA Calculator</h2>
+                    <div class="setup-row">
+                        <div class="subject-item">
+                            <label>Your Group</label>
+                            <select id="group" onchange="initApp()">
+                                <option value="science">Science</option>
+                                <option value="commerce">Business Studies</option>
+                                <option value="arts">Humanities</option>
+                            </select>
+                        </div>
+                        <div class="subject-item">
+                            <label>Input Type</label>
+                            <select id="mode" onchange="initApp()">
+                                <option value="grade">Letter Grade</option>
+                                <option value="point">Grade Point</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="subject-grid" id="mainGrid"></div>
+                    <div id="scienceOptions" class="science-selects" style="margin-top:15px; display:none;">
+                        <div class="subject-item">
+                            <label>Group Subject 3</label>
+                            <select id="sub3_name" onchange="autoSwap(true)">
+                                <option value="Biology">Biology</option>
+                                <option value="Higher Math">Higher Math</option>
+                            </select>
+                            <div id="sub3_input_container" style="margin-top:5px"></div>
+                        </div>
+                        <div class="subject-item">
+                            <label>4th Subject</label>
+                            <select id="sub4_name" onchange="autoSwap(false)">
+                                <option value="Higher Math">Higher Math</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Agriculture">Agriculture</option>
+                            </select>
+                            <div id="sub4_input_container" style="margin-top:5px"></div>
+                        </div>
+                    </div>
+                    <div id="otherOptions" class="science-selects" style="margin-top:15px; display:none;">
+                        <div class="subject-item">
+                            <label id="otherSub3Label">Subject 3</label>
+                            <div id="otherSub3Input"></div>
+                        </div>
+                        <div class="subject-item">
+                            <label>4th Subject</label>
+                            <div id="otherSub4Input"></div>
+                        </div>
+                    </div>
+                    <button class="calculate-button" onclick="calculateGPA()">Calculate Final GPA</button>
+                    <div id="result">
+                        <div style="font-weight: 600; color: #64748b;">TOTAL GPA</div>
+                        <div class="gpa-val" id="gpaDisplay">0.00</div>
+                        <div id="status" style="font-weight: bold;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-content">
+                <blockquote>
+                    <p>See also, GPA Calculator for <a href="/tools/hsc-gpa-calculator">HSC</a> and <a
+                            href="/tools/jsc-gpa-calculator">JSC</a></p>
+                </blockquote>
+                <h2 id="what-is-the-ssc-gpa-calculator-">What is the SSC GPA Calculator?</h2>
+                <p>The <strong>SSC GPA Calculator</strong> is an online tool that helps students calculate their
+                    <strong>Grade Point Average (GPA)</strong> based on their subject grades. Instead of manually adding
+                    and
+                    dividing grade points, the calculator automatically calculates your final GPA within seconds.
+                </p>
+                <p>SSC (Secondary School Certificate) is the <strong>10th grade public examination in
+                        Bangladesh</strong>,
+                    and results are measured using the <strong>GPA scale of 5.00</strong>.</p>
+                <h2 id="ssc-grading-system-in-bangladesh">SSC Grading System in Bangladesh</h2>
+                <p>The SSC grading system converts marks into <strong>grade points and grades</strong>. The highest GPA
+                    a
+                    student can obtain is <strong>5.00 (A+)</strong>.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marks</th>
+                            <th>Grade Point</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>80 – 100</td>
+                            <td>5.00</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>70 – 79</td>
+                            <td>4.00</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>60 – 69</td>
+                            <td>3.50</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>50 – 59</td>
+                            <td>3.00</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>40 – 49</td>
+                            <td>2.00</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>33 – 39</td>
+                            <td>1.00</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>0 – 32</td>
+                            <td>0.00</td>
+                            <td>F</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>This grading system is used for both <strong>Secondary School Certificate (SSC)</strong> and
+                    <strong>Higher Secondary Certificate (HSC)</strong> results in Bangladesh.
+                </p>
+                <h2 id="how-to-calculate-ssc-gpa">How to Calculate SSC GPA</h2>
+                <p>Calculating your SSC GPA is simple if you follow these steps:</p>
+                <h3 id="step-1-select-your-ssc-group">Step 1: Select Your SSC Group</h3>
+                <p>First, choose your education group. The main SSC groups are:</p>
+                <ul>
+                    <li><strong>Science</strong></li>
+                    <li><strong>Business Studies (Commerce)</strong></li>
+                    <li><strong>Humanities (Arts)</strong></li>
+                </ul>
+                <h3 id="step-2-choose-grade-format">Step 2: Choose Grade Format</h3>
+                <p>Select how you want to calculate your GPA:</p>
+                <ul>
+                    <li>By <strong>Grade (A+, A, A-, etc.)</strong></li>
+                    <li>By <strong>Grade Point (5.00, 4.00, etc.)</strong></li>
+                </ul>
+                <h3 id="step-3-select-your-subjects">Step 3: Select Your Subjects</h3>
+                <p>Choose the subjects you appeared in from the dropdown list.</p>
+                <h3 id="step-4-select-grade-or-points">Step 4: Select Grade or Points</h3>
+                <p>Enter your grade or grade point for each subject.</p>
+                <p>Grade values include:</p>
+                <ul>
+                    <li>A+ = 5.00</li>
+                    <li>A = 4.00</li>
+                    <li>A- = 3.50</li>
+                    <li>B = 3.00</li>
+                    <li>C = 2.00</li>
+                    <li>D = 1.00</li>
+                    <li>F = 0.00</li>
+                </ul>
+                <h3 id="step-5-click-the-calculate-button">Step 5: Click the Calculate Button</h3>
+                <p>Finally, click the <strong>Calculate GPA</strong> button. The calculator will automatically show your
+                    <strong>total GPA result</strong>.
+                </p>
+                <h1 id="ssc-new-grading-system-update">SSC New Grading System Update</h1>
+                <p>Due to special circumstances, the SSC examination structure changed in recent years. Instead of the
+                    usual
+                    <strong>10 subjects</strong>, students were evaluated based on <strong>3 main subjects</strong> in
+                    each
+                    group.
+                </p>
+                <p>Also, the <strong>4th subject system was removed</strong> for that exam year.</p>
+                <h2 id="new-ssc-grading-system-marks-to-points-">New SSC Grading System (Marks to Points)</h2>
+                <p>In the updated system, each subject carries <strong>50 marks</strong>, and grade points are
+                    calculated as
+                    follows:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marks</th>
+                            <th>Grade Point</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>40 – 50</td>
+                            <td>5.00</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>35 – 39</td>
+                            <td>4.00</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>30 – 34</td>
+                            <td>3.50</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>25 – 29</td>
+                            <td>3.00</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>20 – 24</td>
+                            <td>2.00</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>17 – 19</td>
+                            <td>1.00</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>0 – 16</td>
+                            <td>0.00</td>
+                            <td>F</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1 id="ssc-gpa-calculation-examples">SSC GPA Calculation Examples</h1>
+                <h2 id="science-group-example">Science Group Example</h2>
+                <p>Suppose a student obtained:</p>
+                <ul>
+                    <li>Physics – 44</li>
+                    <li>Chemistry – 38</li>
+                    <li>Biology – 47</li>
+                </ul>
+                <p>Converted grade points:</p>
+                <ul>
+                    <li>Physics = 5.00</li>
+                    <li>Chemistry = 4.00</li>
+                    <li>Biology = 5.00</li>
+                </ul>
+                <p>GPA Calculation:</p>
+                <p>[
+                    (5.00 + 4.00 + 5.00) ÷ 3 = 4.67
+                    ]</p>
+                <p><strong>Final GPA = 4.67</strong></p>
+                <h2 id="commerce-group-example">Commerce Group Example</h2>
+                <p>Marks obtained:</p>
+                <ul>
+                    <li>Accounting – 43</li>
+                    <li>Finance &amp; Banking – 41</li>
+                    <li>Business Entrepreneurship – 48</li>
+                </ul>
+                <p>Grade points:</p>
+                <ul>
+                    <li>Accounting = 5.00</li>
+                    <li>Finance = 5.00</li>
+                    <li>Business = 5.00</li>
+                </ul>
+                <p>Calculation:</p>
+                <p>[
+                    (5 + 5 + 5) ÷ 3 = 5.00
+                    ]</p>
+                <p><strong>Final GPA = 5.00</strong></p>
+                <h2 id="arts-group-example">Arts Group Example</h2>
+                <p>Marks obtained:</p>
+                <ul>
+                    <li>History – 38</li>
+                    <li>Geography – 25</li>
+                    <li>Civics – 32</li>
+                </ul>
+                <p>Grade points:</p>
+                <ul>
+                    <li>History = 4.00</li>
+                    <li>Geography = 3.00</li>
+                    <li>Civics = 3.50</li>
+                </ul>
+                <p>Calculation:</p>
+                <p>[
+                    (4.00 + 3.00 + 3.50) ÷ 3 = 3.50
+                    ]</p>
+                <p><strong>Final GPA = 3.50</strong></p>
+                <h1 id="alternative-method-to-calculate-gpa">Alternative Method to Calculate GPA</h1>
+                <p>If you are confused with the <strong>50 mark system</strong>, there is another simple method.</p>
+                <p>Just <strong>multiply your obtained marks by 2</strong> to convert them into the old <strong>100-mark
+                        system</strong>.</p>
+                <p>Example:</p>
+                <ul>
+                    <li>If you get <strong>45 out of 50</strong>, multiply by 2</li>
+                    <li>45 × 2 = <strong>90</strong></li>
+                </ul>
+                <p>Now you can calculate your grade using the <strong>old grading system table</strong>.</p>
+                <p>This method produces the <strong>same GPA result</strong>.</p>
+                <h1 id="final-verdict">Final Verdict</h1>
+                <p>The <strong>SSC GPA Calculator</strong> makes it very easy for students to determine their GPA
+                    quickly.
+                    Instead of manually calculating grades, you can simply input your subjects and grades to get instant
+                    results.</p>
+                <p>Understanding the <strong>SSC grading system</strong> also helps students estimate their results and
+                    prepare better for future exams like <strong>HSC</strong>.</p>
+                <p>If you want to calculate your GPA accurately, follow the grading tables and calculation methods
+                    mentioned
+                    above.</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Study Koro. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/privacy-policy/">Privacy</a></li>
+                    <li><a href="/terms/">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/ssc-gpa-calculator.js"></script>
+</body>
+
+</html>

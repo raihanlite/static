@@ -1,0 +1,149 @@
+/* --- IELTS Calculator Main Styles --- */
+.calc-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+}
+
+/* --- Interactive Module Switcher --- */
+.module-switcher {
+    display: flex;
+    background: #f8fafc;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 35px;
+    gap: 5px;
+}
+
+.module-switcher button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    color: #64748b;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.module-switcher button.active {
+    background: #002f5d;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 47, 93, 0.2);
+    transform: scale(1.02);
+}
+
+/* --- Section Titles --- */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #E31837;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, #e2e8f0, transparent);
+}
+
+/* --- Input Grid & Logic --- */
+.input-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.input-group input, 
+.input-group select {
+    padding: 12px;
+    border: 2px solid #f1f5f9;
+    background: #f8fafc;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+    outline: none;
+    background: #ffffff;
+    border-color: #E31837;
+    box-shadow: 0 0 0 4px rgba(227, 24, 55, 0.1);
+}
+
+/* --- Glassmorphism Result Card --- */
+.score-display-card {
+    margin-top: 40px;
+    background: #002f5d;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(227, 24, 55, 0.2) 0, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(0, 47, 93, 0.8) 0, transparent 50%);
+    padding: 50px 20px;
+    border-radius: 24px;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.big-number {
+    display: block;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 10px 0;
+    background: linear-gradient(to bottom, #ffffff, #cbd5e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+#feedbackText {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+}
+
+/* --- Feedback Logic Colors --- */
+.band-high { color: #22c55e !important; } 
+.band-mid { color: #eab308 !important; }  
+.band-low { color: #ef4444 !important; }  
+
+/* --- Mobile Fixes --- */
+@media (max-width: 600px) {
+    .calc-container { padding: 25px 20px; }
+    .input-row { grid-template-columns: 1fr; } 
+    .big-number { font-size: 4.5rem; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

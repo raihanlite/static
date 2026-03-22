@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSC GPA Calculator - Bangladesh</title>
+    <meta name="title" content="HSC GPA Calculator - Bangladesh">
+    <meta name="description"
+        content="Using HSC GPA Calculator you can find out your GPA very easily. Calculate your HSC Grade Point with HSC GPA Calculator BD Online">
+    <meta name="keywords"
+        content="HSC GPA calculator, HSC result tools, BD GPA calculator, GPA from grade, GPA from marks, GPA BD">
+    <meta name="author" content="Study Koro">
+
+    <meta name="geo.region" content="BD" />
+    <meta name="geo.placename" content="Dhaka" />
+    <meta name="category" content="Education, Calculator, Higher Secondary School" />
+    <meta name="subject" content="HSC GPA Calculator for Bangladesh Education Boards" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Study Koro">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="True" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studykoro.com/tools/hsc-gpa-calculator.html">
+    <meta property="og:title" content="HSC GPA Calculator - Bangladesh">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://studykoro.com/tools/hsc-gpa-calculator.html">
+    <meta property="twitter:title" content="HSC GPA Calculator - Bangladesh">
+    <meta property="twitter:description"
+        content="Using HSC GPA Calculator you can find out your GPA very easily. Calculate your HSC Grade Point with HSC GPA Calculator BD Online">
+    <meta property="twitter:image" content="/images/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "HSC GPA Calculator",
+      "operatingSystem": "Any",
+      "applicationCategory": "EducationalApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BDT"
+      },
+      "description": "Using HSC GPA Calculator you can find out your GPA very easily. Calculate your HSC Grade Point with HSC GPA Calculator BD Online"
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+    <link rel="canonical" href="https://studykoro.com/tools/hsc-gpa-calculator.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/tools.css">
+    <link rel="stylesheet" href="../assets/css/hsc-gpa-calculator.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="site-brand">
+                <a href="/" rel="home">Study Koro</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
+                <ul class="menu">
+                    <li class="menu-item"><a href="/">Home</a></li>
+                    <li class="menu-item"><a href="/posts/">Blog</a></li>
+                    <li class="menu-item"><a href="/tools" aria-haspopup="true">Tools</a></li>
+                    <li class="menu-item"><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="tool-width">
+                <h1>HSC GPA Calculator</h1>
+                <p>HSC GPA Calculator is the best and easy way to calculate GPA. You can easily Calculate Grade points
+                    without doing any complex math. Using this HSC GPA Calculator anyone can find out their GPA within a
+                    few seconds.</p>
+            </div>
+        </section>
+
+        <section class="tool-width">
+            <div class="tools-card">
+                <div class="container">
+                    <label for="groupSelect">Select group</label>
+                    <select id="groupSelect">
+                        <option value="science">Science</option>
+                        <option value="business">Business Studies</option>
+                        <option value="humanities">Humanities</option>
+                    </select>
+                    <form id="subjectsForm" onsubmit="return false;"></form>
+                    <button type="button" id="calculateBtn">Calculate GPA</button>
+                    <div id="resultContainer">
+                        <div id="result"></div>
+                        <div id="totalMarks"></div>
+                    </div>
+                    <button type="button" id="saveImageBtn" disabled>Save as Picture</button>
+                </div>
+            </div>
+
+            <div class="tool-content">
+                <blockquote>
+                    <p>See also, GPA Calculator for <a href="/tools/ssc-gpa-calculator">SSC</a> and <a
+                            href="/tools/jsc-gpa-calculator">JSC</a></p>
+                </blockquote>
+                <h2 id="hsc-grading-system">HSC Grading System</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marks</th>
+                            <th>Points</th>
+                            <th>Grades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>80 – 100</td>
+                            <td>5.00</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>70 – 79</td>
+                            <td>4.00</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>60 – 69</td>
+                            <td>3.50</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>50 – 59</td>
+                            <td>3.00</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>40 – 49</td>
+                            <td>2.00</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>33 – 39</td>
+                            <td>1.00</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>0 – 32</td>
+                            <td>0.00</td>
+                            <td>F</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2 id="how-to-use-the-gpa-calculator">How to Use the GPA Calculator</h2>
+                <h3 id="step-1-select-your-group">Step 1: Select Your Group</h3>
+                <p>Choose your academic group from the dropdown menu:</p>
+                <ul>
+                    <li>Science</li>
+                    <li>Business Studies</li>
+                    <li>Humanities</li>
+                </ul>
+                <p>The calculator will automatically load the subjects for that group.</p>
+                <h3 id="step-2-enter-marks-or-select-grade">Step 2: Enter Marks or Select Grade</h3>
+                <p>For each subject you can enter your result in <strong>two ways</strong>:</p>
+                <ul>
+                    <li><strong>Enter Marks</strong> in the marks box</li>
+                    <li><strong>Or select a Grade</strong> from the dropdown</li>
+                </ul>
+                <p>You only need to use <strong>one option</strong>.
+                    If you enter marks, the grade will be calculated automatically.</p>
+                <h3 id="step-3-choose-optional-subject">Step 3: Choose Optional Subject</h3>
+                <p>If you have a <strong>4th / Optional Subject</strong>:</p>
+                <ol>
+                    <li>Select the subject from the optional subject list</li>
+                    <li>Enter the <strong>marks or grade</strong> for that subject</li>
+                </ol>
+                <p>If you do not have an optional subject, leave it blank.</p>
+                <h3 id="step-4-calculate-gpa">Step 4: Calculate GPA</h3>
+                <p>After entering all subjects, click the <strong>“Calculate GPA”</strong> button.</p>
+                <p>The calculator will display:</p>
+                <ul>
+                    <li>Your <strong>Final GPA</strong></li>
+                    <li>Your <strong>Approximate Total Marks</strong></li>
+                </ul>
+                <h3 id="step-5-save-your-result">Step 5: Save Your Result</h3>
+                <p>Click <strong>“Save as Picture”</strong> to download your result as an image.</p>
+                <h2 id="important-notes">Important Notes</h2>
+                <ul>
+                    <li>Most subjects are <strong>out of 200 marks</strong>.</li>
+                    <li><strong>ICT is out of 100 marks.</strong></li>
+                    <li>Maximum GPA is <strong>5.00</strong>.</li>
+                    <li>Optional subject points may <strong>increase GPA slightly</strong>.</li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Study Koro. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/privacy-policy/">Privacy</a></li>
+                    <li><a href="/terms/">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/hsc-gpa-calculator.js"></script>
+</body>
+
+</html>

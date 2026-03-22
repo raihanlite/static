@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator BD — All Public & Private Universities</title>
+    <meta name="title" content="CGPA Calculator BD — All Public & Private Universities">
+    <meta name="description"
+        content="Free CGPA & GPA Calculator for all Bangladesh universities - DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong, and more. Instant calculation for public and private institutions. No signup required.">
+    <meta name="keywords"
+        content="Bangladesh CGPA calculator, university CGPA calculator Bangladesh, public private university GPA, DU CGPA calculator, BUET GPA calculator, NSU CGPA, Bangladesh university grading system, semester GPA calculator BD, UGC grading scale Bangladesh, free CGPA calculator">
+    <meta name="author" content="Study Koro">
+
+    <meta name="geo.region" content="BD" />
+    <meta name="geo.placename" content="Dhaka" />
+    <meta name="category" content="Education, Calculator, University" />
+    <meta name="subject" content="CGPA Calculator for Bangladesh Public and Private Universities" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Study Koro">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="True" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studykoro.com/tools/cgpa-calculator.html">
+    <meta property="og:title" content="CGPA Calculator BD — All Public & Private Universities">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://studykoro.com/tools/cgpa-calculator.html">
+    <meta property="twitter:title" content="CGPA Calculator BD — All Public & Private Universities">
+    <meta property="twitter:description"
+        content="Free CGPA & GPA Calculator for all Bangladesh universities - DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong, and more. Instant calculation for public and private institutions. No signup required.">
+    <meta property="twitter:image" content="/images/og-image.jpg">
+
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CGPA Calculator BD — All Public and Private Universities",
+    "operatingSystem": "All",
+    "applicationCategory": "EducationalApplication",
+    "featureList": [
+        "4.0 and 5.0 scale CGPA calculation",
+        "Support for 50+ Bangladesh universities",
+        "Grade point to letter grade conversion",
+        "Semester-wise GPA tracking",
+        "Cumulative CGPA calculation",
+        "Mobile-optimized interface",
+        "Offline functionality (PWA)",
+        "No registration required",
+        "Free to use"
+    ],
+    "inLanguage": [
+        "en",
+        "bn"
+    ],
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BDT"
+    },
+    "description": "Free CGPA & GPA Calculator for all Bangladesh universities - DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong, and more. Instant calculation for public and private institutions. No signup required." 
+    }</script>
+
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC grading system where A+ = 4.00, A = 3.75, A- = 3.50, and so on."
+            },
+            "name": "How is CGPA calculated in Bangladesh universities?"
+        },
+        {
+            "@type": "Question",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All major institutions including DU, BUET, RUET, NSU, BRAC, IUB, AIUB, and 40+ more are supported via the UGC preset."
+            },
+            "name": "Which Bangladesh universities are supported?"
+        },
+        {
+            "@type": "Question",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Use the 'Semester Calculator' for individual terms and the 'Overall Calculator' to combine them into a final cumulative score."
+            },
+            "name": "Can I calculate CGPA for multiple semesters at once?"
+        },
+        {
+            "@type": "Question",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. It is entirely free and uses Browser Local Storage. Your data is never uploaded to any server."
+            },
+            "name": "Is this CGPA calculator free and safe to use?"
+    }]}</script>
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+    <link rel="canonical" href="https://studykoro.com/tools/cgpa-calculator.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/tools.css">
+    <link rel="stylesheet" href="../assets/css/cgpa-calculator.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="site-brand">
+                <a href="/" rel="home">Study Koro</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
+                <ul class="menu">
+                    <li class="menu-item"><a href="/">Home</a></li>
+                    <li class="menu-item"><a href="/posts/">Blog</a></li>
+                    <li class="menu-item"><a href="/tools" aria-haspopup="true">Tools</a></li>
+                    <li class="menu-item"><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="tool-width">
+                <h1>CGPA Calculator BD</h1>
+                <p>Support All Public & Private Universities</p>
+            </div>
+        </section>
+
+        <section class="tool-width">
+            <div class="tools-card">
+                <div class="document">
+                    <div class="form-group">
+                        <label>University Preset (Sets Grading Scale)</label>
+                        <select id="uniSelect">
+                            <option value="ugc">UGC Standard (All Universities)</option>
+                            <option value="du">University of Dhaka (DU)</option>
+                            <option value="buet">BUET</option>
+                            <option value="nsu">North South University (NSU)</option>
+                            <option value="brac">BRAC University</option>
+                            <option value="iub">Independent University (IUB)</option>
+                            <option value="aust">AUST</option>
+                            <option value="iut">IUT</option>
+                        </select>
+                        <div id="uniInfo" class="info-note">
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div>
+                            <h2>Semester Calculator</h2>
+                            <form id="subjectForm">
+                                <div class="form-group">
+                                    <label>Subject Name</label>
+                                    <input type="text" id="subjName" placeholder="e.g. Physics" required>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label>Credits</label>
+                                        <input type="number" id="subjCredit" step="0.5" min="0.5" max="6" value="3.0">
+                                    </div>
+                                    <div>
+                                        <label>Grade</label>
+                                        <select id="subjGrade">
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit">Add Subject</button>
+                            </form>
+                            <div id="subjectsContainer" class="entry-list"></div>
+                            <div class="result-panel">
+                                <span class="stat-label">Semester GPA</span>
+                                <span class="big-number" id="semesterGpaDisplay">0.00</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2>Overall History</h2>
+                            <form id="overallForm">
+                                <div class="form-group">
+                                    <label>Select Semester</label>
+                                    <select id="semesterDropdown">
+                                        <option value="1st">1st Semester</option>
+                                        <option value="2nd">2nd Semester</option>
+                                        <option value="3rd">3rd Semester</option>
+                                        <option value="4th">4th Semester</option>
+                                        <option value="5th">5th Semester</option>
+                                        <option value="6th">6th Semester</option>
+                                        <option value="7th">7th Semester</option>
+                                        <option value="8th">8th Semester</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label>GPA</label>
+                                        <input type="number" id="overallGpa" step="0.01" min="0" max="4"
+                                            placeholder="3.50">
+                                    </div>
+                                    <div>
+                                        <label>Total Credits</label>
+                                        <input type="number" id="overallCredits" step="0.5" min="1" placeholder="15.0">
+                                    </div>
+                                </div>
+                                <button type="submit">Save Record</button>
+                            </form>
+                            <div id="semestersContainer" class="entry-list"></div>
+                            <div class="result-panel">
+                                <span class="stat-label">Cumulative CGPA</span>
+                                <span class="big-number" id="cumulativeCgpa">0.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Goal Planner</h2>
+                    <p>Why use this? Find out what grades you need in remaining subjects to reach your target CGPA.</p>
+                    <div class="grid-2">
+                        <div>
+                            <label>Target CGPA</label>
+                            <input type="number" id="targetCgpaGoal" step="0.01" min="0" max="4" value="3.50">
+                        </div>
+                        <div>
+                            <label>Remaining Credits</label>
+                            <input type="number" id="futureCredits" step="0.5" min="0" value="15.0">
+                        </div>
+                    </div>
+                    <button id="calculateGoalBtn">Analyze Target</button>
+                    <div id="goalResult" class="goal-box">Add your current data to see required future grades.</div>
+                    <p>Calculations based on Σ(Grade Point × Credits) / Σ Credits</p>
+                </div>
+                <div id="status-message"></div>
+            </div>
+
+            <div class="tool-content">
+                <h2>UGC Grading Scale Information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grade</th>
+                            <th>GPA</th>
+                            <th>Range (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A+</td>
+                            <td>4.00</td>
+                            <td>80-100%</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>3.75</td>
+                            <td>75-79%</td>
+                        </tr>
+                        <tr>
+                            <td>A-</td>
+                            <td>3.50</td>
+                            <td>70-74%</td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td>3.25</td>
+                            <td>65-69%</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>3.00</td>
+                            <td>60-64%</td>
+                        </tr>
+                        <tr>
+                            <td>B-</td>
+                            <td>2.75</td>
+                            <td>55-59%</td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td>2.50</td>
+                            <td>50-54%</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>2.25</td>
+                            <td>45-49%</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>2.00</td>
+                            <td>40-44%</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>0.00</td>
+                            <td>0-39%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>How CGPA is Calculated</h3>
+                <p><b>Formula:</b> CGPA = Σ (Credit × Grade Point) ÷ Σ Credit</p>
+                <p><i>Example: Mathematics (3cr × 4.0) + Physics (3cr × 3.75) = 23.25 Total Points. 23.25 ÷ 6 Total
+                        Credits = 3.875 CGPA.</i></p>
+
+                <h2>Frequently Asked Questions</h2>
+
+
+                <h3>How is CGPA calculated in Bangladesh universities?</h3>
+                <p>CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC grading system where A+ =
+                    4.00, A = 3.75, A- = 3.50, and so on.</p>
+
+
+
+                <h3>Which Bangladesh universities are supported?</h3>
+                <p>All major institutions including DU, BUET, RUET, NSU, BRAC, IUB, AIUB, and 40+ more are supported via
+                    the UGC preset.</p>
+
+
+
+                <h3>Can I calculate CGPA for multiple semesters at once?</h3>
+                <p>Yes. Use the 'Semester Calculator' for individual terms and the 'Overall Calculator' to combine them
+                    into a final cumulative score.</p>
+
+
+
+                <h3>Is this CGPA calculator free and safe to use?</h3>
+                <p>Yes. It is entirely free and uses Browser Local Storage. Your data is never uploaded to any server.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Study Koro. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/privacy-policy/">Privacy</a></li>
+                    <li><a href="/terms/">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/cgpa-calculator.js"></script>
+</body>
+
+</html>

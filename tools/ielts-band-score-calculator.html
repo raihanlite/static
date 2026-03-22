@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Band Score Calculator | Academic & General</title>
+    <meta name="title" content="IELTS Band Score Calculator | Academic & General">
+    <meta name="description"
+        content="Calculate your IELTS overall band score instantly. Accurate raw-to-band conversion for Listening and Reading. Optimized for 2026 official scoring rules.">
+    <meta name="keywords"
+        content="IELTS Calculator, IELTS Band Score, IELTS Raw Score to Band, Academic Reading Score, General Training Reading Score, IELTS Rounding Rules">
+    <meta name="author" content="Study Koro">
+
+    <meta name="geo.region" content="BD" />
+    <meta name="geo.placename" content="Dhaka" />
+    <meta name="category" content="Education, Calculator, IELTS" />
+    <meta name="subject" content="IELTS Band Score Calculator" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Study Koro">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="True" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studykoro.com/tools/ielts-band-score-calculator.html">
+    <meta property="og:title" content="IELTS Band Score Calculator | Academic & General">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://studykoro.com/tools/ielts-band-score-calculator.html">
+    <meta property="twitter:title" content="IELTS Band Score Calculator | Academic & General">
+    <meta property="twitter:description"
+        content="Calculate your IELTS overall band score instantly. Accurate raw-to-band conversion for Listening and Reading. Optimized for 2026 official scoring rules.">
+    <meta property="twitter:image" content="/images/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "IELTS Band Score Calculator | Academic & General",
+      "operatingSystem": "Any",
+      "applicationCategory": "EducationalApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BDT"
+      },
+      "description": "Calculate your IELTS overall band score instantly. Accurate raw-to-band conversion for Listening and Reading. Optimized for 2026 official scoring rules."
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+    <link rel="canonical" href="https://studykoro.com/tools/ielts-band-score-calculator.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/tools.css">
+    <link rel="stylesheet" href="../assets/css/ielts-band-score-calculator.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="site-brand">
+                <a href="/" rel="home">Study Koro</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
+                <ul class="menu">
+                    <li class="menu-item"><a href="/">Home</a></li>
+                    <li class="menu-item"><a href="/posts/">Blog</a></li>
+                    <li class="menu-item"><a href="/tools" aria-haspopup="true">Tools</a></li>
+                    <li class="menu-item"><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="tool-width">
+                <h1>IELTS Band Score Calculator | Academic & General</h1>
+                <p>Official Grading System (Scale of 5.00)</p>
+            </div>
+        </section>
+
+        <section class="tool-width">
+            <div class="tools-card">
+                <div class="calc-container">
+                    <div class="module-switcher">
+                        <button id="btnAcad" class="active" onclick="setModule('academic')">Academic</button>
+                        <button id="btnGen" onclick="setModule('general')">General Training</button>
+                    </div>
+                    <div class="section-title">Step 1: Raw Scores (0-40)</div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Listening Correct Answers</label>
+                            <input type="number" id="lRaw" placeholder="0-40" oninput="updateFromRaw()">
+                        </div>
+                        <div class="input-group">
+                            <label>Reading Correct Answers</label>
+                            <input type="number" id="rRaw" placeholder="0-40" oninput="updateFromRaw()">
+                        </div>
+                    </div>
+                    <div class="section-title">Step 2: Section Bands</div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Listening Band</label>
+                            <select id="lBand" onchange="calculateOverall()"></select>
+                        </div>
+                        <div class="input-group">
+                            <label>Reading Band</label>
+                            <select id="rBand" onchange="calculateOverall()"></select>
+                        </div>
+                        <div class="input-group">
+                            <label>Writing Band</label>
+                            <select id="wBand" onchange="calculateOverall()"></select>
+                        </div>
+                        <div class="input-group">
+                            <label>Speaking Band</label>
+                            <select id="sBand" onchange="calculateOverall()"></select>
+                        </div>
+                    </div>
+                    <div class="score-display-card">
+                        <p>YOUR ESTIMATED OVERALL BAND</p>
+                        <span id="overallResult" class="big-number">0.0</span>
+                        <p id="feedbackText">Enter your scores to see results</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-content">
+                <h2>The Ultimate Guide to IELTS Band Scores</h2>
+                <p>
+                    Understanding how your IELTS scores are calculated is the first step toward achieving your target
+                    band. Whether you
+                    are taking the
+                    <strong>IELTS Academic</strong>
+                    for university or
+                    <strong>General Training</strong>
+                    for migration, the scoring system follows a strict standardized process.
+                </p>
+
+                <h3>What is IELTS Band Score?</h3>
+                <p>
+                    The IELTS (International English Language Testing System) uses a 9-band scale to measure English
+                    language proficiency.
+                    Band 9 represents an expert level of English, while Band 1 indicates minimal ability. Scores are
+                    reported in whole and
+                    half bands (e.g., 6.5, 7.0), allowing for precise assessment of your language skills.
+                </p>
+
+                <h3>How the Overall Band Score is Calculated</h3>
+                <p>
+                    Your overall result is the average of the four components: Listening, Reading, Writing, and
+                    Speaking. However, IELTS
+                    uses a unique rounding system to ensure fairness.
+                </p>
+
+                <strong>The .25 and .75 Rule:</strong>
+                <ul>
+                    <li>
+                        If your average ends in
+                        <strong>.25</strong>
+                        , it is rounded UP to the next half band (e.g., 6.25 becomes 6.5).
+                    </li>
+                    <li>
+                        If your average ends in
+                        <strong>.75</strong>
+                        , it is rounded UP to the next whole band (e.g., 7.75 becomes 8.0).
+                    </li>
+                    <li>
+                        If the average is
+                        <strong>.125</strong>
+                        or
+                        <strong>.625</strong>
+                        , it is rounded DOWN to the nearest half/whole band.
+                    </li>
+                </ul>
+
+                <h3>Academic vs. General Training Reading</h3>
+                <p>
+                    A common point of confusion is the Reading section. While the Listening scores are identical across
+                    both modules, the
+                    Reading scales differ:
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Band Score</th>
+                            <th>Academic (Raw)</th>
+                            <th>General (Raw)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8.0</td>
+                            <td>35-36</td>
+                            <td>37-38</td>
+                        </tr>
+                        <tr>
+                            <td>7.0</td>
+                            <td>30-32</td>
+                            <td>34-35</td>
+                        </tr>
+                        <tr>
+                            <td>6.0</td>
+                            <td>23-26</td>
+                            <td>30-31</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Frequently Asked Questions (FAQ)</h3>
+
+                <strong>Q: Is there negative marking in IELTS?</strong>
+                <p>A: No. You are not penalized for incorrect answers. It is always better to guess than to leave a
+                    blank space.</p>
+
+                <strong>Q: Can I get a 7.25?</strong>
+                <p>
+                    A: No. IELTS only awards whole (7.0) or half (7.5) bands. A calculated average of 7.25 will be
+                    officially reported as
+                    a 7.5.
+                </p>
+
+                <strong>Q: Who accepts IELTS scores?</strong>
+                <p>
+                    A: Over 11,000 organizations worldwide, including universities in the UK, Australia, Canada, and the
+                    USA, as well as
+                    immigration departments.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Study Koro. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/privacy-policy/">Privacy</a></li>
+                    <li><a href="/terms/">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/ielts-band-score-calculator.js"></script>
+</body>
+
+</html>

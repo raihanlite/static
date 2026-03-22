@@ -1,0 +1,141 @@
+/* Container and Group Selection */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+}
+
+.container>label {
+    display: block;
+    font-weight: 700;
+    color: #002f5d;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+#groupSelect {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background-color: #f8fafc;
+    font-weight: 600;
+}
+
+/* Subject Form Rows */
+#subjectsForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#subjectsForm label {
+    font-weight: 600;
+    color: #334155;
+    font-size: 0.9rem;
+    margin-bottom: -5px;
+}
+
+/* Aligning Select and Input on one line */
+#subjectsForm div {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* Grade gets more space than Marks */
+    gap: 10px;
+}
+
+#subjectsForm select,
+#subjectsForm input {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+#subjectsForm input::placeholder {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* Optional Subject Special Styling */
+#optional_subject {
+    width: 100%;
+    border: 1px solid #E31837;
+    background: #fff5f7;
+    margin-bottom: 5px;
+}
+
+/* Action Buttons */
+#calculateBtn,
+#saveImageBtn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+#calculateBtn {
+    background: #002f5d;
+    color: white;
+}
+
+#calculateBtn:hover {
+    background: #001a33;
+}
+
+#saveImageBtn {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+}
+
+#saveImageBtn:not(:disabled) {
+    background: #E31837;
+    color: white;
+    border: none;
+}
+
+#saveImageBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Result Card Styling */
+#resultContainer {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f0f7ff;
+    border: 2px solid #002f5d;
+    border-radius: 10px;
+    text-align: center;
+    /* display: none; */
+    /* Hidden until calculation */
+}
+
+#result {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #002f5d;
+}
+
+#totalMarks {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Responsive Grid for mobile */
+@media (max-width: 480px) {
+    #subjectsForm div {
+        grid-template-columns: 1fr;
+        /* Stack on tiny screens */
+    }
+}
