@@ -1,26 +1,9 @@
-# Robotstxt.org - Study Koro Robots File
-# Optimized for 2026 Search Standards
-
 User-agent: *
-
-# 1. Allow all public content
 Allow: /
 Allow: /tools/
 Allow: /posts/
 
-# 2. Block Crawlers from internal assets to save crawl budget
-# (Bots don't need to index your raw CSS/JS files as standalone pages)
 Disallow: /assets/css/
 Disallow: /assets/js/
-Disallow: /.vscode/
 
-# 3. Block sensitive files
-Disallow: /404.html
-Disallow: /private/
-
-# 4. Host-specific settings
-# If you have a search results page, block it to avoid duplicate content
-Disallow: /search?*
-
-# 5. Link to the Sitemap
-Sitemap: https://studykoro.com/sitemap.xml
+Sitemap: https://studykoro.me/sitemap.xml
