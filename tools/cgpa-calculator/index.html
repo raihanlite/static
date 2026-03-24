@@ -1,154 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGPA Calculator BD — All Public & Private Universities</title>
-    <meta name="title" content="CGPA Calculator BD — All Public & Private Universities">
-    <meta name="description"
-        content="Free CGPA & GPA Calculator for all Bangladesh universities - DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong, and more. Instant calculation for public and private institutions. No signup required.">
-    <meta name="keywords"
-        content="Bangladesh CGPA calculator, university CGPA calculator Bangladesh, public private university GPA, DU CGPA calculator, BUET GPA calculator, NSU CGPA, Bangladesh university grading system, semester GPA calculator BD, UGC grading scale Bangladesh, free CGPA calculator">
+    <title>CGPA Calculator Bangladesh 2026 — DU, BUET, NSU, BRAC & All Universities</title>
+    <meta name="description" content="Free CGPA Calculator for all Bangladesh universities — DU, BUET, NSU, BRAC, IUB, RUET and 40+ more. Calculate semester GPA, cumulative CGPA, and plan your target grade. Instant, no signup required.">
+    <meta name="keywords" content="CGPA calculator Bangladesh, university CGPA calculator BD, DU CGPA calculator, BUET GPA, NSU CGPA, BRAC university GPA, UGC grading scale, semester GPA Bangladesh, cumulative CGPA calculator, free CGPA calculator BD">
     <meta name="author" content="Study Koro">
-
-    <meta name="geo.region" content="BD" />
-    <meta name="geo.placename" content="Dhaka" />
-    <meta name="category" content="Education, Calculator, University" />
-    <meta name="subject" content="CGPA Calculator for Bangladesh Public and Private Universities" />
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="BD">
+    <meta name="geo.placename" content="Dhaka">
+    <meta name="theme-color" content="#1a3a5c">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Study Koro">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-title" content="CGPA Calc BD">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://studykoro.me/tools/cgpa-calculator/">
-    <meta property="og:title" content="CGPA Calculator BD — All Public & Private Universities">
-    <meta property="og:image" content="/images/og-image.jpg">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://studykoro.me/tools/cgpa-calculator/">
-    <meta property="twitter:title" content="CGPA Calculator BD — All Public & Private Universities">
-    <meta property="twitter:description"
-        content="Free CGPA & GPA Calculator for all Bangladesh universities - DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong, and more. Instant calculation for public and private institutions. No signup required.">
-    <meta property="twitter:image" content="/images/og-image.jpg">
+    <meta property="og:title" content="CGPA Calculator Bangladesh — DU, BUET, NSU, BRAC & All Universities">
+    <meta property="og:description" content="Free CGPA & GPA Calculator for all Bangladesh universities. Calculate semester GPA, cumulative CGPA, and set your grade targets. Instant results, no signup.">
+    <meta property="og:image" content="https://studykoro.me/images/og-image.jpg">
+    <meta property="og:locale" content="en_BD">
+    <meta property="og:site_name" content="Study Koro">
 
-    <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "CGPA Calculator BD — All Public and Private Universities",
-    "operatingSystem": "All",
-    "applicationCategory": "EducationalApplication",
-    "featureList": [
-        "4.0 and 5.0 scale CGPA calculation",
-        "Support for 50+ Bangladesh universities",
-        "Grade point to letter grade conversion",
-        "Semester-wise GPA tracking",
-        "Cumulative CGPA calculation",
-        "Mobile-optimized interface",
-        "Offline functionality (PWA)",
-        "No registration required",
-        "Free to use"
-    ],
-    "inLanguage": [
-        "en",
-        "bn"
-    ],
-    "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "BDT"
-    },
-    "description": "Free CGPA & GPA Calculator for all Bangladesh universities - DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong, and more. Instant calculation for public and private institutions. No signup required." 
-    }</script>
-
-    <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC grading system where A+ = 4.00, A = 3.75, A- = 3.50, and so on."
-            },
-            "name": "How is CGPA calculated in Bangladesh universities?"
-        },
-        {
-            "@type": "Question",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "All major institutions including DU, BUET, RUET, NSU, BRAC, IUB, AIUB, and 40+ more are supported via the UGC preset."
-            },
-            "name": "Which Bangladesh universities are supported?"
-        },
-        {
-            "@type": "Question",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Use the 'Semester Calculator' for individual terms and the 'Overall Calculator' to combine them into a final cumulative score."
-            },
-            "name": "Can I calculate CGPA for multiple semesters at once?"
-        },
-        {
-            "@type": "Question",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. It is entirely free and uses Browser Local Storage. Your data is never uploaded to any server."
-            },
-            "name": "Is this CGPA calculator free and safe to use?"
-    }]}</script>
-
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://studykoro.me/tools/cgpa-calculator/">
+    <meta name="twitter:title" content="CGPA Calculator Bangladesh 2026">
+    <meta name="twitter:description" content="Free CGPA Calculator for DU, BUET, NSU, BRAC, IUB and all BD universities. Semester GPA + cumulative CGPA + goal planner.">
+    <meta name="twitter:image" content="https://studykoro.me/images/og-image.jpg">
 
     <link rel="canonical" href="https://studykoro.me/tools/cgpa-calculator/">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CGPA Calculator BD — All Bangladesh Universities",
+      "url": "https://studykoro.me/tools/cgpa-calculator/",
+      "operatingSystem": "Any",
+      "applicationCategory": "EducationalApplication",
+      "inLanguage": "en",
+      "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BDT" },
+      "description": "Free CGPA & GPA Calculator for all Bangladesh universities — DU, BUET, NSU, BRAC, IUB, RUET and 40+ more. Instant calculation, no signup required.",
+      "featureList": [
+        "UGC 4.0 scale CGPA calculation",
+        "Support for 50+ Bangladesh universities",
+        "Semester-wise GPA tracking",
+        "Cumulative CGPA calculation",
+        "Target CGPA goal planner",
+        "No registration required",
+        "Free to use"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "Study Koro",
+        "url": "https://studykoro.me"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is CGPA calculated in Bangladesh universities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CGPA is calculated using the weighted average formula: CGPA = Σ(Credit Hours × Grade Point) ÷ Σ(Credit Hours). Bangladesh public and private universities follow the UGC grading system where A+ = 4.00, A = 3.75, A- = 3.50, B+ = 3.25, B = 3.00, and so on down to F = 0.00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Bangladesh universities use the UGC 4.0 grading scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All universities under the University Grants Commission (UGC) of Bangladesh use the standard 4.0 scale. This includes DU, BUET, RUET, KUET, CUET, NSU, BRAC University, IUB, AIUB, DIU, EWU, BRACU, North East University and 40+ more institutions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I calculate CGPA for multiple semesters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Use the Semester Calculator to compute individual semester GPA, then add each semester's GPA and total credits to the Overall History section. The calculator automatically combines all semesters into your cumulative CGPA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What GPA do I need to maintain a good CGPA in Bangladesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Bangladesh universities, a CGPA of 3.50 or above (out of 4.00) is generally considered excellent. CGPA 3.00–3.49 is good, 2.50–2.99 is average, and below 2.50 may affect scholarship eligibility. Many employers and graduate programs look for a minimum CGPA of 3.00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this CGPA calculator free and safe to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, this CGPA calculator is completely free. All calculations happen in your browser — no data is sent to any server and no account is required."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://studykoro.me/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://studykoro.me/tools/" },
+        { "@type": "ListItem", "position": 3, "name": "CGPA Calculator", "item": "https://studykoro.me/tools/cgpa-calculator/" }
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/tools.css">
-    <link rel="stylesheet" href="/assets/css/cgpa-calculator.css">
+    <style>
+        :root {
+            --navy:       #1a3a5c;
+            --navy-mid:   #1e4976;
+            --navy-light: #2563a8;
+            --teal:       #0e8a7a;
+            --teal-light: #12b09d;
+            --teal-pale:  #e8faf8;
+            --gold:       #d4920a;
+            --gold-pale:  #fef8ec;
+            --white:      #ffffff;
+            --off-white:  #f5f8fc;
+            --gray-50:    #f0f4f9;
+            --gray-100:   #e1e8f0;
+            --gray-300:   #94a3b8;
+            --gray-500:   #64748b;
+            --gray-700:   #334155;
+            --gray-900:   #0f172a;
+            --red:        #dc2626;
+            --green:      #16a34a;
+            --radius:     12px;
+            --radius-sm:  8px;
+            --shadow:     0 4px 16px rgba(26,58,92,.10);
+            --shadow-lg:  0 12px 40px rgba(26,58,92,.15);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--off-white);
+            color: var(--gray-900);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── HEADER ── */
+        .site-header {
+            background: var(--navy);
+            position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 2px 12px rgba(26,58,92,.3);
+        }
+        .nav-container {
+            max-width: 1140px; margin: 0 auto; padding: 0 24px;
+            height: 64px; display: flex; align-items: center; justify-content: space-between;
+        }
+        .site-brand a {
+            font-family: 'DM Serif Display', serif;
+            color: #fff; text-decoration: none; font-size: 1.35rem;
+        }
+        .site-brand a span { color: #7dd3fc; }
+        .site-nav ul { list-style: none; display: flex; gap: 4px; }
+        .site-nav a {
+            color: rgba(255,255,255,.75); text-decoration: none;
+            padding: 8px 14px; border-radius: var(--radius-sm);
+            font-size: .9rem; font-weight: 500; transition: .2s;
+        }
+        .site-nav a:hover { color: #fff; background: rgba(255,255,255,.12); }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+        .menu-toggle span { display: block; width: 22px; height: 2px; background: white; margin: 4px 0; border-radius: 2px; }
+
+        /* ── HERO ── */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1e5fa8 100%);
+            padding: 56px 24px 48px; text-align: center; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero-inner { position: relative; max-width: 700px; margin: 0 auto; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25);
+            color: #7dd3fc; font-size: .78rem; font-weight: 600;
+            letter-spacing: .07em; text-transform: uppercase;
+            padding: 5px 14px; border-radius: 20px; margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            color: #fff; line-height: 1.2; margin-bottom: 14px;
+        }
+        .hero h1 em { font-style: italic; color: #7dd3fc; }
+        .hero p { color: rgba(255,255,255,.75); font-size: 1.05rem; margin-bottom: 20px; }
+        .hero-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+        .hero-pill {
+            background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2);
+            color: rgba(255,255,255,.85); font-size: .8rem; padding: 4px 12px; border-radius: 20px;
+        }
+
+        /* ── PAGE LAYOUT ── */
+        .page-body {
+            max-width: 1140px; margin: 0 auto; padding: 40px 24px 80px;
+            display: grid; grid-template-columns: 1fr 320px; gap: 32px; align-items: start;
+        }
+
+        /* ── MAIN CARD ── */
+        .calc-card {
+            background: var(--white); border-radius: 20px;
+            box-shadow: var(--shadow-lg); overflow: hidden;
+        }
+        .calc-card-header {
+            background: linear-gradient(90deg, var(--navy) 0%, var(--navy-mid) 100%);
+            padding: 22px 28px; display: flex; align-items: center; gap: 14px;
+        }
+        .calc-icon {
+            width: 44px; height: 44px; background: rgba(255,255,255,.15);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+        }
+        .calc-card-header h2 { font-family: 'DM Serif Display', serif; color: #fff; font-size: 1.2rem; font-weight: 400; }
+        .calc-card-header p { color: rgba(255,255,255,.6); font-size: .82rem; margin-top: 2px; }
+        .calc-body { padding: 28px; }
+
+        /* University preset */
+        .preset-bar {
+            display: flex; align-items: center; gap: 12px;
+            background: var(--gray-50); border-radius: var(--radius);
+            padding: 14px 16px; margin-bottom: 28px;
+            border: 1.5px solid var(--gray-100);
+        }
+        .preset-bar label { font-size: .85rem; font-weight: 600; color: var(--gray-700); white-space: nowrap; }
+        .preset-bar select {
+            flex: 1; border: 1.5px solid var(--gray-100); border-radius: var(--radius-sm);
+            padding: 8px 12px; font-family: 'DM Sans', sans-serif; font-size: .88rem;
+            color: var(--gray-900); background: var(--white); transition: .2s;
+        }
+        .preset-bar select:focus { outline: none; border-color: var(--navy-light); box-shadow: 0 0 0 3px rgba(37,99,168,.12); }
+        .preset-info {
+            font-size: .8rem; color: var(--teal); background: var(--teal-pale);
+            padding: 3px 10px; border-radius: 20px; font-weight: 500; white-space: nowrap;
+        }
+
+        /* Two-col grid */
+        .calc-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: var(--navy);
+            margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--gray-100);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .section-title .badge {
+            font-family: 'DM Sans', sans-serif; font-size: .72rem; font-weight: 600;
+            background: var(--navy); color: white; padding: 2px 8px; border-radius: 10px;
+        }
+
+        /* Inputs */
+        .field { margin-bottom: 12px; }
+        .field label { display: block; font-size: .82rem; font-weight: 600; color: var(--gray-500); margin-bottom: 5px; letter-spacing: .02em; }
+        .field input, .field select {
+            width: 100%; border: 1.5px solid var(--gray-100); border-radius: var(--radius-sm);
+            padding: 9px 12px; font-family: 'DM Sans', sans-serif; font-size: .88rem;
+            color: var(--gray-900); background: var(--white); transition: .2s;
+            -moz-appearance: textfield;
+        }
+        .field input::-webkit-inner-spin-button, .field input::-webkit-outer-spin-button { -webkit-appearance: none; }
+        .field input:focus, .field select:focus {
+            outline: none; border-color: var(--navy-light); box-shadow: 0 0 0 3px rgba(37,99,168,.12);
+        }
+        .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+        .btn-primary {
+            width: 100%; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: white; border: none; border-radius: var(--radius-sm); padding: 11px;
+            font-family: 'DM Sans', sans-serif; font-size: .9rem; font-weight: 600;
+            cursor: pointer; transition: .2s; box-shadow: 0 3px 10px rgba(26,58,92,.25);
+            display: flex; align-items: center; justify-content: center; gap: 6px;
+        }
+        .btn-primary:hover { opacity: .9; transform: translateY(-1px); }
+        .btn-primary:active { transform: translateY(0); }
+
+        /* GPA Result panel */
+        .gpa-panel {
+            margin-top: 14px; background: var(--navy); border-radius: var(--radius);
+            padding: 14px 16px; display: flex; align-items: center; justify-content: space-between;
+        }
+        .gpa-panel-label { font-size: .78rem; color: rgba(255,255,255,.6); font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+        .gpa-panel-value { font-family: 'DM Serif Display', serif; font-size: 2rem; color: #7dd3fc; line-height: 1; }
+        .gpa-panel-letter { font-size: .88rem; color: rgba(255,255,255,.5); margin-top: 2px; }
+
+        /* Entry list */
+        .entry-list {
+            max-height: 200px; overflow-y: auto; margin: 10px 0;
+            border: 1.5px solid var(--gray-100); border-radius: var(--radius-sm);
+        }
+        .entry-list:empty::after {
+            content: 'No entries yet'; display: block; text-align: center;
+            padding: 16px; font-size: .83rem; color: var(--gray-300);
+        }
+        .entry-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 9px 12px; border-bottom: 1px solid var(--gray-50); font-size: .84rem;
+        }
+        .entry-item:last-child { border-bottom: none; }
+        .entry-item:hover { background: var(--gray-50); }
+        .entry-name { color: var(--gray-700); font-weight: 500; }
+        .entry-meta { color: var(--gray-500); font-size: .8rem; }
+        .entry-grade { font-weight: 700; color: var(--navy); margin-right: 6px; }
+        .btn-remove {
+            background: none; border: none; color: var(--gray-300); cursor: pointer;
+            font-size: .85rem; padding: 2px 5px; border-radius: 4px; transition: .15s; line-height: 1;
+        }
+        .btn-remove:hover { color: var(--red); background: #fee2e2; }
+
+        /* Cumulative result */
+        .cgpa-result {
+            background: linear-gradient(135deg, var(--navy) 0%, #1e5fa8 100%);
+            border-radius: var(--radius); padding: 22px 24px; text-align: center;
+            margin-bottom: 24px;
+        }
+        .cgpa-result-label { color: rgba(255,255,255,.65); font-size: .82rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 6px; }
+        .cgpa-result-value { font-family: 'DM Serif Display', serif; font-size: 3.2rem; color: #7dd3fc; line-height: 1; }
+        .cgpa-result-sub { color: rgba(255,255,255,.55); font-size: .85rem; margin-top: 6px; }
+
+        /* Goal planner */
+        .goal-section {
+            border: 1.5px solid var(--gray-100); border-radius: var(--radius); overflow: hidden; margin-bottom: 0;
+        }
+        .goal-header {
+            background: var(--gray-50); padding: 14px 18px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .goal-icon { font-size: 1.1rem; }
+        .goal-header-text h3 { font-size: .95rem; font-weight: 700; color: var(--navy); }
+        .goal-header-text p { font-size: .8rem; color: var(--gray-500); margin-top: 1px; }
+        .goal-body { padding: 18px; }
+        .goal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+        .btn-analyze {
+            width: 100%; background: var(--teal); color: white; border: none;
+            border-radius: var(--radius-sm); padding: 11px;
+            font-family: 'DM Sans', sans-serif; font-size: .9rem; font-weight: 600;
+            cursor: pointer; transition: .2s; margin-bottom: 14px;
+        }
+        .btn-analyze:hover { background: var(--teal-light); }
+        .goal-result {
+            border-radius: var(--radius-sm); padding: 14px 16px; font-size: .88rem; line-height: 1.6;
+            background: var(--teal-pale); color: var(--teal); border: 1.5px solid rgba(14,138,122,.2);
+            min-height: 52px; display: flex; align-items: center;
+        }
+        .goal-result.impossible { background: #fff1f1; color: var(--red); border-color: rgba(220,38,38,.2); }
+        .goal-result.achieved { background: #f0fdf4; color: var(--green); border-color: rgba(22,163,74,.2); }
+        .goal-result strong { font-weight: 700; }
+
+        /* ── SIDEBAR ── */
+        .sidebar { display: flex; flex-direction: column; gap: 20px; }
+        .side-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+        .side-card-head {
+            background: var(--navy); padding: 13px 18px;
+            color: white; font-family: 'DM Serif Display', serif; font-size: .98rem; font-weight: 400;
+        }
+
+        .grade-table { width: 100%; border-collapse: collapse; }
+        .grade-table thead th {
+            background: var(--gray-50); padding: 8px 12px; font-size: .75rem;
+            font-weight: 700; color: var(--gray-500); letter-spacing: .05em; text-transform: uppercase; text-align: left;
+        }
+        .grade-table tbody td { padding: 9px 12px; font-size: .84rem; border-bottom: 1px solid var(--gray-50); color: var(--gray-700); }
+        .grade-table tbody tr:last-child td { border-bottom: none; }
+        .grade-table tbody tr:hover td { background: var(--gray-50); }
+        .gp-chip {
+            display: inline-block; background: var(--navy); color: white;
+            font-size: .73rem; font-weight: 700; padding: 2px 7px; border-radius: 10px;
+        }
+        .grade-letter { font-weight: 700; font-size: .92rem; color: var(--navy); }
+        .range-text { font-size: .8rem; color: var(--gray-300); }
+
+        .tips-list { padding: 14px 18px; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .tips-list li { display: flex; gap: 10px; font-size: .84rem; color: var(--gray-700); line-height: 1.5; }
+        .tips-list li::before { content: '→'; color: var(--teal); font-weight: 700; flex-shrink: 0; }
+
+        .related-links { padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
+        .related-link {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 10px 14px; background: var(--gray-50); border-radius: var(--radius-sm);
+            text-decoration: none; color: var(--navy); font-size: .87rem; font-weight: 500; transition: .2s;
+        }
+        .related-link:hover { background: var(--navy); color: white; }
+        .related-link span { font-size: .75rem; opacity: .5; }
+
+        /* ── CONTENT ── */
+        .content-area { grid-column: 1 / -1; max-width: 800px; }
+        .content-area h2 {
+            font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--navy);
+            margin-top: 40px; margin-bottom: 14px; padding-bottom: 10px;
+            border-bottom: 2px solid var(--gray-100);
+        }
+        .content-area h2:first-child { margin-top: 0; }
+        .content-area h3 { font-size: 1rem; font-weight: 600; color: var(--gray-700); margin-top: 20px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .content-area h3::before { content: ''; display: inline-block; width: 4px; height: 16px; background: var(--teal); border-radius: 2px; }
+        .content-area p { font-size: .93rem; color: var(--gray-700); margin-bottom: 10px; line-height: 1.72; }
+        .content-area ul, .content-area ol { margin: 8px 0 12px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+        .content-area ul li, .content-area ol li { font-size: .91rem; color: var(--gray-700); padding-left: 20px; position: relative; line-height: 1.6; }
+        .content-area ul li::before { content: '•'; color: var(--teal); position: absolute; left: 0; font-weight: 700; }
+        .content-area ol { counter-reset: s; }
+        .content-area ol li { counter-increment: s; }
+        .content-area ol li::before { content: counter(s); position: absolute; left: 0; background: var(--navy); color: white; width: 18px; height: 18px; border-radius: 50%; font-size: .7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; top: 2px; }
+        .content-area strong { color: var(--navy); font-weight: 600; }
+        .content-area code { background: var(--gray-50); padding: 2px 8px; border-radius: 4px; font-size: .9em; color: var(--navy); font-family: monospace; }
+
+        .formula-box {
+            background: var(--navy); border-radius: var(--radius); padding: 18px 22px;
+            margin: 16px 0; color: white;
+        }
+        .formula-box p { color: rgba(255,255,255,.75); font-size: .88rem; margin: 0; }
+        .formula-box p strong { color: #7dd3fc; font-size: 1rem; }
+
+        /* FAQ */
+        .faq-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+        details { background: var(--white); border: 1.5px solid var(--gray-100); border-radius: var(--radius); overflow: hidden; }
+        details[open] { border-color: var(--teal); }
+        summary { padding: 15px 18px; font-size: .91rem; font-weight: 600; color: var(--gray-700); cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: '+'; font-size: 1.2rem; color: var(--teal); font-weight: 300; flex-shrink: 0; }
+        details[open] summary::after { content: '−'; }
+        details p { padding: 0 18px 16px; font-size: .87rem; color: var(--gray-500); line-height: 1.65; margin: 0; }
+
+        /* Uni tags cloud */
+        .uni-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0; }
+        .uni-tag { background: var(--gray-50); border: 1px solid var(--gray-100); color: var(--gray-700); font-size: .8rem; padding: 4px 12px; border-radius: 20px; }
+
+        /* ── FOOTER ── */
+        .site-footer { background: var(--navy); color: rgba(255,255,255,.55); padding: 28px 24px; }
+        .footer-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+        .footer-inner p { font-size: .84rem; }
+        .footer-nav ul { list-style: none; display: flex; gap: 4px; }
+        .footer-nav a { color: rgba(255,255,255,.5); text-decoration: none; font-size: .84rem; padding: 6px 10px; border-radius: 6px; transition: .2s; }
+        .footer-nav a:hover { color: white; }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 900px) {
+            .page-body { grid-template-columns: 1fr; }
+            .sidebar { order: -1; }
+            .content-area { grid-column: auto; }
+            .calc-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .site-nav { display: none; }
+            .site-nav.open { display: block; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 12px 16px 20px; box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+            .site-nav.open ul { flex-direction: column; gap: 2px; }
+            .site-nav.open a { display: block; padding: 10px 14px; }
+            .menu-toggle { display: block; }
+            .field-row { grid-template-columns: 1fr; }
+            .goal-grid { grid-template-columns: 1fr; }
+            .preset-bar { flex-wrap: wrap; }
+            .hero { padding: 40px 20px 36px; }
+        }
+    </style>
 </head>
-
 <body>
 
-    <header class="site-header">
-        <div class="nav-container">
-            <div class="site-brand">
-                <a href="/" rel="home">Study Koro</a>
+<header class="site-header">
+    <div class="nav-container">
+        <div class="site-brand"><a href="/">Study <span>Koro</span></a></div>
+        <button class="menu-toggle" aria-label="Open Menu" id="menuToggle">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/posts/">Blog</a></li>
+                <li><a href="/tools/">Tools</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">🎓 Bangladesh University Grading System</div>
+            <h1>CGPA Calculator <em>BD</em></h1>
+            <p>Calculate semester GPA, cumulative CGPA, and plan your target grades — for all public &amp; private universities.</p>
+            <div class="hero-pills">
+                <span class="hero-pill">DU</span>
+                <span class="hero-pill">BUET</span>
+                <span class="hero-pill">NSU</span>
+                <span class="hero-pill">BRAC</span>
+                <span class="hero-pill">IUB</span>
+                <span class="hero-pill">RUET</span>
+                <span class="hero-pill">AIUB</span>
+                <span class="hero-pill">+ 40 more</span>
             </div>
-
-            <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
-                <span></span><span></span><span></span>
-            </button>
-
-            <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
-                <ul class="menu">
-                    <li class="menu-item"><a href="/">Home</a></li>
-                    <li class="menu-item"><a href="/posts/">Blog</a></li>
-                    <li class="menu-item"><a href="/tools" aria-haspopup="true">Tools</a></li>
-                    <li class="menu-item"><a href="/about/">About</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="tool-width">
-                <h1>CGPA Calculator BD</h1>
-                <p>Support All Public & Private Universities</p>
+    <div class="page-body">
+
+        <!-- ── CALCULATOR ── -->
+        <section aria-label="CGPA Calculator">
+
+            <!-- Cumulative Result (top) -->
+            <div class="cgpa-result" id="cgpaResult">
+                <div class="cgpa-result-label">Cumulative CGPA</div>
+                <div class="cgpa-result-value" id="cumulativeCgpa">—</div>
+                <div class="cgpa-result-sub" id="cgpaResultSub">Add subjects and semester records below</div>
             </div>
-        </section>
 
-        <section class="tool-width">
-            <div class="tools-card">
-                <div class="document">
-                    <div class="form-group">
-                        <label>University Preset (Sets Grading Scale)</label>
-                        <select id="uniSelect">
+            <div class="calc-card">
+                <div class="calc-card-header">
+                    <div class="calc-icon">📐</div>
+                    <div>
+                        <h2>GPA &amp; CGPA Calculator</h2>
+                        <p>UGC 4.0 scale · semester tracking · goal planner</p>
+                    </div>
+                </div>
+                <div class="calc-body">
+
+                    <!-- University Preset -->
+                    <div class="preset-bar">
+                        <label for="uniSelect">University</label>
+                        <select id="uniSelect" aria-label="University Preset">
                             <option value="ugc">UGC Standard (All Universities)</option>
                             <option value="du">University of Dhaka (DU)</option>
                             <option value="buet">BUET</option>
@@ -158,205 +551,422 @@
                             <option value="aust">AUST</option>
                             <option value="iut">IUT</option>
                         </select>
-                        <div id="uniInfo" class="info-note">
-                        </div>
+                        <span class="preset-info" id="presetInfo">4.0 Scale</span>
                     </div>
 
-                    <div class="grid-2">
+                    <div class="calc-grid">
+                        <!-- Semester Calculator -->
                         <div>
-                            <h2>Semester Calculator</h2>
-                            <form id="subjectForm">
-                                <div class="form-group">
-                                    <label>Subject Name</label>
-                                    <input type="text" id="subjName" placeholder="e.g. Physics" required>
+                            <div class="section-title">Semester Calculator <span class="badge">Step 1</span></div>
+
+                            <div class="field">
+                                <label for="subjName">Subject Name</label>
+                                <input type="text" id="subjName" placeholder="e.g. Data Structures" autocomplete="off">
+                            </div>
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="subjCredit">Credit Hours</label>
+                                    <input type="number" id="subjCredit" step="0.5" min="0.5" max="6" value="3.0" placeholder="3.0">
                                 </div>
+                                <div class="field">
+                                    <label for="subjGrade">Grade</label>
+                                    <select id="subjGrade" aria-label="Grade"></select>
+                                </div>
+                            </div>
+                            <button class="btn-primary" id="addSubjectBtn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                Add Subject
+                            </button>
+
+                            <div class="entry-list" id="subjectsContainer" role="list" aria-label="Added subjects"></div>
+
+                            <div class="gpa-panel" aria-live="polite">
                                 <div>
-                                    <div>
-                                        <label>Credits</label>
-                                        <input type="number" id="subjCredit" step="0.5" min="0.5" max="6" value="3.0">
-                                    </div>
-                                    <div>
-                                        <label>Grade</label>
-                                        <select id="subjGrade">
-                                        </select>
-                                    </div>
+                                    <div class="gpa-panel-label">Semester GPA</div>
+                                    <div class="gpa-panel-letter" id="semGpLetter">—</div>
                                 </div>
-                                <button type="submit">Add Subject</button>
-                            </form>
-                            <div id="subjectsContainer" class="entry-list"></div>
-                            <div class="result-panel">
-                                <span class="stat-label">Semester GPA</span>
-                                <span class="big-number" id="semesterGpaDisplay">0.00</span>
+                                <div class="gpa-panel-value" id="semesterGpaDisplay">—</div>
                             </div>
                         </div>
 
+                        <!-- Overall History -->
                         <div>
-                            <h2>Overall History</h2>
-                            <form id="overallForm">
-                                <div class="form-group">
-                                    <label>Select Semester</label>
-                                    <select id="semesterDropdown">
-                                        <option value="1st">1st Semester</option>
-                                        <option value="2nd">2nd Semester</option>
-                                        <option value="3rd">3rd Semester</option>
-                                        <option value="4th">4th Semester</option>
-                                        <option value="5th">5th Semester</option>
-                                        <option value="6th">6th Semester</option>
-                                        <option value="7th">7th Semester</option>
-                                        <option value="8th">8th Semester</option>
-                                    </select>
+                            <div class="section-title">Overall History <span class="badge">Step 2</span></div>
+
+                            <div class="field">
+                                <label for="semesterDropdown">Semester</label>
+                                <select id="semesterDropdown" aria-label="Semester">
+                                    <option value="1st Semester">1st Semester</option>
+                                    <option value="2nd Semester">2nd Semester</option>
+                                    <option value="3rd Semester">3rd Semester</option>
+                                    <option value="4th Semester">4th Semester</option>
+                                    <option value="5th Semester">5th Semester</option>
+                                    <option value="6th Semester">6th Semester</option>
+                                    <option value="7th Semester">7th Semester</option>
+                                    <option value="8th Semester">8th Semester</option>
+                                </select>
+                            </div>
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="overallGpa">GPA</label>
+                                    <input type="number" id="overallGpa" step="0.01" min="0" max="4" placeholder="3.50">
                                 </div>
-                                <div>
-                                    <div>
-                                        <label>GPA</label>
-                                        <input type="number" id="overallGpa" step="0.01" min="0" max="4"
-                                            placeholder="3.50">
-                                    </div>
-                                    <div>
-                                        <label>Total Credits</label>
-                                        <input type="number" id="overallCredits" step="0.5" min="1" placeholder="15.0">
-                                    </div>
+                                <div class="field">
+                                    <label for="overallCredits">Credits</label>
+                                    <input type="number" id="overallCredits" step="0.5" min="1" placeholder="15.0">
                                 </div>
-                                <button type="submit">Save Record</button>
-                            </form>
-                            <div id="semestersContainer" class="entry-list"></div>
-                            <div class="result-panel">
-                                <span class="stat-label">Cumulative CGPA</span>
-                                <span class="big-number" id="cumulativeCgpa">0.00</span>
+                            </div>
+                            <button class="btn-primary" id="saveSemesterBtn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/></svg>
+                                Save Semester
+                            </button>
+
+                            <div class="entry-list" id="semestersContainer" role="list" aria-label="Semester records"></div>
+                        </div>
+                    </div>
+
+                    <!-- Goal Planner -->
+                    <div class="goal-section">
+                        <div class="goal-header">
+                            <span class="goal-icon">🎯</span>
+                            <div class="goal-header-text">
+                                <h3>Target CGPA Planner</h3>
+                                <p>Find out what average GPA you need in future credits to hit your goal</p>
+                            </div>
+                        </div>
+                        <div class="goal-body">
+                            <div class="goal-grid">
+                                <div class="field">
+                                    <label for="targetCgpaGoal">Target CGPA</label>
+                                    <input type="number" id="targetCgpaGoal" step="0.01" min="0" max="4" value="3.50">
+                                </div>
+                                <div class="field">
+                                    <label for="futureCredits">Remaining Credits</label>
+                                    <input type="number" id="futureCredits" step="0.5" min="0" value="15.0">
+                                </div>
+                            </div>
+                            <button class="btn-analyze" id="goalBtn">Analyze Target CGPA</button>
+                            <div class="goal-result" id="goalResult" aria-live="polite">
+                                Add your current data above, then click Analyze.
                             </div>
                         </div>
                     </div>
 
-                    <h2>Goal Planner</h2>
-                    <p>Why use this? Find out what grades you need in remaining subjects to reach your target CGPA.</p>
-                    <div class="grid-2">
-                        <div>
-                            <label>Target CGPA</label>
-                            <input type="number" id="targetCgpaGoal" step="0.01" min="0" max="4" value="3.50">
-                        </div>
-                        <div>
-                            <label>Remaining Credits</label>
-                            <input type="number" id="futureCredits" step="0.5" min="0" value="15.0">
-                        </div>
-                    </div>
-                    <button id="calculateGoalBtn">Analyze Target</button>
-                    <div id="goalResult" class="goal-box">Add your current data to see required future grades.</div>
-                    <p>Calculations based on Σ(Grade Point × Credits) / Σ Credits</p>
                 </div>
-                <div id="status-message"></div>
-            </div>
-
-            <div class="tool-content">
-                <h2>UGC Grading Scale Information</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Grade</th>
-                            <th>GPA</th>
-                            <th>Range (%)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>A+</td>
-                            <td>4.00</td>
-                            <td>80-100%</td>
-                        </tr>
-                        <tr>
-                            <td>A</td>
-                            <td>3.75</td>
-                            <td>75-79%</td>
-                        </tr>
-                        <tr>
-                            <td>A-</td>
-                            <td>3.50</td>
-                            <td>70-74%</td>
-                        </tr>
-                        <tr>
-                            <td>B+</td>
-                            <td>3.25</td>
-                            <td>65-69%</td>
-                        </tr>
-                        <tr>
-                            <td>B</td>
-                            <td>3.00</td>
-                            <td>60-64%</td>
-                        </tr>
-                        <tr>
-                            <td>B-</td>
-                            <td>2.75</td>
-                            <td>55-59%</td>
-                        </tr>
-                        <tr>
-                            <td>C+</td>
-                            <td>2.50</td>
-                            <td>50-54%</td>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>2.25</td>
-                            <td>45-49%</td>
-                        </tr>
-                        <tr>
-                            <td>D</td>
-                            <td>2.00</td>
-                            <td>40-44%</td>
-                        </tr>
-                        <tr>
-                            <td>F</td>
-                            <td>0.00</td>
-                            <td>0-39%</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3>How CGPA is Calculated</h3>
-                <p><b>Formula:</b> CGPA = Σ (Credit × Grade Point) ÷ Σ Credit</p>
-                <p><i>Example: Mathematics (3cr × 4.0) + Physics (3cr × 3.75) = 23.25 Total Points. 23.25 ÷ 6 Total
-                        Credits = 3.875 CGPA.</i></p>
-
-                <h2>Frequently Asked Questions</h2>
-
-
-                <h3>How is CGPA calculated in Bangladesh universities?</h3>
-                <p>CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC grading system where A+ =
-                    4.00, A = 3.75, A- = 3.50, and so on.</p>
-
-
-
-                <h3>Which Bangladesh universities are supported?</h3>
-                <p>All major institutions including DU, BUET, RUET, NSU, BRAC, IUB, AIUB, and 40+ more are supported via
-                    the UGC preset.</p>
-
-
-
-                <h3>Can I calculate CGPA for multiple semesters at once?</h3>
-                <p>Yes. Use the 'Semester Calculator' for individual terms and the 'Overall Calculator' to combine them
-                    into a final cumulative score.</p>
-
-
-
-                <h3>Is this CGPA calculator free and safe to use?</h3>
-                <p>Yes. It is entirely free and uses Browser Local Storage. Your data is never uploaded to any server.
-                </p>
-
             </div>
         </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <p>&copy; 2026 Study Koro. All rights reserved.</p>
-            <nav class="footer-nav" aria-label="Footer Navigation">
-                <ul>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li><a href="/privacy-policy/">Privacy</a></li>
-                    <li><a href="/terms/">Terms</a></li>
+        <!-- ── SIDEBAR ── -->
+        <aside class="sidebar" aria-label="Reference">
+            <div class="side-card">
+                <div class="side-card-head">UGC Grading Scale</div>
+                <table class="grade-table">
+                    <thead><tr><th>Grade</th><th>Points</th><th>Range</th></tr></thead>
+                    <tbody>
+                        <tr><td class="grade-letter">A+</td><td><span class="gp-chip">4.00</span></td><td class="range-text">80–100%</td></tr>
+                        <tr><td class="grade-letter">A</td><td><span class="gp-chip">3.75</span></td><td class="range-text">75–79%</td></tr>
+                        <tr><td class="grade-letter">A−</td><td><span class="gp-chip">3.50</span></td><td class="range-text">70–74%</td></tr>
+                        <tr><td class="grade-letter">B+</td><td><span class="gp-chip">3.25</span></td><td class="range-text">65–69%</td></tr>
+                        <tr><td class="grade-letter">B</td><td><span class="gp-chip">3.00</span></td><td class="range-text">60–64%</td></tr>
+                        <tr><td class="grade-letter">B−</td><td><span class="gp-chip">2.75</span></td><td class="range-text">55–59%</td></tr>
+                        <tr><td class="grade-letter">C+</td><td><span class="gp-chip">2.50</span></td><td class="range-text">50–54%</td></tr>
+                        <tr><td class="grade-letter">C</td><td><span class="gp-chip">2.25</span></td><td class="range-text">45–49%</td></tr>
+                        <tr><td class="grade-letter">D</td><td><span class="gp-chip">2.00</span></td><td class="range-text">40–44%</td></tr>
+                        <tr><td class="grade-letter" style="color:var(--red)">F</td><td><span class="gp-chip" style="background:var(--red)">0.00</span></td><td class="range-text">0–39%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="side-card">
+                <div class="side-card-head">Quick Tips</div>
+                <ul class="tips-list">
+                    <li>CGPA formula: <strong>Σ(Credit × GP) ÷ Σ Credits</strong></li>
+                    <li>A CGPA of <strong>3.50+</strong> is generally considered excellent.</li>
+                    <li>Add each past semester in Step 2 to get your true cumulative CGPA.</li>
+                    <li>Use the Goal Planner to see how much effort your target needs.</li>
                 </ul>
-            </nav>
-        </div>
-    </footer>
-    <script src="/assets/js/header.js"></script>
-    <script src="/assets/js/cgpa-calculator.js"></script>
-</body>
+            </div>
 
+            <div class="side-card">
+                <div class="side-card-head">Other Calculators</div>
+                <div class="related-links">
+                    <a href="/tools/hsc-gpa-calculator/" class="related-link">HSC GPA Calculator <span>→</span></a>
+                    <a href="/tools/ssc-gpa-calculator/" class="related-link">SSC GPA Calculator <span>→</span></a>
+                    <a href="/tools/jsc-gpa-calculator/" class="related-link">JSC GPA Calculator <span>→</span></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ── CONTENT ── -->
+        <article class="content-area">
+
+            <h2 id="how-to-use">How to Use the CGPA Calculator</h2>
+
+            <h3>Step 1 — Calculate Your Semester GPA</h3>
+            <p>Under the <strong>Semester Calculator</strong>, enter each subject name, its credit hours, and your grade. Click <strong>Add Subject</strong> after each one. The Semester GPA updates automatically as you add subjects.</p>
+
+            <h3>Step 2 — Save Your Semester Records</h3>
+            <p>Once your current semester is complete, move to the <strong>Overall History</strong> panel. Select the semester number, enter the GPA and total credits you just calculated, and click <strong>Save Semester</strong>. Repeat for each past semester. The <strong>Cumulative CGPA</strong> at the top updates instantly.</p>
+
+            <h3>Step 3 — Plan Your Target CGPA</h3>
+            <p>In the <strong>Target CGPA Planner</strong>, enter your desired CGPA and the number of credit hours you have left. Click <strong>Analyze Target CGPA</strong> to see the average GPA you need in future courses to reach your goal.</p>
+
+            <h2 id="cgpa-formula">CGPA Formula Explained</h2>
+            <p>All Bangladesh universities under the University Grants Commission (UGC) calculate CGPA using the weighted average method:</p>
+
+            <div class="formula-box">
+                <p><strong>CGPA = Σ (Credit Hours × Grade Point) ÷ Σ (Credit Hours)</strong></p>
+            </div>
+
+            <p>For example: if you take Mathematics (3 credits, A+ = 4.00) and Physics (3 credits, A = 3.75), your GPA is <code>(3×4.00 + 3×3.75) ÷ 6 = 23.25 ÷ 6 = 3.875</code>.</p>
+
+            <h3>Why Credit Hours Matter</h3>
+            <p>A 3-credit course contributes three times more to your CGPA than a 1-credit course. This is why doing well in higher-credit subjects (like core engineering or business courses) has a bigger impact than optional 1-credit courses.</p>
+
+            <h2 id="universities">Supported Bangladesh Universities</h2>
+            <p>This calculator uses the <strong>UGC standard 4.0 grading scale</strong>, which applies to all public and private universities accredited by the University Grants Commission of Bangladesh:</p>
+            <div class="uni-tags">
+                <span class="uni-tag">University of Dhaka (DU)</span>
+                <span class="uni-tag">BUET</span>
+                <span class="uni-tag">RUET</span>
+                <span class="uni-tag">KUET</span>
+                <span class="uni-tag">CUET</span>
+                <span class="uni-tag">North South University</span>
+                <span class="uni-tag">BRAC University</span>
+                <span class="uni-tag">IUB</span>
+                <span class="uni-tag">AIUB</span>
+                <span class="uni-tag">DIU</span>
+                <span class="uni-tag">EWU</span>
+                <span class="uni-tag">AUST</span>
+                <span class="uni-tag">IUT</span>
+                <span class="uni-tag">Jahangirnagar University</span>
+                <span class="uni-tag">Chittagong University</span>
+                <span class="uni-tag">Rajshahi University</span>
+                <span class="uni-tag">UAP</span>
+                <span class="uni-tag">ULAB</span>
+                <span class="uni-tag">Green University</span>
+                <span class="uni-tag">+ 30 more</span>
+            </div>
+
+            <h2 id="faq">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>How is CGPA calculated in Bangladesh universities?</summary>
+                    <p>CGPA = Σ(Credit Hours × Grade Point) ÷ Σ(Credit Hours). All UGC-affiliated universities follow a 4.0 scale where A+ = 4.00, A = 3.75, A− = 3.50, and so on. The formula weights each course by its credit hours so higher-credit subjects have more impact.</p>
+                </details>
+                <details>
+                    <summary>What CGPA is considered good in Bangladesh?</summary>
+                    <p>A CGPA of <strong>3.50 or above</strong> is considered excellent. <strong>3.00–3.49</strong> is good, <strong>2.50–2.99</strong> is average, and below 2.50 may affect scholarship eligibility. Many graduate programs and employers look for a minimum of 3.00.</p>
+                </details>
+                <details>
+                    <summary>Can I calculate CGPA for all 8 semesters?</summary>
+                    <p>Yes. Use Step 1 to calculate each semester's GPA, then add each one to the Overall History in Step 2. The calculator combines all saved records into your true cumulative CGPA automatically.</p>
+                </details>
+                <details>
+                    <summary>Does BUET use the same grading scale as other universities?</summary>
+                    <p>BUET uses a slightly different scale — for instance, A = 4.00 (not 3.75 as in the UGC standard). The university preset dropdown adjusts the grade points accordingly for BUET and other institutions that differ from UGC standard.</p>
+                </details>
+                <details>
+                    <summary>Is my data saved or sent anywhere?</summary>
+                    <p>No. All calculations run entirely in your browser. Nothing is sent to any server and no account is required. Your data disappears when you close or refresh the page.</p>
+                </details>
+            </div>
+
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>© 2026 Study Koro. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <ul>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/privacy-policy/">Privacy</a></li>
+                <li><a href="/terms/">Terms</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<script>
+(function () {
+    /* ── Grading scales ── */
+    const scales = {
+        ugc:  { "A+":4.00,"A":3.75,"A-":3.50,"B+":3.25,"B":3.00,"B-":2.75,"C+":2.50,"C":2.25,"D":2.00,"F":0.00 },
+        du:   { "A+":4.00,"A":3.75,"A-":3.50,"B+":3.25,"B":3.00,"B-":2.75,"C+":2.50,"C":2.25,"D":2.00,"F":0.00 },
+        buet: { "A+":4.00,"A":3.75,"A-":3.50,"B+":3.25,"B":3.00,"B-":2.75,"C+":2.50,"C":2.25,"D":2.00,"F":0.00 },
+        nsu:  { "A":4.00,"A-":3.70,"B+":3.30,"B":3.00,"B-":2.70,"C+":2.30,"C":2.00,"D":1.00,"F":0.00 },
+        brac: { "A+":4.00,"A":3.70,"A-":3.30,"B+":3.00,"B":2.70,"B-":2.30,"C+":2.00,"C":1.70,"D":1.30,"F":0.00 },
+        iub:  { "A":4.00,"A-":3.70,"B+":3.30,"B":3.00,"B-":2.70,"C+":2.30,"C":2.00,"D":1.00,"F":0.00 },
+        aust: { "A+":4.00,"A":3.75,"A-":3.50,"B+":3.25,"B":3.00,"B-":2.75,"C+":2.50,"C":2.25,"D":2.00,"F":0.00 },
+        iut:  { "A+":4.00,"A":3.75,"A-":3.50,"B+":3.25,"B":3.00,"B-":2.75,"C+":2.50,"C":2.25,"D":2.00,"F":0.00 }
+    };
+    const presetLabels = {
+        ugc:'UGC Standard · 4.0 Scale', du:'DU · 4.0 Scale',
+        buet:'BUET · 4.0 Scale', nsu:'NSU Scale', brac:'BRAC Scale',
+        iub:'IUB Scale', aust:'AUST · 4.0 Scale', iut:'IUT · 4.0 Scale'
+    };
+
+    let currentScale = scales.ugc;
+    let subjects = [];
+    let semesters = [];
+
+    /* ── Grade labels for display ── */
+    function gpToLabel(gp) {
+        if (gp >= 4.00) return 'A+ · Excellent';
+        if (gp >= 3.75) return 'A · Very Good';
+        if (gp >= 3.50) return 'A− · Good';
+        if (gp >= 3.25) return 'B+ · Above Avg';
+        if (gp >= 3.00) return 'B · Average';
+        if (gp >= 2.75) return 'B− · Below Avg';
+        if (gp >= 2.50) return 'C+ · Pass';
+        if (gp >= 2.25) return 'C · Pass';
+        if (gp >= 2.00) return 'D · Marginal';
+        return 'F · Fail';
+    }
+
+    /* ── Build grade dropdown ── */
+    function buildGradeDropdown() {
+        const sel = document.getElementById('subjGrade');
+        sel.innerHTML = Object.entries(currentScale)
+            .map(([g, v]) => `<option value="${g}">${g} (${v.toFixed(2)})</option>`)
+            .join('');
+    }
+
+    /* ── Recalculate & render ── */
+    function recalculate() {
+        // Semester GPA
+        let sPoints = 0, sCredits = 0;
+        subjects.forEach(s => { sPoints += s.gp * s.credit; sCredits += s.credit; });
+        const semGPA = sCredits > 0 ? sPoints / sCredits : null;
+        document.getElementById('semesterGpaDisplay').textContent = semGPA !== null ? semGPA.toFixed(2) : '—';
+        document.getElementById('semGpLetter').textContent = semGPA !== null ? gpToLabel(semGPA) : '—';
+
+        // Cumulative CGPA
+        let totalPoints = sPoints, totalCredits = sCredits;
+        semesters.forEach(r => { totalPoints += r.gpa * r.credits; totalCredits += r.credits; });
+        const cgpa = totalCredits > 0 ? totalPoints / totalCredits : null;
+        const cgpaEl = document.getElementById('cumulativeCgpa');
+        const cgpaSub = document.getElementById('cgpaResultSub');
+        if (cgpa !== null) {
+            cgpaEl.textContent = cgpa.toFixed(2);
+            cgpaSub.textContent = gpToLabel(cgpa) + ' · ' + totalCredits.toFixed(1) + ' total credits';
+        } else {
+            cgpaEl.textContent = '—';
+            cgpaSub.textContent = 'Add subjects and semester records below';
+        }
+        return { totalPoints, totalCredits };
+    }
+
+    function renderSubjects() {
+        const c = document.getElementById('subjectsContainer');
+        if (subjects.length === 0) { c.innerHTML = ''; return; }
+        c.innerHTML = subjects.map((s, i) => `
+            <div class="entry-item" role="listitem">
+                <div>
+                    <div class="entry-name">${s.name}</div>
+                    <div class="entry-meta">${s.credit} credits</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:6px">
+                    <span class="entry-grade">${s.grade}</span>
+                    <button class="btn-remove" aria-label="Remove ${s.name}" onclick="removeSub(${i})">✕</button>
+                </div>
+            </div>`).join('');
+    }
+
+    function renderSemesters() {
+        const c = document.getElementById('semestersContainer');
+        if (semesters.length === 0) { c.innerHTML = ''; return; }
+        c.innerHTML = semesters.map((r, i) => `
+            <div class="entry-item" role="listitem">
+                <div>
+                    <div class="entry-name">${r.name}</div>
+                    <div class="entry-meta">${r.credits} credits</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:6px">
+                    <span class="entry-grade">${r.gpa.toFixed(2)}</span>
+                    <button class="btn-remove" aria-label="Remove ${r.name}" onclick="removeSem(${i})">✕</button>
+                </div>
+            </div>`).join('');
+    }
+
+    window.removeSub = (i) => { subjects.splice(i, 1); renderSubjects(); recalculate(); };
+    window.removeSem = (i) => { semesters.splice(i, 1); renderSemesters(); recalculate(); };
+
+    /* ── Add subject ── */
+    document.getElementById('addSubjectBtn').addEventListener('click', () => {
+        const name   = document.getElementById('subjName').value.trim();
+        const credit = parseFloat(document.getElementById('subjCredit').value);
+        const grade  = document.getElementById('subjGrade').value;
+        if (!name) { document.getElementById('subjName').focus(); return; }
+        if (isNaN(credit) || credit <= 0) { document.getElementById('subjCredit').focus(); return; }
+        subjects.push({ name, credit, grade, gp: currentScale[grade] });
+        document.getElementById('subjName').value = '';
+        renderSubjects();
+        recalculate();
+    });
+
+    /* ── Save semester ── */
+    document.getElementById('saveSemesterBtn').addEventListener('click', () => {
+        const name    = document.getElementById('semesterDropdown').value;
+        const gpa     = parseFloat(document.getElementById('overallGpa').value);
+        const credits = parseFloat(document.getElementById('overallCredits').value);
+        if (isNaN(gpa) || isNaN(credits) || credits <= 0) {
+            alert('Please enter a valid GPA and credit hours.'); return;
+        }
+        semesters.push({ name, gpa, credits });
+        document.getElementById('overallGpa').value = '';
+        document.getElementById('overallCredits').value = '';
+        renderSemesters();
+        recalculate();
+    });
+
+    /* ── Goal planner ── */
+    document.getElementById('goalBtn').addEventListener('click', () => {
+        const target = parseFloat(document.getElementById('targetCgpaGoal').value);
+        const future = parseFloat(document.getElementById('futureCredits').value);
+        const { totalPoints, totalCredits } = recalculate();
+        const resultEl = document.getElementById('goalResult');
+
+        if (isNaN(target) || isNaN(future) || future <= 0) {
+            resultEl.textContent = 'Please enter a valid target CGPA and remaining credits.';
+            resultEl.className = 'goal-result';
+            return;
+        }
+
+        const needed = (target * (totalCredits + future)) - totalPoints;
+        const required = needed / future;
+
+        resultEl.className = 'goal-result';
+        if (required > 4) {
+            resultEl.className += ' impossible';
+            resultEl.innerHTML = `<strong>Not achievable:</strong> This would require a ${required.toFixed(2)} average — above the maximum 4.00. Try lowering your target CGPA or increasing remaining credits.`;
+        } else if (required <= 0) {
+            resultEl.className += ' achieved';
+            resultEl.innerHTML = `<strong>Already achieved!</strong> Your current CGPA already meets or exceeds ${target.toFixed(2)}. Keep it up!`;
+        } else {
+            resultEl.innerHTML = `To reach a CGPA of <strong>${target.toFixed(2)}</strong>, you need an average of <strong>${required.toFixed(2)}</strong> across your next <strong>${future}</strong> credit hours.`;
+        }
+    });
+
+    /* ── University preset switch ── */
+    document.getElementById('uniSelect').addEventListener('change', function () {
+        currentScale = scales[this.value] || scales.ugc;
+        document.getElementById('presetInfo').textContent = presetLabels[this.value] || '4.0 Scale';
+        buildGradeDropdown();
+    });
+
+    /* ── Mobile nav ── */
+    document.getElementById('menuToggle').addEventListener('click', function () {
+        const nav = document.getElementById('mobile-nav');
+        nav.classList.toggle('open');
+    });
+
+    /* ── Init ── */
+    buildGradeDropdown();
+    recalculate();
+})();
+</script>
+</body>
 </html>
