@@ -21,6 +21,18 @@
   </url>
 
   <url>
+    <loc>https://studykoro.me/posts/ielts-preparation-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://studykoro.me/posts/how-to-study-abroad-from-bangladesh/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://studykoro.me/tools/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

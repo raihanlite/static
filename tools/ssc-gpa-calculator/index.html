@@ -1,411 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSC GPA Calculator & Grading System in Bangladesh</title>
-    <meta name="title" content="SSC GPA Calculator & Grading System in Bangladesh">
-    <meta name="description"
-        content="Using SSC GPA Calculator you can calculate your GPA without doing any complex math and Learn about New SSC Grading System System in Bangladesh">
-    <meta name="keywords"
-        content="SSC GPA Calculator, SSC Result Calculator, SSC GPA Calculator with 4th Subject, Education Board SSC GPA Calculator, SSC marks to GPA converter">
+    <title>SSC GPA Calculator Bangladesh 2026 — Science, Commerce & Arts</title>
+    <meta name="description" content="Free SSC GPA Calculator for Bangladesh. Calculate your Secondary School Certificate GPA for Science, Commerce, and Arts groups. Enter marks or select grades — instant result for all education boards.">
+    <meta name="keywords" content="SSC GPA calculator, SSC GPA Bangladesh, SSC result calculator BD, Science group SSC GPA, Commerce SSC GPA, Arts SSC GPA, Bangladesh SSC grading, SSC GPA 2026, SSC grade point calculator">
     <meta name="author" content="Study Koro">
-
-    <meta name="geo.region" content="BD" />
-    <meta name="geo.placename" content="Dhaka" />
-    <meta name="category" content="Education, Calculator, High School" />
-    <meta name="subject" content="SSC GPA Calculator for Bangladesh Education Boards" />
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="BD">
+    <meta name="theme-color" content="#1a3a2a">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Study Koro">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="HandheldFriendly" content="True" />
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://studykoro.me/tools/ssc-gpa-calculator/">
-    <meta property="og:title" content="SSC GPA Calculator">
-    <meta property="og:image" content="/images/og-image.jpg">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://studykoro.me/tools/ssc-gpa-calculator/">
-    <meta property="twitter:title" content="SSC GPA Calculator">
-    <meta property="twitter:description"
-        content="Calculate your SSC GPA instantly with our free online tool. Supports the official 5.00 scale and 4th subject logic for all Bangladesh Education Boards.">
-    <meta property="twitter:image" content="/images/og-image.jpg">
+    <meta property="og:title" content="SSC GPA Calculator Bangladesh 2026 — Science, Commerce & Arts">
+    <meta property="og:description" content="Free SSC GPA Calculator for all Bangladesh education boards. Science, Commerce & Arts groups. Enter marks or select grades — instant result.">
+    <meta property="og:image" content="https://studykoro.me/images/og-image.jpg">
+    <meta property="og:locale" content="en_BD">
+    <meta property="og:site_name" content="Study Koro">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SSC GPA Calculator Bangladesh 2026">
+    <meta name="twitter:description" content="Calculate your SSC GPA for Science, Commerce, and Arts. Free for all Bangladesh education boards.">
+    <meta name="twitter:image" content="https://studykoro.me/images/og-image.jpg">
+
+    <link rel="canonical" href="https://studykoro.me/tools/ssc-gpa-calculator/">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "SSC GPA Calculator",
+      "name": "SSC GPA Calculator Bangladesh",
+      "url": "https://studykoro.me/tools/ssc-gpa-calculator/",
       "operatingSystem": "Any",
       "applicationCategory": "EducationalApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "BDT"
-      },
-      "description": "Calculate SSC GPA based on the official Bangladeshi education board grading system (5.00 scale)."
+      "inLanguage": "en",
+      "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BDT" },
+      "description": "Free SSC GPA Calculator for Bangladesh students. Calculate GPA for Science, Commerce, and Arts groups across all Bangladesh education boards.",
+      "featureList": ["Science group GPA", "Commerce group GPA", "Arts group GPA", "Optional subject bonus", "Grade and marks input modes", "Save result as image"],
+      "provider": { "@type": "Organization", "name": "Study Koro", "url": "https://studykoro.me" }
     }
     </script>
 
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is SSC GPA calculated in Bangladesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SSC GPA is calculated by averaging the grade points of all main subjects. Each subject is graded on a 5-point scale: A+ = 5.00, A = 4.00, A- = 3.50, B = 3.00, C = 2.00, D = 1.00, F = 0.00. If you have an optional (4th) subject with a grade point above 2.00, a bonus is added: (grade point - 2). The final GPA is capped at 5.00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Golden A+ in SSC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Golden A+ in SSC Bangladesh means the student achieved an A+ grade (80 marks or above) in every single subject, resulting in a perfect GPA of 5.00. It is the highest possible result in the SSC examination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does optional subject increase SSC GPA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If your optional subject grade point is above 2.00 (C grade), the bonus added is (grade point - 2). For example, an A+ (5.00) in the optional subject adds 3.00 bonus points before the average is taken. The final GPA is capped at 5.00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the passing mark in SSC Bangladesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A student must score at least 33 marks (grade D, 1.00 point) in each subject to pass the SSC examination. Scoring 0-32 in any subject results in an F (0.00) and the student is considered to have failed that subject."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ICT out of 100 marks in SSC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Information and Communication Technology (ICT) carries 100 marks in SSC, while most other subjects carry 100 marks for theory and additional marks for practical. For GPA purposes, marks are evaluated on a 100-point scale per subject."
+          }
+        }
+      ]
+    }
+    </script>
 
-    <link rel="canonical" href="https://studykoro.me/tools/ssc-gpa-calculator/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://studykoro.me/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://studykoro.me/tools/" },
+        { "@type": "ListItem", "position": 3, "name": "SSC GPA Calculator", "item": "https://studykoro.me/tools/ssc-gpa-calculator/" }
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/tools.css">
-    <link rel="stylesheet" href="/assets/css/ssc-gpa-calculator.css">
+    <style>
+        :root {
+            --forest:       #1a3a2a;
+            --forest-mid:   #1f5038;
+            --forest-light: #2a7a50;
+            --green:        #16a34a;
+            --green-pale:   #f0fdf4;
+            --gold:         #d97706;
+            --gold-pale:    #fffbeb;
+            --red:          #dc2626;
+            --red-pale:     #fff1f1;
+            --white:        #ffffff;
+            --off-white:    #f4f8f5;
+            --gray-50:      #f0f4f0;
+            --gray-100:     #e2e8e0;
+            --gray-300:     #94a3b8;
+            --gray-500:     #64748b;
+            --gray-700:     #334155;
+            --gray-900:     #0f172a;
+            --radius:       12px;
+            --radius-sm:    8px;
+            --shadow:       0 4px 16px rgba(26,58,42,.10);
+            --shadow-lg:    0 12px 40px rgba(26,58,42,.15);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--off-white); color: var(--gray-900); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+        /* HEADER */
+        .site-header { background: var(--forest); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(26,58,42,.3); }
+        .nav-container { max-width: 1140px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+        .site-brand a { font-family: 'DM Serif Display', serif; color: #fff; text-decoration: none; font-size: 1.35rem; }
+        .site-brand a span { color: #86efac; }
+        .site-nav ul { list-style: none; display: flex; gap: 4px; }
+        .site-nav a { color: rgba(255,255,255,.75); text-decoration: none; padding: 8px 14px; border-radius: var(--radius-sm); font-size: .9rem; font-weight: 500; transition: .2s; }
+        .site-nav a:hover { color: #fff; background: rgba(255,255,255,.12); }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+        .menu-toggle span { display: block; width: 22px; height: 2px; background: white; margin: 4px 0; border-radius: 2px; }
+
+        /* HERO */
+        .hero { background: linear-gradient(135deg, var(--forest) 0%, #237848 100%); padding: 56px 24px 48px; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E"); }
+        .hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); color: #86efac; font-size: .78rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 20px; }
+        .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 5vw, 2.8rem); color: #fff; line-height: 1.2; margin-bottom: 14px; }
+        .hero h1 em { font-style: italic; color: #86efac; }
+        .hero p { color: rgba(255,255,255,.75); font-size: 1.05rem; }
+
+        /* PAGE */
+        .page-body { max-width: 1140px; margin: 0 auto; padding: 40px 24px 80px; display: grid; grid-template-columns: 1fr 320px; gap: 32px; align-items: start; }
+
+        /* CALC CARD */
+        .calc-card { background: var(--white); border-radius: 20px; box-shadow: var(--shadow-lg); overflow: hidden; }
+        .calc-header { background: linear-gradient(90deg, var(--forest) 0%, var(--forest-mid) 100%); padding: 22px 28px; display: flex; align-items: center; gap: 14px; }
+        .calc-icon { width: 44px; height: 44px; background: rgba(255,255,255,.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+        .calc-header h2 { font-family: 'DM Serif Display', serif; color: #fff; font-size: 1.2rem; font-weight: 400; }
+        .calc-header p { color: rgba(255,255,255,.6); font-size: .82rem; margin-top: 2px; }
+        .calc-body { padding: 28px; }
+
+        /* Group tabs */
+        .group-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: var(--gray-50); border-radius: var(--radius); padding: 6px; margin-bottom: 22px; }
+        .group-tab { background: none; border: none; cursor: pointer; padding: 10px 8px; border-radius: var(--radius-sm); font-family: 'DM Sans', sans-serif; font-size: .82rem; font-weight: 600; color: var(--gray-500); transition: .2s; text-align: center; }
+        .group-tab.active { background: var(--forest); color: #fff; box-shadow: 0 2px 8px rgba(26,58,42,.25); }
+        .group-tab:hover:not(.active) { background: var(--white); color: var(--forest); }
+
+        /* Input mode toggle */
+        .mode-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+        .mode-label { font-size: .82rem; font-weight: 600; color: var(--gray-500); }
+        .mode-toggle { display: flex; background: var(--gray-50); border-radius: var(--radius-sm); padding: 4px; gap: 4px; }
+        .mode-btn { background: none; border: none; cursor: pointer; padding: 6px 14px; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: .8rem; font-weight: 600; color: var(--gray-500); transition: .2s; }
+        .mode-btn.active { background: var(--forest); color: #fff; }
+
+        /* Subject rows */
+        #mainGrid { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+        .subject-row { display: grid; grid-template-columns: 1fr 120px 130px; gap: 8px; align-items: center; padding: 10px 14px; background: var(--gray-50); border-radius: var(--radius-sm); border: 1.5px solid transparent; transition: .2s; }
+        .subject-row:hover { border-color: var(--gray-100); background: var(--white); }
+        .subject-row:focus-within { border-color: var(--forest-light); background: var(--white); }
+        .subj-name { font-size: .88rem; font-weight: 500; color: var(--gray-700); }
+        .subj-name small { display: block; font-size: .74rem; color: var(--gray-300); font-weight: 400; }
+
+        .g-input { border: 1.5px solid var(--gray-100); border-radius: var(--radius-sm); padding: 7px 10px; font-family: 'DM Sans', sans-serif; font-size: .85rem; color: var(--gray-900); background: var(--white); width: 100%; transition: .2s; -moz-appearance: textfield; }
+        .g-input::-webkit-inner-spin-button, .g-input::-webkit-outer-spin-button { -webkit-appearance: none; }
+        .g-input:focus { outline: none; border-color: var(--forest-light); box-shadow: 0 0 0 3px rgba(42,122,80,.12); }
+
+        /* Extra subjects panels */
+        .extra-panel { border: 1.5px dashed var(--gray-100); border-radius: var(--radius); padding: 14px; margin-bottom: 18px; }
+        .extra-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+        .extra-badge { background: var(--gold-pale); color: #92600a; font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; }
+        .extra-header p { font-size: .82rem; color: var(--gray-500); }
+
+        .extra-row { display: grid; grid-template-columns: 1fr 120px 130px; gap: 8px; align-items: center; margin-bottom: 8px; }
+        .extra-row:last-child { margin-bottom: 0; }
+
+        /* Science specific */
+        .sci-extra label { font-size: .82rem; font-weight: 600; color: var(--gray-500); display: block; margin-bottom: 5px; }
+        .sci-extra-row { display: grid; grid-template-columns: 1fr 120px 130px; gap: 8px; align-items: center; margin-bottom: 10px; }
+
+        /* Buttons */
+        .btn-calc { width: 100%; background: linear-gradient(135deg, var(--forest) 0%, var(--forest-light) 100%); color: #fff; border: none; border-radius: var(--radius); padding: 15px; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: .2s; box-shadow: 0 4px 14px rgba(26,58,42,.3); display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-calc:hover { opacity: .92; transform: translateY(-1px); }
+        .btn-calc:active { transform: translateY(0); }
+
+        /* Result */
+        .result-box { display: none; margin-top: 18px; border-radius: var(--radius); overflow: hidden; border: 2px solid var(--forest-light); }
+        .result-box.show { display: block; animation: slideUp .3s ease; }
+        @keyframes slideUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+
+        .result-top { background: var(--forest); padding: 22px 24px; text-align: center; }
+        .result-top-label { color: rgba(255,255,255,.6); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+        .result-gpa { font-family: 'DM Serif Display', serif; font-size: 3.8rem; color: #86efac; line-height: 1; }
+        .result-status { margin-top: 6px; font-size: .95rem; font-weight: 600; }
+        .result-status.pass { color: #86efac; }
+        .result-status.golden { color: var(--gold-pale); }
+        .result-status.fail { color: #fca5a5; }
+
+        .btn-save { width: 100%; margin-top: 10px; background: var(--white); color: var(--forest); border: 2px solid var(--forest); border-radius: var(--radius); padding: 12px; font-family: 'DM Sans', sans-serif; font-size: .92rem; font-weight: 600; cursor: pointer; transition: .2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-save:hover { background: var(--forest); color: #fff; }
+        .btn-save:disabled { opacity: .4; cursor: not-allowed; }
+        .btn-save:disabled:hover { background: var(--white); color: var(--forest); }
+
+        /* SIDEBAR */
+        .sidebar { display: flex; flex-direction: column; gap: 20px; }
+        .side-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+        .side-card-head { background: var(--forest); padding: 13px 18px; color: white; font-family: 'DM Serif Display', serif; font-size: .98rem; font-weight: 400; }
+
+        .grade-table { width: 100%; border-collapse: collapse; }
+        .grade-table thead th { background: var(--gray-50); padding: 8px 12px; font-size: .75rem; font-weight: 700; color: var(--gray-500); letter-spacing: .05em; text-transform: uppercase; text-align: left; }
+        .grade-table tbody td { padding: 9px 12px; font-size: .85rem; border-bottom: 1px solid var(--gray-50); color: var(--gray-700); }
+        .grade-table tbody tr:last-child td { border-bottom: none; }
+        .grade-table tbody tr:hover td { background: var(--gray-50); }
+        .gp-chip { display: inline-block; background: var(--forest); color: white; font-size: .73rem; font-weight: 700; padding: 2px 7px; border-radius: 10px; }
+        .grade-letter { font-weight: 700; font-size: .92rem; color: var(--forest); }
+
+        .tips-list { padding: 14px 18px; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .tips-list li { display: flex; gap: 10px; font-size: .84rem; color: var(--gray-700); line-height: 1.5; }
+        .tips-list li::before { content: '→'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+        .related-links { padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
+        .related-link { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--gray-50); border-radius: var(--radius-sm); text-decoration: none; color: var(--forest); font-size: .87rem; font-weight: 500; transition: .2s; }
+        .related-link:hover { background: var(--forest); color: white; }
+        .related-link span { font-size: .75rem; opacity: .5; }
+
+        /* CONTENT */
+        .content-area { grid-column: 1 / -1; max-width: 800px; }
+        .content-area h2 { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--forest); margin-top: 40px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-100); }
+        .content-area h2:first-child { margin-top: 0; }
+        .content-area h3 { font-size: 1rem; font-weight: 600; color: var(--gray-700); margin-top: 20px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .content-area h3::before { content: ''; display: inline-block; width: 4px; height: 16px; background: var(--forest-light); border-radius: 2px; }
+        .content-area p { font-size: .93rem; color: var(--gray-700); margin-bottom: 10px; line-height: 1.72; }
+        .content-area ul, .content-area ol { margin: 8px 0 12px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+        .content-area ul li, .content-area ol li { font-size: .91rem; color: var(--gray-700); padding-left: 20px; position: relative; line-height: 1.6; }
+        .content-area ul li::before { content: '•'; color: var(--green); position: absolute; left: 0; font-weight: 700; }
+        .content-area ol { counter-reset: s; }
+        .content-area ol li { counter-increment: s; }
+        .content-area ol li::before { content: counter(s); position: absolute; left: 0; background: var(--forest); color: white; width: 18px; height: 18px; border-radius: 50%; font-size: .7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; top: 2px; }
+        .content-area strong { color: var(--forest); font-weight: 600; }
+        .content-area code { background: var(--gray-50); padding: 2px 8px; border-radius: 4px; font-size: .9em; color: var(--forest); font-family: monospace; }
+
+        .formula-box { background: var(--forest); border-radius: var(--radius); padding: 18px 22px; margin: 14px 0; }
+        .formula-box p { color: rgba(255,255,255,.75); font-size: .88rem; margin: 0 0 8px; line-height: 1.65; }
+        .formula-box p:last-child { margin-bottom: 0; }
+        .formula-box strong { color: #86efac; }
+
+        .faq-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+        details { background: var(--white); border: 1.5px solid var(--gray-100); border-radius: var(--radius); overflow: hidden; }
+        details[open] { border-color: var(--forest-light); }
+        summary { padding: 15px 18px; font-size: .91rem; font-weight: 600; color: var(--gray-700); cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: '+'; font-size: 1.2rem; color: var(--forest-light); font-weight: 300; flex-shrink: 0; }
+        details[open] summary::after { content: '−'; }
+        details p { padding: 0 18px 16px; font-size: .87rem; color: var(--gray-500); line-height: 1.65; margin: 0; }
+
+        /* FOOTER */
+        .site-footer { background: var(--forest); color: rgba(255,255,255,.55); padding: 28px 24px; }
+        .footer-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+        .footer-inner p { font-size: .84rem; }
+        .footer-nav ul { list-style: none; display: flex; gap: 4px; }
+        .footer-nav a { color: rgba(255,255,255,.5); text-decoration: none; font-size: .84rem; padding: 6px 10px; border-radius: 6px; transition: .2s; }
+        .footer-nav a:hover { color: white; }
+
+        @media (max-width: 900px) { .page-body { grid-template-columns: 1fr; } .sidebar { order: -1; } .content-area { grid-column: auto; } }
+        @media (max-width: 600px) {
+            .site-nav { display: none; }
+            .site-nav.open { display: block; position: absolute; top: 64px; left: 0; right: 0; background: var(--forest); padding: 12px 16px 20px; box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+            .site-nav.open ul { flex-direction: column; gap: 2px; }
+            .site-nav.open a { display: block; padding: 10px 14px; }
+            .menu-toggle { display: block; }
+            .subject-row, .extra-row, .sci-extra-row { grid-template-columns: 1fr; }
+            .group-tabs { grid-template-columns: 1fr; }
+            .hero { padding: 40px 20px 36px; }
+        }
+    </style>
 </head>
-
 <body>
 
-    <header class="site-header">
-        <div class="nav-container">
-            <div class="site-brand">
-                <a href="/" rel="home">Study Koro</a>
-            </div>
+<header class="site-header">
+    <div class="nav-container">
+        <div class="site-brand"><a href="/">Study <span>Koro</span></a></div>
+        <button class="menu-toggle" aria-label="Open Menu" id="menuToggle">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/posts/">Blog</a></li>
+                <li><a href="/tools/">Tools</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-            <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
-                <span></span><span></span><span></span>
-            </button>
-
-            <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
-                <ul class="menu">
-                    <li class="menu-item"><a href="/">Home</a></li>
-                    <li class="menu-item"><a href="/posts/">Blog</a></li>
-                    <li class="menu-item"><a href="/tools" aria-haspopup="true">Tools</a></li>
-                    <li class="menu-item"><a href="/about/">About</a></li>
-                </ul>
-            </nav>
+<main>
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">🇧🇩 Bangladesh Education Board</div>
+            <h1>SSC GPA <em>Calculator</em></h1>
+            <p>Instantly calculate your Secondary School Certificate GPA for Science, Commerce, or Arts. Enter marks or select grades — result in seconds.</p>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="tool-width">
-                <h1>SSC GPA Calculator</h1>
-                <p>Official Grading System (Scale of 5.00)</p>
-            </div>
-        </section>
+    <div class="page-body">
 
-        <section class="tool-width">
-            <div class="tools-card">
-                <div class="container">
-                    <h2 style="text-align:center; margin-top:0;">SSC GPA Calculator</h2>
-                    <div class="setup-row">
-                        <div class="subject-item">
-                            <label>Your Group</label>
-                            <select id="group" onchange="initApp()">
-                                <option value="science">Science</option>
-                                <option value="commerce">Business Studies</option>
-                                <option value="arts">Humanities</option>
-                            </select>
-                        </div>
-                        <div class="subject-item">
-                            <label>Input Type</label>
-                            <select id="mode" onchange="initApp()">
-                                <option value="grade">Letter Grade</option>
-                                <option value="point">Grade Point</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="subject-grid" id="mainGrid"></div>
-                    <div id="scienceOptions" class="science-selects" style="margin-top:15px; display:none;">
-                        <div class="subject-item">
-                            <label>Group Subject 3</label>
-                            <select id="sub3_name" onchange="autoSwap(true)">
-                                <option value="Biology">Biology</option>
-                                <option value="Higher Math">Higher Math</option>
-                            </select>
-                            <div id="sub3_input_container" style="margin-top:5px"></div>
-                        </div>
-                        <div class="subject-item">
-                            <label>4th Subject</label>
-                            <select id="sub4_name" onchange="autoSwap(false)">
-                                <option value="Higher Math">Higher Math</option>
-                                <option value="Biology">Biology</option>
-                                <option value="Agriculture">Agriculture</option>
-                            </select>
-                            <div id="sub4_input_container" style="margin-top:5px"></div>
-                        </div>
-                    </div>
-                    <div id="otherOptions" class="science-selects" style="margin-top:15px; display:none;">
-                        <div class="subject-item">
-                            <label id="otherSub3Label">Subject 3</label>
-                            <div id="otherSub3Input"></div>
-                        </div>
-                        <div class="subject-item">
-                            <label>4th Subject</label>
-                            <div id="otherSub4Input"></div>
-                        </div>
-                    </div>
-                    <button class="calculate-button" onclick="calculateGPA()">Calculate Final GPA</button>
-                    <div id="result">
-                        <div style="font-weight: 600; color: #64748b;">TOTAL GPA</div>
-                        <div class="gpa-val" id="gpaDisplay">0.00</div>
-                        <div id="status" style="font-weight: bold;"></div>
+        <!-- CALCULATOR -->
+        <section aria-label="SSC GPA Calculator" id="calcSection">
+            <div class="calc-card" id="calcCard">
+                <div class="calc-header">
+                    <div class="calc-icon">📐</div>
+                    <div>
+                        <h2>SSC GPA Calculator</h2>
+                        <p>Science · Commerce · Arts — all Bangladesh boards</p>
                     </div>
                 </div>
-            </div>
+                <div class="calc-body">
 
-            <div class="tool-content">
-                <blockquote>
-                    <p>See also, GPA Calculator for <a href="/tools/hsc-gpa-calculator">HSC</a> and <a
-                            href="/tools/jsc-gpa-calculator">JSC</a></p>
-                </blockquote>
-                <h2 id="what-is-the-ssc-gpa-calculator-">What is the SSC GPA Calculator?</h2>
-                <p>The <strong>SSC GPA Calculator</strong> is an online tool that helps students calculate their
-                    <strong>Grade Point Average (GPA)</strong> based on their subject grades. Instead of manually adding
-                    and
-                    dividing grade points, the calculator automatically calculates your final GPA within seconds.
-                </p>
-                <p>SSC (Secondary School Certificate) is the <strong>10th grade public examination in
-                        Bangladesh</strong>,
-                    and results are measured using the <strong>GPA scale of 5.00</strong>.</p>
-                <h2 id="ssc-grading-system-in-bangladesh">SSC Grading System in Bangladesh</h2>
-                <p>The SSC grading system converts marks into <strong>grade points and grades</strong>. The highest GPA
-                    a
-                    student can obtain is <strong>5.00 (A+)</strong>.</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Marks</th>
-                            <th>Grade Point</th>
-                            <th>Grade</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>80 – 100</td>
-                            <td>5.00</td>
-                            <td>A+</td>
-                        </tr>
-                        <tr>
-                            <td>70 – 79</td>
-                            <td>4.00</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>60 – 69</td>
-                            <td>3.50</td>
-                            <td>A-</td>
-                        </tr>
-                        <tr>
-                            <td>50 – 59</td>
-                            <td>3.00</td>
-                            <td>B</td>
-                        </tr>
-                        <tr>
-                            <td>40 – 49</td>
-                            <td>2.00</td>
-                            <td>C</td>
-                        </tr>
-                        <tr>
-                            <td>33 – 39</td>
-                            <td>1.00</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td>0 – 32</td>
-                            <td>0.00</td>
-                            <td>F</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>This grading system is used for both <strong>Secondary School Certificate (SSC)</strong> and
-                    <strong>Higher Secondary Certificate (HSC)</strong> results in Bangladesh.
-                </p>
-                <h2 id="how-to-calculate-ssc-gpa">How to Calculate SSC GPA</h2>
-                <p>Calculating your SSC GPA is simple if you follow these steps:</p>
-                <h3 id="step-1-select-your-ssc-group">Step 1: Select Your SSC Group</h3>
-                <p>First, choose your education group. The main SSC groups are:</p>
-                <ul>
-                    <li><strong>Science</strong></li>
-                    <li><strong>Business Studies (Commerce)</strong></li>
-                    <li><strong>Humanities (Arts)</strong></li>
-                </ul>
-                <h3 id="step-2-choose-grade-format">Step 2: Choose Grade Format</h3>
-                <p>Select how you want to calculate your GPA:</p>
-                <ul>
-                    <li>By <strong>Grade (A+, A, A-, etc.)</strong></li>
-                    <li>By <strong>Grade Point (5.00, 4.00, etc.)</strong></li>
-                </ul>
-                <h3 id="step-3-select-your-subjects">Step 3: Select Your Subjects</h3>
-                <p>Choose the subjects you appeared in from the dropdown list.</p>
-                <h3 id="step-4-select-grade-or-points">Step 4: Select Grade or Points</h3>
-                <p>Enter your grade or grade point for each subject.</p>
-                <p>Grade values include:</p>
-                <ul>
-                    <li>A+ = 5.00</li>
-                    <li>A = 4.00</li>
-                    <li>A- = 3.50</li>
-                    <li>B = 3.00</li>
-                    <li>C = 2.00</li>
-                    <li>D = 1.00</li>
-                    <li>F = 0.00</li>
-                </ul>
-                <h3 id="step-5-click-the-calculate-button">Step 5: Click the Calculate Button</h3>
-                <p>Finally, click the <strong>Calculate GPA</strong> button. The calculator will automatically show your
-                    <strong>total GPA result</strong>.
-                </p>
-                <h1 id="ssc-new-grading-system-update">SSC New Grading System Update</h1>
-                <p>Due to special circumstances, the SSC examination structure changed in recent years. Instead of the
-                    usual
-                    <strong>10 subjects</strong>, students were evaluated based on <strong>3 main subjects</strong> in
-                    each
-                    group.
-                </p>
-                <p>Also, the <strong>4th subject system was removed</strong> for that exam year.</p>
-                <h2 id="new-ssc-grading-system-marks-to-points-">New SSC Grading System (Marks to Points)</h2>
-                <p>In the updated system, each subject carries <strong>50 marks</strong>, and grade points are
-                    calculated as
-                    follows:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Marks</th>
-                            <th>Grade Point</th>
-                            <th>Grade</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>40 – 50</td>
-                            <td>5.00</td>
-                            <td>A+</td>
-                        </tr>
-                        <tr>
-                            <td>35 – 39</td>
-                            <td>4.00</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>30 – 34</td>
-                            <td>3.50</td>
-                            <td>A-</td>
-                        </tr>
-                        <tr>
-                            <td>25 – 29</td>
-                            <td>3.00</td>
-                            <td>B</td>
-                        </tr>
-                        <tr>
-                            <td>20 – 24</td>
-                            <td>2.00</td>
-                            <td>C</td>
-                        </tr>
-                        <tr>
-                            <td>17 – 19</td>
-                            <td>1.00</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td>0 – 16</td>
-                            <td>0.00</td>
-                            <td>F</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h1 id="ssc-gpa-calculation-examples">SSC GPA Calculation Examples</h1>
-                <h2 id="science-group-example">Science Group Example</h2>
-                <p>Suppose a student obtained:</p>
-                <ul>
-                    <li>Physics – 44</li>
-                    <li>Chemistry – 38</li>
-                    <li>Biology – 47</li>
-                </ul>
-                <p>Converted grade points:</p>
-                <ul>
-                    <li>Physics = 5.00</li>
-                    <li>Chemistry = 4.00</li>
-                    <li>Biology = 5.00</li>
-                </ul>
-                <p>GPA Calculation:</p>
-                <p>[
-                    (5.00 + 4.00 + 5.00) ÷ 3 = 4.67
-                    ]</p>
-                <p><strong>Final GPA = 4.67</strong></p>
-                <h2 id="commerce-group-example">Commerce Group Example</h2>
-                <p>Marks obtained:</p>
-                <ul>
-                    <li>Accounting – 43</li>
-                    <li>Finance &amp; Banking – 41</li>
-                    <li>Business Entrepreneurship – 48</li>
-                </ul>
-                <p>Grade points:</p>
-                <ul>
-                    <li>Accounting = 5.00</li>
-                    <li>Finance = 5.00</li>
-                    <li>Business = 5.00</li>
-                </ul>
-                <p>Calculation:</p>
-                <p>[
-                    (5 + 5 + 5) ÷ 3 = 5.00
-                    ]</p>
-                <p><strong>Final GPA = 5.00</strong></p>
-                <h2 id="arts-group-example">Arts Group Example</h2>
-                <p>Marks obtained:</p>
-                <ul>
-                    <li>History – 38</li>
-                    <li>Geography – 25</li>
-                    <li>Civics – 32</li>
-                </ul>
-                <p>Grade points:</p>
-                <ul>
-                    <li>History = 4.00</li>
-                    <li>Geography = 3.00</li>
-                    <li>Civics = 3.50</li>
-                </ul>
-                <p>Calculation:</p>
-                <p>[
-                    (4.00 + 3.00 + 3.50) ÷ 3 = 3.50
-                    ]</p>
-                <p><strong>Final GPA = 3.50</strong></p>
-                <h1 id="alternative-method-to-calculate-gpa">Alternative Method to Calculate GPA</h1>
-                <p>If you are confused with the <strong>50 mark system</strong>, there is another simple method.</p>
-                <p>Just <strong>multiply your obtained marks by 2</strong> to convert them into the old <strong>100-mark
-                        system</strong>.</p>
-                <p>Example:</p>
-                <ul>
-                    <li>If you get <strong>45 out of 50</strong>, multiply by 2</li>
-                    <li>45 × 2 = <strong>90</strong></li>
-                </ul>
-                <p>Now you can calculate your grade using the <strong>old grading system table</strong>.</p>
-                <p>This method produces the <strong>same GPA result</strong>.</p>
-                <h1 id="final-verdict">Final Verdict</h1>
-                <p>The <strong>SSC GPA Calculator</strong> makes it very easy for students to determine their GPA
-                    quickly.
-                    Instead of manually calculating grades, you can simply input your subjects and grades to get instant
-                    results.</p>
-                <p>Understanding the <strong>SSC grading system</strong> also helps students estimate their results and
-                    prepare better for future exams like <strong>HSC</strong>.</p>
-                <p>If you want to calculate your GPA accurately, follow the grading tables and calculation methods
-                    mentioned
-                    above.</p>
+                    <!-- Group Tabs -->
+                    <div class="group-tabs" role="tablist" aria-label="Academic Group">
+                        <button class="group-tab active" data-group="science" role="tab" aria-selected="true">Science</button>
+                        <button class="group-tab" data-group="commerce" role="tab" aria-selected="false">Commerce</button>
+                        <button class="group-tab" data-group="arts" role="tab" aria-selected="false">Arts</button>
+                    </div>
 
+                    <!-- Input Mode -->
+                    <div class="mode-row">
+                        <span class="mode-label">Input method</span>
+                        <div class="mode-toggle" role="group" aria-label="Input mode">
+                            <button class="mode-btn active" data-mode="grade">Grades</button>
+                            <button class="mode-btn" data-mode="marks">Marks</button>
+                        </div>
+                    </div>
+
+                    <!-- Main Subjects -->
+                    <div id="mainGrid" aria-label="Main subjects"></div>
+
+                    <!-- Science Extra -->
+                    <div id="scienceExtras" class="extra-panel" style="display:none">
+                        <div class="extra-header">
+                            <span class="extra-badge">Science</span>
+                            <p>3rd &amp; 4th elective subjects</p>
+                        </div>
+                        <div class="sci-extra">
+                            <label for="sub3Name">3rd Subject</label>
+                            <div class="sci-extra-row">
+                                <select id="sub3Name" aria-label="3rd subject name" onchange="sciSwap(true)">
+                                    <option value="Biology">Biology</option>
+                                    <option value="Higher Math">Higher Math</option>
+                                </select>
+                                <div id="sub3GradeWrap"></div>
+                                <div id="sub3MarksWrap"></div>
+                            </div>
+                            <label for="sub4Name">4th Subject (Optional)</label>
+                            <div class="sci-extra-row">
+                                <select id="sub4Name" aria-label="4th subject name" onchange="sciSwap(false)">
+                                    <option value="Higher Math">Higher Math</option>
+                                    <option value="Biology">Biology</option>
+                                </select>
+                                <div id="sub4GradeWrap"></div>
+                                <div id="sub4MarksWrap"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Groups Extra -->
+                    <div id="otherExtras" class="extra-panel">
+                        <div class="extra-header">
+                            <span class="extra-badge">Optional</span>
+                            <p>4th / Optional subject</p>
+                        </div>
+                        <div id="optSubjectArea"></div>
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <button class="btn-calc" id="calcBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 7h6M9 12h6M9 17h4"/></svg>
+                        Calculate GPA
+                    </button>
+
+                    <!-- Result -->
+                    <div class="result-box" id="resultBox" role="region" aria-live="polite" aria-label="GPA Result">
+                        <div class="result-top">
+                            <div class="result-top-label">Your SSC GPA</div>
+                            <div class="result-gpa" id="resultGPA">—</div>
+                            <div class="result-status" id="resultStatus"></div>
+                        </div>
+                    </div>
+
+                    <button class="btn-save" id="saveBtn" disabled>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Save Result as Image
+                    </button>
+                </div>
             </div>
         </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <p>&copy; 2026 Study Koro. All rights reserved.</p>
-            <nav class="footer-nav" aria-label="Footer Navigation">
-                <ul>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li><a href="/privacy-policy/">Privacy</a></li>
-                    <li><a href="/terms/">Terms</a></li>
+        <!-- SIDEBAR -->
+        <aside class="sidebar" aria-label="Reference">
+            <div class="side-card">
+                <div class="side-card-head">SSC Grading Scale</div>
+                <table class="grade-table">
+                    <thead><tr><th>Marks</th><th>Grade</th><th>Points</th></tr></thead>
+                    <tbody>
+                        <tr><td>80–100</td><td class="grade-letter">A+</td><td><span class="gp-chip">5.00</span></td></tr>
+                        <tr><td>70–79</td><td class="grade-letter">A</td><td><span class="gp-chip">4.00</span></td></tr>
+                        <tr><td>60–69</td><td class="grade-letter">A−</td><td><span class="gp-chip">3.50</span></td></tr>
+                        <tr><td>50–59</td><td class="grade-letter">B</td><td><span class="gp-chip">3.00</span></td></tr>
+                        <tr><td>40–49</td><td class="grade-letter">C</td><td><span class="gp-chip">2.00</span></td></tr>
+                        <tr><td>33–39</td><td class="grade-letter">D</td><td><span class="gp-chip">1.00</span></td></tr>
+                        <tr><td>0–32</td><td class="grade-letter" style="color:var(--red)">F</td><td><span class="gp-chip" style="background:var(--red)">0.00</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="side-card">
+                <div class="side-card-head">Quick Tips</div>
+                <ul class="tips-list">
+                    <li>Minimum 33 marks (Grade D) needed to pass each subject.</li>
+                    <li>Optional subject grade above C adds a <strong>bonus</strong> to your GPA.</li>
+                    <li>A+ in every subject = <strong>Golden A+ (5.00)</strong>.</li>
+                    <li>F in any main subject = <strong>0.00 GPA</strong> (failed).</li>
+                    <li>Maximum possible GPA is <strong>5.00</strong>.</li>
                 </ul>
-            </nav>
-        </div>
-    </footer>
-    <script src="/assets/js/header.js"></script>
-    <script src="/assets/js/ssc-gpa-calculator.js"></script>
-</body>
+            </div>
 
+            <div class="side-card">
+                <div class="side-card-head">Other Calculators</div>
+                <div class="related-links">
+                    <a href="/tools/hsc-gpa-calculator/" class="related-link">HSC GPA Calculator <span>→</span></a>
+                    <a href="/tools/cgpa-calculator/" class="related-link">University CGPA Calculator <span>→</span></a>
+                    <a href="/tools/ielts-band-score-calculator/" class="related-link">IELTS Band Score Calculator <span>→</span></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTENT -->
+        <article class="content-area">
+
+            <h2 id="how-to-use">How to Use the SSC GPA Calculator</h2>
+
+            <h3>Step 1 — Select Your Group</h3>
+            <p>Choose <strong>Science</strong>, <strong>Commerce</strong>, or <strong>Arts</strong> from the tabs at the top of the calculator. The subject list updates automatically.</p>
+
+            <h3>Step 2 — Choose Your Input Method</h3>
+            <p>Select <strong>Grades</strong> to pick a letter grade (A+, A, A−…) from a dropdown, or <strong>Marks</strong> to type in your raw score (0–100). You only need to use one — the grade will be set automatically when you enter marks.</p>
+
+            <h3>Step 3 — Enter Science Electives or Optional Subject</h3>
+            <p>Science students select their 3rd subject (Biology or Higher Math) and 4th subject. Commerce and Arts students can choose an optional 4th subject from their group's list. Leave it blank if not applicable.</p>
+
+            <h3>Step 4 — Calculate</h3>
+            <p>Click <strong>Calculate GPA</strong>. Your GPA appears instantly along with your result status — Passed, Failed, or <strong>Golden A+</strong> if you scored A+ in every subject.</p>
+
+            <h2 id="formula">How SSC GPA is Calculated</h2>
+            <p>The SSC GPA formula used by all Bangladesh education boards works as follows:</p>
+            <ol>
+                <li>Convert each subject's marks to a grade point using the official grading scale.</li>
+                <li>If any main subject has grade F (0.00), the student is considered failed and GPA = 0.00.</li>
+                <li>Add all main subject grade points together.</li>
+                <li>If the optional subject's grade point is above 2.00, add a bonus: <strong>(grade point − 2)</strong>.</li>
+                <li>Divide the total by the number of main subjects.</li>
+                <li>Cap the final result at <strong>5.00</strong>.</li>
+            </ol>
+
+            <div class="formula-box">
+                <p><strong>GPA = (Sum of main subject grade points + optional bonus) ÷ number of main subjects</strong></p>
+                <p>Optional bonus = Grade Point − 2 (only if GP > 2.00, otherwise 0)</p>
+                <p>Example: 8 subjects with total 36 points + optional A+ bonus (5 − 2 = 3) = 39 ÷ 8 = <strong>4.875 → capped? No → 4.88</strong></p>
+            </div>
+
+            <h3>What is a Golden A+?</h3>
+            <p>A <strong>Golden A+</strong> means scoring A+ (80 marks or above) in every single subject, resulting in a perfect GPA of <strong>5.00</strong>. It is the highest possible SSC result in Bangladesh and is widely regarded as a mark of exceptional academic achievement.</p>
+
+            <h2 id="subjects">SSC Subjects by Group</h2>
+
+            <h3>Science Group</h3>
+            <p>Core subjects: Bangla, English, Mathematics, Religion, ICT, Bangladesh & Global Studies (BGS), Physics, Chemistry. Plus two elective subjects — Biology and/or Higher Math — one of which may be the optional subject.</p>
+
+            <h3>Commerce Group</h3>
+            <p>Core subjects: Bangla, English, Mathematics, Religion, ICT, General Science. Plus group subjects: Accounting, Business Entrepreneurship, Finance &amp; Banking. One of the group subjects may be taken as the optional subject.</p>
+
+            <h3>Arts Group</h3>
+            <p>Core subjects: Bangla, English, Mathematics, Religion, ICT, General Science. Plus group subjects: History of Bangladesh &amp; World Civilisation, Geography &amp; Environment, Civics &amp; Citizenship. One may be taken as the optional subject.</p>
+
+            <h2 id="faq">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>How is SSC GPA calculated in Bangladesh?</summary>
+                    <p>SSC GPA is the average of all main subject grade points. If an optional subject's grade point exceeds 2.00, the excess (GP − 2) is added as a bonus before dividing. An F in any main subject results in a failed result. The maximum GPA is 5.00.</p>
+                </details>
+                <details>
+                    <summary>What is a Golden A+ in SSC?</summary>
+                    <p>A Golden A+ means scoring A+ (80+ marks) in every subject, giving a perfect GPA of 5.00. It is the highest possible SSC result and is recognized by all Bangladesh education boards.</p>
+                </details>
+                <details>
+                    <summary>Does the optional subject increase my GPA?</summary>
+                    <p>Yes, but only if your optional subject grade point is above 2.00 (C grade). The bonus is calculated as (grade point − 2). So an A+ in the optional subject adds 3.00 bonus points, while a B (3.00) adds 1.00. The final GPA is still capped at 5.00.</p>
+                </details>
+                <details>
+                    <summary>What is the minimum marks to pass SSC?</summary>
+                    <p>You need at least 33 marks (Grade D, 1.00 point) in each subject to pass. Scoring 0–32 in any subject results in a grade F (0.00) and the student fails the entire SSC examination regardless of other scores.</p>
+                </details>
+                <details>
+                    <summary>Does this calculator work for all Bangladesh boards?</summary>
+                    <p>Yes. All eight BISE education boards — Dhaka, Rajshahi, Comilla, Chittagong, Sylhet, Barisal, Dinajpur, and Mymensingh — as well as the Madrasah and Technical boards, use the same official 5-point grading scale for SSC.</p>
+                </details>
+            </div>
+
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>© 2026 Study Koro. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <ul>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/privacy-policy/">Privacy</a></li>
+                <li><a href="/terms/">Terms</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<script>
+(function () {
+    const groups = {
+        science: { main: ["Bangla","English","Math","Religion","ICT","BGS","Physics","Chemistry"] },
+        commerce: { main: ["Bangla","English","Math","Religion","ICT","General Science"] },
+        arts:    { main: ["Bangla","English","Math","Religion","ICT","General Science"] }
+    };
+    const sciElectives = ["Biology", "Higher Math"];
+    const commerceOpts = ["Accounting", "Business Entrepreneurship", "Finance & Banking"];
+    const artsOpts     = ["History of Bangladesh", "Geography & Environment", "Civics & Citizenship"];
+
+    const gradeMap = { "A+":5, "A":4, "A-":3.5, "B":3, "C":2, "D":1, "F":0 };
+    const gradeOptions = Object.entries(gradeMap);
+
+    let currentGroup = 'science';
+    let currentMode  = 'grade';
+
+    /* ── Helpers ── */
+    function marksToGP(m) {
+        m = parseFloat(m);
+        if (m >= 80) return 5; if (m >= 70) return 4; if (m >= 60) return 3.5;
+        if (m >= 50) return 3; if (m >= 40) return 2; if (m >= 33) return 1;
+        return 0;
+    }
+
+    function gradeSelect(id) {
+        const s = document.createElement('select');
+        s.id = id; s.className = 'g-input';
+        gradeOptions.forEach(([k,v]) => {
+            const o = document.createElement('option');
+            o.value = v; o.textContent = k + ' (' + v + ')';
+            s.appendChild(o);
+        });
+        return s;
+    }
+
+    function marksInput(id, max) {
+        const i = document.createElement('input');
+        i.type = 'number'; i.id = id; i.className = 'g-input';
+        i.min = 0; i.max = max || 100; i.placeholder = '0–' + (max||100);
+        return i;
+    }
+
+    function renderSubjectRow(name, gradeId, marksId) {
+        const row = document.createElement('div');
+        row.className = 'subject-row';
+
+        const nm = document.createElement('div');
+        nm.className = 'subj-name';
+        nm.textContent = name;
+
+        const gradeWrap = document.createElement('div');
+        const marksWrap = document.createElement('div');
+
+        if (currentMode === 'grade') {
+            const gs = gradeSelect(gradeId);
+            gradeWrap.appendChild(gs);
+            marksWrap.style.display = 'none';
+        } else {
+            const mi = marksInput(marksId);
+            marksWrap.appendChild(mi);
+            gradeWrap.style.display = 'none';
+        }
+
+        row.appendChild(nm);
+        row.appendChild(gradeWrap);
+        row.appendChild(marksWrap);
+        return row;
+    }
+
+    /* ── Render main grid ── */
+    function renderMain() {
+        const grid = document.getElementById('mainGrid');
+        grid.innerHTML = '';
+        groups[currentGroup].main.forEach((name, i) => {
+            grid.appendChild(renderSubjectRow(name, 'mg' + i + '_g', 'mg' + i + '_m'));
+        });
+    }
+
+    /* ── Render extra panels ── */
+    function renderExtras() {
+        const sciPanel  = document.getElementById('scienceExtras');
+        const otherPanel = document.getElementById('otherExtras');
+
+        if (currentGroup === 'science') {
+            sciPanel.style.display = 'block';
+            otherPanel.style.display = 'none';
+            renderSciExtras();
+        } else {
+            sciPanel.style.display = 'none';
+            otherPanel.style.display = 'block';
+            renderOptSubject();
+        }
+    }
+
+    function renderSciExtras() {
+        ['sub3','sub4'].forEach((pfx, idx) => {
+            const gw = document.getElementById(pfx + 'GradeWrap');
+            const mw = document.getElementById(pfx + 'MarksWrap');
+            gw.innerHTML = ''; mw.innerHTML = '';
+            if (currentMode === 'grade') {
+                gw.appendChild(gradeSelect(pfx + '_g'));
+                mw.style.display = 'none';
+            } else {
+                mw.appendChild(marksInput(pfx + '_m'));
+                gw.style.display = 'none';
+            }
+        });
+    }
+
+    function renderOptSubject() {
+        const opts = currentGroup === 'commerce' ? commerceOpts : artsOpts;
+        const area = document.getElementById('optSubjectArea');
+        area.innerHTML = '';
+
+        const row = document.createElement('div');
+        row.className = 'extra-row';
+
+        const sel = document.createElement('select');
+        sel.id = 'optName'; sel.className = 'g-input';
+        const def = document.createElement('option');
+        def.value = ''; def.textContent = 'Select Subject'; sel.appendChild(def);
+        opts.forEach(o => {
+            const op = document.createElement('option');
+            op.value = o; op.textContent = o; sel.appendChild(op);
+        });
+
+        const gradeWrap = document.createElement('div');
+        const marksWrap = document.createElement('div');
+        gradeWrap.id = 'optGradeWrap'; marksWrap.id = 'optMarksWrap';
+
+        if (currentMode === 'grade') {
+            gradeWrap.appendChild(gradeSelect('opt_g'));
+        } else {
+            marksWrap.appendChild(marksInput('opt_m'));
+        }
+
+        row.appendChild(sel);
+        row.appendChild(gradeWrap);
+        row.appendChild(marksWrap);
+        area.appendChild(row);
+    }
+
+    /* ── Science swap ── */
+    window.sciSwap = function (is3) {
+        const s3 = document.getElementById('sub3Name');
+        const s4 = document.getElementById('sub4Name');
+        if (s3.value === s4.value) {
+            const other = sciElectives.find(s => s !== (is3 ? s3.value : s4.value));
+            if (is3) s4.value = other; else s3.value = other;
+        }
+    };
+
+    /* ── Get GP ── */
+    function getGP(gradeId, marksId) {
+        if (currentMode === 'grade') {
+            const el = document.getElementById(gradeId);
+            return el ? parseFloat(el.value) : null;
+        } else {
+            const el = document.getElementById(marksId);
+            if (!el || el.value === '') return null;
+            return marksToGP(el.value);
+        }
+    }
+
+    /* ── Calculate ── */
+    function calculate() {
+        const mainSubjs = groups[currentGroup].main;
+        let total = 0, hasFail = false;
+
+        for (let i = 0; i < mainSubjs.length; i++) {
+            const gp = getGP('mg' + i + '_g', 'mg' + i + '_m');
+            if (gp === null) { alert('Please enter a grade or marks for: ' + mainSubjs[i]); return; }
+            if (gp === 0) hasFail = true;
+            total += gp;
+        }
+
+        let bonus = 0;
+        if (currentGroup === 'science') {
+            const gp3 = getGP('sub3_g', 'sub3_m');
+            if (gp3 === null) { alert('Please enter grade or marks for the 3rd subject'); return; }
+            if (gp3 === 0) hasFail = true;
+            total += gp3;
+
+            const gp4 = getGP('sub4_g', 'sub4_m');
+            if (gp4 !== null) {
+                bonus = gp4 > 2 ? gp4 - 2 : 0;
+            }
+        } else {
+            const optSel = document.getElementById('optName');
+            if (optSel && optSel.value !== '') {
+                const gpOpt = getGP('opt_g', 'opt_m');
+                if (gpOpt !== null) bonus = gpOpt > 2 ? gpOpt - 2 : 0;
+            }
+        }
+
+        const count = mainSubjs.length + (currentGroup === 'science' ? 1 : 0);
+        const raw = (total + bonus) / count;
+        const final = Math.min(5, raw);
+
+        const isGolden = !hasFail && final >= 5;
+        const resultGPA = document.getElementById('resultGPA');
+        const resultStatus = document.getElementById('resultStatus');
+        const resultBox = document.getElementById('resultBox');
+
+        resultGPA.textContent = hasFail ? '0.00' : final.toFixed(2);
+        resultStatus.className = 'result-status ' + (hasFail ? 'fail' : isGolden ? 'golden' : 'pass');
+        resultStatus.textContent = hasFail ? '✗ Failed' : isGolden ? '★ Golden A+' : '✓ Passed';
+
+        resultBox.classList.add('show');
+        document.getElementById('saveBtn').disabled = false;
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    document.getElementById('calcBtn').addEventListener('click', calculate);
+
+    /* ── Mode toggle ── */
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentMode = btn.dataset.mode;
+            renderMain(); renderExtras();
+        });
+    });
+
+    /* ── Group tabs ── */
+    document.querySelectorAll('.group-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.group-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+            tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+            currentGroup = tab.dataset.group;
+            renderMain(); renderExtras();
+            document.getElementById('resultBox').classList.remove('show');
+            document.getElementById('saveBtn').disabled = true;
+        });
+    });
+
+    /* ── Save image ── */
+    async function saveImage() {
+        if (!window.html2canvas) {
+            await new Promise(resolve => {
+                const s = document.createElement('script');
+                s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+                s.onload = resolve; document.body.appendChild(s);
+            });
+        }
+        const cb = document.getElementById('calcBtn'), sb = document.getElementById('saveBtn');
+        cb.hidden = true; sb.hidden = true;
+        await new Promise(r => setTimeout(r, 100));
+        try {
+            const canvas = await html2canvas(document.getElementById('calcCard'), { backgroundColor:'#ffffff', scale:2 });
+            cb.hidden = false; sb.hidden = false;
+            const a = document.createElement('a');
+            a.download = 'ssc-gpa-result.png'; a.href = canvas.toDataURL('image/png'); a.click();
+        } catch { cb.hidden = false; sb.hidden = false; alert('Could not save image.'); }
+    }
+    document.getElementById('saveBtn').addEventListener('click', saveImage);
+
+    /* ── Mobile nav ── */
+    document.getElementById('menuToggle').addEventListener('click', function () {
+        document.getElementById('mobile-nav').classList.toggle('open');
+    });
+
+    /* ── Init ── */
+    renderMain(); renderExtras();
+})();
+</script>
+</body>
 </html>
