@@ -1,0 +1,165 @@
+{
+  "_PageHeader-1dea8UE3.js": {
+    "file": "assets/PageHeader-1dea8UE3.js",
+    "name": "PageHeader",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_arrow-right-CrVcf1vJ.js": {
+    "file": "assets/arrow-right-CrVcf1vJ.js",
+    "name": "arrow-right",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_chevron-right-DmZ5o9LL.js": {
+    "file": "assets/chevron-right-DmZ5o9LL.js",
+    "name": "chevron-right",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_client-yBnPTS2Y.js": {
+    "file": "assets/client-yBnPTS2Y.js",
+    "name": "client",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "index.html": {
+    "file": "assets/app-B2To5jus.js",
+    "name": "app",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "_client-yBnPTS2Y.js",
+      "src/pages/HomePage.tsx",
+      "src/pages/AboutPage.tsx",
+      "src/pages/ContactPage.tsx",
+      "src/pages/DisclaimerPage.tsx",
+      "src/pages/PrivacyPage.tsx",
+      "src/pages/TermsPage.tsx",
+      "src/pages/ToolsIndexPage.tsx",
+      "src/pages/ToolDetailPage.tsx",
+      "src/pages/PostsIndexPage.tsx",
+      "src/pages/PostDetailPage.tsx",
+      "src/pages/NotFoundPage.tsx"
+    ],
+    "css": [
+      "assets/app-BPCuTe_Z.css"
+    ]
+  },
+  "src/pages/AboutPage.tsx": {
+    "file": "assets/AboutPage-zMu03iHh.js",
+    "name": "AboutPage",
+    "src": "src/pages/AboutPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js"
+    ]
+  },
+  "src/pages/ContactPage.tsx": {
+    "file": "assets/ContactPage-BoCENgTe.js",
+    "name": "ContactPage",
+    "src": "src/pages/ContactPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js"
+    ]
+  },
+  "src/pages/DisclaimerPage.tsx": {
+    "file": "assets/DisclaimerPage-B8pk6nHg.js",
+    "name": "DisclaimerPage",
+    "src": "src/pages/DisclaimerPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js"
+    ]
+  },
+  "src/pages/HomePage.tsx": {
+    "file": "assets/HomePage-BTJmu9Ip.js",
+    "name": "HomePage",
+    "src": "src/pages/HomePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_arrow-right-CrVcf1vJ.js"
+    ]
+  },
+  "src/pages/NotFoundPage.tsx": {
+    "file": "assets/NotFoundPage-hyUUHxTQ.js",
+    "name": "NotFoundPage",
+    "src": "src/pages/NotFoundPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/pages/PostDetailPage.tsx": {
+    "file": "assets/PostDetailPage-CremoP6y.js",
+    "name": "PostDetailPage",
+    "src": "src/pages/PostDetailPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_chevron-right-DmZ5o9LL.js"
+    ]
+  },
+  "src/pages/PostsIndexPage.tsx": {
+    "file": "assets/PostsIndexPage-DgxQlxts.js",
+    "name": "PostsIndexPage",
+    "src": "src/pages/PostsIndexPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js"
+    ]
+  },
+  "src/pages/PrivacyPage.tsx": {
+    "file": "assets/PrivacyPage-9MkJz9HJ.js",
+    "name": "PrivacyPage",
+    "src": "src/pages/PrivacyPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js"
+    ]
+  },
+  "src/pages/TermsPage.tsx": {
+    "file": "assets/TermsPage-Dz9P8J8Y.js",
+    "name": "TermsPage",
+    "src": "src/pages/TermsPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js"
+    ]
+  },
+  "src/pages/ToolDetailPage.tsx": {
+    "file": "assets/ToolDetailPage-CQoNYPJT.js",
+    "name": "ToolDetailPage",
+    "src": "src/pages/ToolDetailPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js",
+      "_chevron-right-DmZ5o9LL.js"
+    ]
+  },
+  "src/pages/ToolsIndexPage.tsx": {
+    "file": "assets/ToolsIndexPage-DrIxsruK.js",
+    "name": "ToolsIndexPage",
+    "src": "src/pages/ToolsIndexPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_PageHeader-1dea8UE3.js",
+      "_arrow-right-CrVcf1vJ.js"
+    ]
+  }
+}

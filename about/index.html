@@ -1,206 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Study Koro — Free Academic Tools for Bangladesh Students</title>
-    <meta name="description" content="Study Koro provides free, accurate academic calculators and study resources for students in Bangladesh.">
+    <meta name="theme-color" content="#0b3d6b">
     <meta name="author" content="Study Koro">
-    <link rel="canonical" href="https://studykoro.me/about/">
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("sk-theme");
+          var d = t
+            ? t === "dark"
+            : matchMedia("(prefers-color-scheme: dark)").matches;
+          if (d) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+    <title>Study Koro</title>
+    <script type="module" crossorigin="" src="/assets/app-B2To5jus.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-BPCuTe_Z.css">
+  <link rel="modulepreload" crossorigin="" href="/assets/AboutPage-zMu03iHh.js"></head>
+  <body>
+    <div id="root" data-server-rendered="true"><div class="flex min-h-screen flex-col"><header class="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70"><div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5"><a class="font-serif text-xl tracking-tight text-foreground" aria-label="Study Koro home" href="/">Study <span class="text-primary">Koro</span></a><nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Main"><a class="transition-colors hover:text-foreground text-muted-foreground" href="/">Home</a><a class="transition-colors hover:text-foreground text-muted-foreground" href="/tools">Tools</a><a class="transition-colors hover:text-foreground text-muted-foreground" href="/posts">Blog</a><a aria-current="page" class="transition-colors hover:text-foreground text-foreground font-medium" href="/about">About</a></nav><div class="flex items-center gap-1"><button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground" aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon h-4 w-4" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><button type="button" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Open menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div></header><main class="flex-1"><div class="mx-auto max-w-3xl px-5 pb-24 pt-12 sm:pt-20"><div class="mx-auto max-w-3xl text-left"><p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary">About</p><h1 class="font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl">Practical learning tools for Bangladeshi students.</h1></div><div class="prose-editorial mt-12"><p>Study Koro is a free educational resource built by and for Bangladeshi students. We make academic tools and study guides that are honest, accurate, and easy to use — the kind of resources we wished we had during our own school, college, and university years.</p>
 
-    <style>
-        :root {
-            --accent:      #2563eb;
-            --white:       #ffffff;
-            --bg:          #fafafa;
-            --bg-subtle:   #f3f4f6;
-            --border:      #e5e7eb;
-            --border-light:#f0f0f0;
-            --text-1:      #111827;
-            --text-2:      #374151;
-            --text-3:      #6b7280;
-            --text-4:      #9ca3af;
-            --radius:      12px;
-            --radius-sm:   8px;
-            --shadow:      0 4px 12px rgba(0,0,0,.07);
-            --shadow-md:   0 8px 24px rgba(0,0,0,.09);
-        }
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-1); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+<h2>What we do</h2>
 
-        /* HEADER */
-        .site-header { background: var(--white); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border); }
-        .nav-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
-        .site-brand a { font-family: 'DM Serif Display', serif; color: var(--text-1); text-decoration: none; font-size: 1.35rem; letter-spacing: -.01em; }
-        .site-brand a span { color: var(--accent); }
-        .site-nav ul { list-style: none; display: flex; gap: 2px; }
-        .site-nav a { color: var(--text-3); text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: .88rem; font-weight: 500; transition: color .15s, background .15s; }
-        .site-nav a:hover, .site-nav a[aria-current] { color: var(--text-1); background: var(--bg-subtle); }
-        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
-        .menu-toggle span { display: block; width: 20px; height: 1.5px; background: var(--text-2); margin: 5px 0; border-radius: 2px; }
+<p>We focus on two things:</p>
 
-        /* PAGE HERO */
-        .page-hero { background: var(--bg); padding: 48px 24px 40px; border-bottom: 1px solid var(--border); text-align: center; }
-        .page-hero-inner { max-width: 560px; margin: 0 auto; }
-        .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(1.9rem, 4vw, 2.6rem); color: var(--text-1); line-height: 1.2; margin-bottom: 12px; letter-spacing: -.02em; }
-        .page-hero p { color: var(--text-3); font-size: .97rem; line-height: 1.7; }
+<ul>
+<li><strong>Calculators</strong> that implement the official grading rules used in Bangladesh — the Ministry of Education's 5.00 GPA scale for SSC and HSC, the University Grants Commission's 4.00 scale for university CGPA, and the British Council / IDP band rules for IELTS.</li>
+<li><strong>Guides</strong> on the practical questions Bangladeshi students actually search for: how GPA works, how to prepare for IELTS, how to apply to universities abroad, how to write applications and SOPs, and how to navigate scholarships and visas.</li>
+</ul>
 
-        /* CONTENT LAYOUT */
-        .page-body { max-width: 1100px; margin: 0 auto; padding: 48px 24px 80px; display: grid; grid-template-columns: 1fr 280px; gap: 48px; align-items: start; }
+<h2>Why we built it</h2>
 
-        /* ARTICLE */
-        .post-body { font-size: .97rem; color: var(--text-2); line-height: 1.8; }
-        .post-body h2 { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--text-1); margin-top: 36px; margin-bottom: 12px; letter-spacing: -.01em; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
-        .post-body h2:first-child { margin-top: 0; }
-        .post-body p { margin-bottom: 14px; }
-        .post-body ul { margin: 8px 0 14px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
-        .post-body ul li { padding-left: 18px; position: relative; }
-        .post-body ul li::before { content: '–'; color: var(--text-4); position: absolute; left: 0; }
-        .post-body strong { color: var(--text-1); font-weight: 600; }
-        .post-body a { color: var(--accent); text-decoration: none; font-weight: 500; }
-        .post-body a:hover { text-decoration: underline; }
-        .post-body em { font-style: italic; color: var(--text-3); }
+<p>Most academic tools available to Bangladeshi students are either incorrect (using Indian or international grading rules), heavy with ads and pop-ups, or so confusingly designed that students stop trusting the result. We wanted to build something different: simple, fast, accurate, and free — with no account required and no data collected from your inputs.</p>
 
-        /* SIDEBAR */
-        .page-sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 80px; }
-        .side-card { background: var(--white); border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; }
-        .side-card-head { background: var(--bg-subtle); padding: 13px 18px; color: var(--text-2); font-size: .8rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
-        .side-list { padding: 12px; display: flex; flex-direction: column; gap: 6px; }
-        .side-link { display: flex; align-items: flex-start; gap: 8px; padding: 9px 10px; border-radius: var(--radius-sm); text-decoration: none; color: var(--text-2); font-size: .83rem; font-weight: 500; transition: background .15s, color .15s; line-height: 1.4; }
-        .side-link:hover { background: var(--bg-subtle); color: var(--text-1); }
+<p>The same applies to our writing. The internet has plenty of generic study-abroad content, but very little written from a Bangladeshi student's perspective with realistic costs, real visa processes, and the specific rules that apply here. We try to fill that gap.</p>
 
-        /* FOOTER */
-        .site-footer { background: var(--white); border-top: 1px solid var(--border); padding: 28px 24px; }
-        .footer-container { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-        .footer-container p { font-size: .82rem; color: var(--text-4); }
-        .footer-nav ul { list-style: none; display: flex; gap: 2px; }
-        .footer-nav a { color: var(--text-3); text-decoration: none; font-size: .84rem; padding: 5px 10px; border-radius: 6px; transition: color .15s; }
-        .footer-nav a:hover { color: var(--text-1); }
+<h2>How we work</h2>
 
-        @media (max-width: 760px) {
-            .page-body { grid-template-columns: 1fr; }
-            .page-sidebar { position: static; }
-        }
-        @media (max-width: 600px) {
-            .site-nav { display: none; }
-            .site-nav.open { display: block; position: absolute; top: 60px; left: 0; right: 0; background: var(--white); padding: 12px 16px 20px; box-shadow: var(--shadow-md); border-bottom: 1px solid var(--border); }
-            .site-nav.open ul { flex-direction: column; gap: 2px; }
-            .site-nav.open a { display: block; padding: 10px 12px; }
-            .menu-toggle { display: block; }
-        }
-    </style>
-</head>
-<body>
+<ul>
+<li><strong>Original content.</strong> Every guide is written from scratch, not copy-pasted or AI-spun.</li>
+<li><strong>Verified against official sources.</strong> Grading rules, scholarship details, and visa requirements are checked against official board, UGC, embassy, and university documents — and updated when those rules change.</li>
+<li><strong>No paywalls, no signups.</strong> Every tool and every guide is free to use.</li>
+<li><strong>Privacy-first.</strong> Calculator inputs stay in your browser. We don't collect or store the marks, grades, or scores you enter.</li>
+</ul>
 
-<header class="site-header">
-    <div class="nav-container">
-        <div class="site-brand">
-            <a href="/" rel="home">Study <span>Koro</span></a>
-        </div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
-            <span></span><span></span><span></span>
-        </button>
-        <nav class="site-nav" id="mobile-nav" aria-label="Main Navigation">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/posts/">Blog</a></li>
-                <li><a href="/tools/">Tools</a></li>
-                <li><a href="/about/" aria-current="page">About</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<h2>Editorial standards</h2>
 
-<main>
-    <section class="page-hero">
-        <div class="page-hero-inner">
-            <h1>About Study Koro</h1>
-            <p>Free academic tools and study resources built for students in Bangladesh.</p>
-        </div>
-    </section>
+<p>When we publish a guide, we follow three rules:</p>
+<ol>
+<li><strong>Useful before clever.</strong> Concrete numbers, real examples, and step-by-step instructions instead of motivational filler.</li>
+<li><strong>Honest about limits.</strong> If a topic has exceptions, official ambiguity, or genuine risk, we say so.</li>
+<li><strong>Updated when reality changes.</strong> Visa rules, scholarship deadlines, and university requirements shift constantly. We revisit our guides and date every meaningful change.</li>
+</ol>
 
-    <div class="page-body">
-        <article class="post-body">
-            <p>Welcome to <strong>Study Koro</strong>. Our goal is to provide helpful educational resources for students in Bangladesh. We publish guides, calculators, and useful information to help students make better academic decisions.</p>
-            <p>Our website focuses on topics such as:</p>
-            <ul>
-                <li>GPA Calculators (SSC, HSC, JSC)</li>
-                <li>University Subject Lists</li>
-                <li>Admission Guides</li>
-                <li>College and University Information</li>
-                <li>Educational Resources for Students</li>
-            </ul>
+<h2>Who runs Study Koro</h2>
 
-            <h2 id="our-mission">Our Mission</h2>
-            <p>Our mission is simple: <strong>make educational information easy to access and understand</strong>. Many students struggle to find reliable information online. We aim to solve that by publishing clear and updated guides.</p>
+<p>Study Koro is run by a small group of Bangladeshi graduates with backgrounds in engineering, education, and editorial work. We've been through the SSC, HSC, university CGPA, and IELTS process ourselves, and several of our contributors have gone through study-abroad applications to the UK, Australia, and Germany.</p>
 
-            <h2 id="what-we-provide">What We Provide</h2>
-            <p>On this website you will find:</p>
-            <ul>
-                <li>Accurate academic information</li>
-                <li>Easy-to-use online calculators</li>
-                <li>Lists of universities and subjects</li>
-                <li>Admission related updates</li>
-            </ul>
-            <p>All content is written to be <strong>simple, practical, and useful for students</strong>.</p>
+<h2>Get in touch</h2>
 
-            <h2 id="why-this-website">Why This Website</h2>
-            <p>Many education websites are filled with outdated or confusing information. We try to keep everything <strong>clear, updated, and easy to read</strong> so students can quickly find what they need.</p>
+<p>Found an error? Want a topic covered? Have a suggestion for a new calculator? We genuinely want to hear from you — see our <a href="/contact/">contact page</a> for how to reach us.</p>
+</div></div></main><footer class="mt-24 border-t border-border bg-background"><div class="mx-auto max-w-6xl px-5 py-12"><div class="grid gap-10 md:grid-cols-3"><div><a class="font-serif text-lg tracking-tight" href="/">Study <span class="text-primary">Koro</span></a><p class="mt-3 max-w-xs text-sm text-muted-foreground leading-relaxed">Free, accurate academic calculators and study guides for students in Bangladesh.</p></div><div class="grid grid-cols-2 gap-8 md:col-span-2 md:grid-cols-3"><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Tools</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/ssc-gpa-calculator">SSC GPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/hsc-gpa-calculator">HSC GPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/cgpa-calculator">University CGPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/ielts-band-score-calculator">IELTS Band</a></li></ul></div><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Learn</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts">Blog</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts/how-to-study-abroad-from-bangladesh">Study Abroad</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts/ielts-preparation-tips">IELTS Tips</a></li></ul></div><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Company</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/about">About</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/contact">Contact</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/privacy-policy">Privacy</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/terms">Terms</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/disclaimer">Disclaimer</a></li></ul></div></div></div><div class="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center"><p>© <!-- -->2026<!-- --> Study Koro. All rights reserved.</p><p>Made for Bangladeshi students.</p></div></div></footer></div><script>window.__staticRouterHydrationData = JSON.parse("{\"loaderData\":{\"0\":null},\"actionData\":null,\"errors\":null}");</script></div>
+<script>window.__VITE_REACT_SSG_HASH__ = 'vvycrwefly'</script>
+  
 
-            <h2 id="contact">Contact</h2>
-            <p>If you have questions, suggestions, or corrections, feel free to contact us.</p>
-            <p>You can reach us through our <a href="/contact/"><strong>Contact Page</strong></a> or email us directly.</p>
-            <p><em>Thank you for visiting our website.</em></p>
-        </article>
-
-        <aside class="page-sidebar" aria-label="Sidebar">
-            <div class="side-card">
-                <div class="side-card-head">Related Guides</div>
-                <div class="side-list">
-                    <a href="/posts/ielts-preparation-tips/" class="side-link">IELTS Preparation Tips</a>
-                    <a href="/posts/best-scholarships-in-austrailia/" class="side-link">Scholarship Guides</a>
-                    <a href="/posts/how-to-study-abroad-from-bangladesh/" class="side-link">Study Abroad Guide</a>
-                </div>
-            </div>
-            <div class="side-card">
-                <div class="side-card-head">Quick Tools</div>
-                <div class="side-list">
-                    <a href="/tools/ssc-gpa-calculator/" class="side-link">SSC GPA Calculator</a>
-                    <a href="/tools/hsc-gpa-calculator/" class="side-link">HSC GPA Calculator</a>
-                    <a href="/tools/ielts-band-score-calculator/" class="side-link">IELTS Calculator</a>
-                    <a href="/tools/cgpa-calculator/" class="side-link">CGPA Calculator</a>
-                </div>
-            </div>
-        </aside>
-    </div>
-</main>
-
-<footer class="site-footer">
-    <div class="footer-container">
-        <p>&copy; 2026 Study Koro. All rights reserved.</p>
-        <nav class="footer-nav" aria-label="Footer Navigation">
-            <ul>
-                <li><a href="/contact/">Contact</a></li>
-                <li><a href="/privacy-policy/">Privacy</a></li>
-                <li><a href="/terms/">Terms</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
-
-<script>
-    document.getElementById('menuToggle').addEventListener('click', function () {
-        const nav = document.getElementById('mobile-nav');
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !expanded);
-        nav.classList.toggle('open');
-    });
-</script>
-</body>
-</html>
+</body></html>

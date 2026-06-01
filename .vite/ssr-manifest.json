@@ -1,0 +1,170 @@
+{
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/prop-types/index.js?commonjs-module": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/react-dom/cjs/react-dom.production.min.js?commonjs-exports": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/react-dom/client.js?commonjs-exports": [
+    "/assets/client-yBnPTS2Y.js"
+  ],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/react-dom/index.js?commonjs-module": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/react/cjs/react-jsx-runtime.production.min.js?commonjs-exports": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/react/cjs/react.production.min.js?commonjs-exports": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/react/index.js?commonjs-module": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/react/jsx-runtime.js?commonjs-module": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/scheduler/cjs/scheduler.production.min.js?commonjs-exports": [],
+  "\u0000C:/Users/Raihan/Downloads/study-koro (1)/study-koro/node_modules/scheduler/index.js?commonjs-module": [],
+  "\u0000commonjsHelpers.js": [],
+  "\u0000vite/modulepreload-polyfill.js": [],
+  "\u0000vite/preload-helper.js": [],
+  "index.html": [],
+  "node_modules/@remix-run/router/dist/router.js": [],
+  "node_modules/invariant/browser.js": [],
+  "node_modules/lucide-react/dist/esm/Icon.js": [],
+  "node_modules/lucide-react/dist/esm/createLucideIcon.js": [],
+  "node_modules/lucide-react/dist/esm/defaultAttributes.js": [],
+  "node_modules/lucide-react/dist/esm/icons/arrow-left.js": [
+    "/assets/PostDetailPage-CremoP6y.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/arrow-right.js": [
+    "/assets/arrow-right-CrVcf1vJ.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/book-open.js": [
+    "/assets/HomePage-BTJmu9Ip.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/calculator.js": [
+    "/assets/HomePage-BTJmu9Ip.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/chevron-right.js": [
+    "/assets/chevron-right-DmZ5o9LL.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/globe.js": [
+    "/assets/HomePage-BTJmu9Ip.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/graduation-cap.js": [
+    "/assets/HomePage-BTJmu9Ip.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/mail.js": [
+    "/assets/ContactPage-BoCENgTe.js"
+  ],
+  "node_modules/lucide-react/dist/esm/icons/menu.js": [],
+  "node_modules/lucide-react/dist/esm/icons/moon.js": [],
+  "node_modules/lucide-react/dist/esm/icons/sun.js": [],
+  "node_modules/lucide-react/dist/esm/icons/x.js": [],
+  "node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.js": [],
+  "node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.js": [],
+  "node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.js": [],
+  "node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.js": [],
+  "node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.js": [],
+  "node_modules/prop-types/factoryWithThrowingShims.js": [],
+  "node_modules/prop-types/index.js": [],
+  "node_modules/prop-types/lib/ReactPropTypesSecret.js": [],
+  "node_modules/react-dom/cjs/react-dom.production.min.js": [],
+  "node_modules/react-dom/client.js": [
+    "/assets/client-yBnPTS2Y.js"
+  ],
+  "node_modules/react-dom/index.js": [],
+  "node_modules/react-fast-compare/index.js": [],
+  "node_modules/react-helmet-async/lib/index.esm.js": [],
+  "node_modules/react-router-dom/dist/index.js": [],
+  "node_modules/react-router/dist/index.js": [],
+  "node_modules/react/cjs/react-jsx-runtime.production.min.js": [],
+  "node_modules/react/cjs/react.production.min.js": [],
+  "node_modules/react/index.js": [],
+  "node_modules/react/jsx-runtime.js": [],
+  "node_modules/scheduler/cjs/scheduler.production.min.js": [],
+  "node_modules/scheduler/index.js": [],
+  "node_modules/shallowequal/index.js": [],
+  "node_modules/vite-react-ssg/dist/index.mjs": [],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.BxjO14Et.mjs": [],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.C0y5wbxl.mjs": [],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.C6pK7rvr.mjs": [],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.CjIppNIS.mjs": [],
+  "node_modules/vite-react-ssg/node_modules/react-helmet-async/lib/index.module.js": [],
+  "src/App.tsx": [],
+  "src/components/site/Footer.tsx": [],
+  "src/components/site/Header.tsx": [],
+  "src/components/site/PageHeader.tsx": [
+    "/assets/PageHeader-1dea8UE3.js"
+  ],
+  "src/components/site/RelatedAside.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/components/site/ToolLongform.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/components/site/ToolShell.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/content/pages/about.html?raw": [
+    "/assets/AboutPage-zMu03iHh.js"
+  ],
+  "src/content/pages/disclaimer.html?raw": [
+    "/assets/DisclaimerPage-B8pk6nHg.js"
+  ],
+  "src/content/pages/privacy-policy.html?raw": [
+    "/assets/PrivacyPage-9MkJz9HJ.js"
+  ],
+  "src/content/pages/terms.html?raw": [
+    "/assets/TermsPage-Dz9P8J8Y.js"
+  ],
+  "src/content/posts.ts": [],
+  "src/content/posts/affordable-countries-for-bangladeshi-students.html?raw": [],
+  "src/content/posts/application-letter-formats-bangladeshi-students.html?raw": [],
+  "src/content/posts/cgpa-to-percentage-bangladesh.html?raw": [],
+  "src/content/posts/common-grammar-mistakes-bangladeshi-students.html?raw": [],
+  "src/content/posts/how-gpa-is-calculated-in-bangladesh.html?raw": [],
+  "src/content/posts/how-to-improve-cgpa-in-one-semester.html?raw": [],
+  "src/content/posts/how-to-study-abroad-from-bangladesh.html?raw": [],
+  "src/content/posts/how-to-write-sop-bangladeshi-students.html?raw": [],
+  "src/content/posts/ielts-preparation-tips.html?raw": [],
+  "src/content/posts/ielts-speaking-topics-model-answers.html?raw": [],
+  "src/content/posts/ielts-writing-task-2-band-7.html?raw": [],
+  "src/content/posts/student-visa-interview-questions.html?raw": [],
+  "src/content/posts/study-tour-application.html?raw": [],
+  "src/content/tools.ts": [],
+  "src/features/calculators/CgpaCalculator.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/features/calculators/HscCalculator.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/features/calculators/IeltsCalculator.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/features/calculators/SscCalculator.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/main.tsx": [],
+  "src/pages/AboutPage.tsx": [
+    "/assets/AboutPage-zMu03iHh.js"
+  ],
+  "src/pages/ContactPage.tsx": [
+    "/assets/ContactPage-BoCENgTe.js"
+  ],
+  "src/pages/DisclaimerPage.tsx": [
+    "/assets/DisclaimerPage-B8pk6nHg.js"
+  ],
+  "src/pages/HomePage.tsx": [
+    "/assets/HomePage-BTJmu9Ip.js"
+  ],
+  "src/pages/NotFoundPage.tsx": [
+    "/assets/NotFoundPage-hyUUHxTQ.js"
+  ],
+  "src/pages/PostDetailPage.tsx": [
+    "/assets/PostDetailPage-CremoP6y.js"
+  ],
+  "src/pages/PostsIndexPage.tsx": [
+    "/assets/PostsIndexPage-DgxQlxts.js"
+  ],
+  "src/pages/PrivacyPage.tsx": [
+    "/assets/PrivacyPage-9MkJz9HJ.js"
+  ],
+  "src/pages/TermsPage.tsx": [
+    "/assets/TermsPage-Dz9P8J8Y.js"
+  ],
+  "src/pages/ToolDetailPage.tsx": [
+    "/assets/ToolDetailPage-CQoNYPJT.js"
+  ],
+  "src/pages/ToolsIndexPage.tsx": [
+    "/assets/ToolsIndexPage-DrIxsruK.js"
+  ],
+  "src/styles.css": []
+}
