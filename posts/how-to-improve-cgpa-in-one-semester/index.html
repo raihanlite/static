@@ -1,52 +1,134 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0b3d6b">
-    <meta name="author" content="Study Koro">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
-    <script>
-      (function () {
-        try {
-          var t = localStorage.getItem("sk-theme");
-          var d = t
-            ? t === "dark"
-            : matchMedia("(prefers-color-scheme: dark)").matches;
-          if (d) document.documentElement.classList.add("dark");
-        } catch (e) {}
-      })();
-    </script>
-    <title>Study Koro</title>
-    <script type="module" crossorigin="" src="/assets/app-B2To5jus.js"></script>
-    <link rel="stylesheet" crossorigin="" href="/assets/app-BPCuTe_Z.css">
-  <link rel="modulepreload" crossorigin="" href="/assets/PostDetailPage-CremoP6y.js"></head>
-  <body>
-    <div id="root" data-server-rendered="true"><div class="flex min-h-screen flex-col"><header class="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70"><div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5"><a class="font-serif text-xl tracking-tight text-foreground" aria-label="Study Koro home" href="/">Study <span class="text-primary">Koro</span></a><nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Main"><a class="transition-colors hover:text-foreground text-muted-foreground" href="/">Home</a><a class="transition-colors hover:text-foreground text-muted-foreground" href="/tools">Tools</a><a aria-current="page" class="transition-colors hover:text-foreground text-foreground font-medium" href="/posts">Blog</a><a class="transition-colors hover:text-foreground text-muted-foreground" href="/about">About</a></nav><div class="flex items-center gap-1"><button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground" aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon h-4 w-4" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><button type="button" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Open menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div></header><main class="flex-1"><article class="mx-auto max-w-3xl px-5 pb-24 pt-10 sm:pt-16"><nav aria-label="Breadcrumb" class="mb-8 flex items-center gap-1.5 text-xs text-muted-foreground"><a class="hover:text-foreground" href="/">Home</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-3 w-3" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><a class="hover:text-foreground" href="/posts">Blog</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-3 w-3" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span class="text-foreground truncate">Academic</span></nav><header class="mb-12"><p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Academic</p><h1 class="mt-4 font-serif text-4xl leading-[1.15] tracking-tight text-foreground sm:text-5xl">How to Improve Your CGPA in 1 Semester — A Realistic Plan</h1><p class="mt-5 text-lg leading-relaxed text-muted-foreground">Eight strategies that actually move the needle, four common myths that don't, and a week-by-week plan for one improvement semester.</p><div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground"><span>By Study Koro</span><span aria-hidden="true">·</span><span>April 2026</span><span aria-hidden="true">·</span><span>9 min read</span></div></header><div class="prose-editorial"><p>Pulling up a low CGPA in one semester sounds impossible — but it isn't. The math is brutal in one direction (one bad semester drags you down for years) and forgiving in the other (one excellent semester, combined with smart course selection, can move your CGPA meaningfully). The trick is knowing exactly which levers actually work.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>How to Improve CGPA in One Semester</title>
+  <meta name="description" content="Eight strategies that actually move the needle, four common myths that don't, and a week-by-week plan for one improvement semester." />
+  <link rel="canonical" href="https://studykoro.me/posts/how-to-improve-cgpa-in-one-semester/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Study Koro" />
+  <meta property="og:site_name" content="Study Koro" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to Improve CGPA in One Semester" />
+  <meta property="og:description" content="Eight strategies that actually move the needle, four common myths that don't, and a week-by-week plan for one improvement semester." />
+  <meta property="og:url" content="https://studykoro.me/posts/how-to-improve-cgpa-in-one-semester/" />
+  <meta property="article:published_time" content="2026-04-17" />
+  <meta property="article:modified_time" content="2026-04-17" />
+  <meta property="article:author" content="Study Koro" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Improve CGPA in One Semester" />
+  <meta name="twitter:description" content="Eight strategies that actually move the needle, four common myths that don't, and a week-by-week plan for one improvement semester." />
+  <link rel="alternate" type="application/rss+xml" title="Study Koro RSS Feed" href="/feed.xml" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  <link rel="apple-touch-icon" href="/media/favicon.png" />
+  <link rel="preload" as="style" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<div class="gp-page-wrap">
 
+  <header class="gp-header">
+    <div class="gp-container gp-header-inner">
+      <div class="gp-site-brand">
+        <a href="/" class="gp-site-title">Study Koro</a>
+      </div>
+
+      <div class="gp-header-right">
+        <nav aria-label="Primary" class="gp-desktop-nav">
+        <a href="/" class="gp-nav-link">Home</a>
+        <div class="gp-nav-item">
+          <button class="gp-nav-link" aria-haspopup="true" aria-expanded="false">
+            Tools <span class="gp-nav-caret" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="gp-dropdown-menu" role="menu">
+            <a href="/tools/ssc-gpa-calculator/" class="gp-dropdown-item" role="menuitem">SSC GPA Calculator</a>
+            <a href="/tools/hsc-gpa-calculator/" class="gp-dropdown-item" role="menuitem">HSC GPA Calculator</a>
+            <a href="/tools/cgpa-calculator/" class="gp-dropdown-item" role="menuitem">CGPA Calculator</a>
+            <a href="/tools/ielts-band-score-calculator/" class="gp-dropdown-item" role="menuitem">IELTS Band Score Calculator</a>
+          </div>
+        </div>
+        <a href="/posts/" class="gp-nav-link is-active" aria-current="page">Blog</a>
+        <a href="/about/" class="gp-nav-link">About</a>
+        <a href="/contact/" class="gp-nav-link">Contact</a>
+        </nav>
+
+        <button id="header-search-toggle" class="gp-header-search-toggle" aria-label="Open search" aria-expanded="false" aria-controls="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <button id="mobile-toggle" class="gp-mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="header-search" class="gp-header-search" hidden>
+      <form class="gp-search-form gp-container" role="search" aria-label="Site search" action="/search/" method="get">
+        <label for="header-search-input" class="sr-only">Search</label>
+        <input id="header-search-input" type="search" name="q" class="gp-search-input" placeholder="Search …" />
+      </form>
+    </div>
+
+    <nav id="mobile-nav" class="gp-mobile-nav" style="display:none" aria-label="Mobile">
+      <a href="/" class="gp-mobile-nav-link">Home</a>
+      <div class="gp-mobile-nav-group">
+        <button type="button" class="gp-mobile-nav-parent" aria-expanded="false" aria-controls="mobile-submenu-1">
+          <span class="gp-mobile-nav-parent-label">Tools</span>
+          <span class="gp-mobile-nav-caret" aria-hidden="true">&#9660;</span>
+        </button>
+        <div id="mobile-submenu-1" class="gp-mobile-nav-children" hidden>
+          <a href="/tools/ssc-gpa-calculator/" class="gp-mobile-nav-child">SSC GPA Calculator</a>
+          <a href="/tools/hsc-gpa-calculator/" class="gp-mobile-nav-child">HSC GPA Calculator</a>
+          <a href="/tools/cgpa-calculator/" class="gp-mobile-nav-child">CGPA Calculator</a>
+          <a href="/tools/ielts-band-score-calculator/" class="gp-mobile-nav-child">IELTS Band Score Calculator</a>
+        </div>
+      </div>
+      <a href="/posts/" class="gp-mobile-nav-link is-active">Blog</a>
+      <a href="/about/" class="gp-mobile-nav-link">About</a>
+      <a href="/contact/" class="gp-mobile-nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="gp-main">
+    <div class="gp-container gp-content-row">
+      <div class="gp-primary">
+        <nav class="gp-breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="gp-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+          <a href="/posts/">Blog</a>
+          <span class="gp-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+          <a href="/category/academic/">Academic</a>
+          <span class="gp-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+          <span aria-current="page">How to Improve Your CGPA in 1 Semester — A Realistic Plan</span>
+        </nav>
+        <article class="gp-post-card">
+          <header class="gp-single-header">
+            <h1 class="gp-single-title">How to Improve Your CGPA in 1 Semester — A Realistic Plan</h1>
+            <div class="gp-post-meta">
+              <a href="/archive/2026/04/"><time datetime="2026-04-17">April 17, 2026</time></a>
+              by <a href="/author/study-koro/" rel="author">Study Koro</a> &middot; <span class="gp-read-time">4 min read</span>
+            </div>
+          </header>
+          <div class="gp-single-media"><span class="gp-media-tile" style="background:#e8542f" aria-hidden="true">HT</span></div>
+          <div class="gp-post-content">
+<p>Pulling up a low CGPA in one semester sounds impossible — but it isn&#39;t. The math is brutal in one direction (one bad semester drags you down for years) and forgiving in the other (one excellent semester, combined with smart course selection, can move your CGPA meaningfully). The trick is knowing exactly which levers actually work.</p>
 <p>This guide is for the Bangladeshi university student who has 1–2 weeks before classes start and wants a real plan, not motivational quotes.</p>
-
 <h2>First: understand the math</h2>
-
-<p>CGPA is a weighted average. Each new semester gets added with its credit weight, but the previous semesters don't disappear. So:</p>
-
+<p>CGPA is a weighted average. Each new semester gets added with its credit weight, but the previous semesters don&#39;t disappear. So:</p>
 <ul>
 <li>If your current CGPA is 2.80 across 60 credits and you score 3.80 in a 15-credit semester, your new CGPA = (2.80 × 60 + 3.80 × 15) ÷ 75 = <strong>3.00</strong>.</li>
-<li>To reach a 3.50, you'd need <em>several</em> 3.80+ semesters in a row.</li>
+<li>To reach a 3.50, you&#39;d need <em>several</em> 3.80+ semesters in a row.</li>
 </ul>
-
-<p>Use our <a href="/tools/cgpa-calculator/">CGPA Calculator</a>'s target-GPA planner to see exactly what semester GPA you need to hit your goal — it does this math instantly.</p>
-
+<p>Use our <a href="/tools/cgpa-calculator/">CGPA Calculator</a>&#39;s target-GPA planner to see exactly what semester GPA you need to hit your goal — it does this math instantly.</p>
 <h2>The 8 things that actually work</h2>
-
 <h3>1. Take a slightly lighter credit load</h3>
 <p>If your normal load is 15 credits, drop to 12 for one semester. Fewer courses = more time per course = higher marks. Most Bangladeshi universities allow this without penalty.</p>
-
 <h3>2. Retake your worst courses (if your university allows)</h3>
-<p>Most universities let you retake a course you scored C or below in; the higher grade replaces the lower one (or the lower grade is excluded). Check your university's grading policy carefully. Retaking even one D and converting it to a B+ can lift your CGPA noticeably.</p>
-
+<p>Most universities let you retake a course you scored C or below in; the higher grade replaces the lower one (or the lower grade is excluded). Check your university&#39;s grading policy carefully. Retaking even one D and converting it to a B+ can lift your CGPA noticeably.</p>
 <h3>3. Choose courses strategically</h3>
 <p>Not all courses are equally easy or equally weighted. For one improvement semester:</p>
 <ul>
@@ -54,67 +136,124 @@
 <li>Avoid double-loading on courses with weekly heavy assignments.</li>
 <li>If electives are available, pick ones where your background gives you an advantage.</li>
 </ul>
-
 <h3>4. Front-load the semester</h3>
-<p>Most students collapse in weeks 10–14. Reverse this: study hardest in weeks 1–8, when assignment loads are lighter, so the back-half crunch doesn't bury you. The students with the highest GPAs aren't the ones who pull all-nighters before finals — they're the ones who keep up week-by-week.</p>
-
+<p>Most students collapse in weeks 10–14. Reverse this: study hardest in weeks 1–8, when assignment loads are lighter, so the back-half crunch doesn&#39;t bury you. The students with the highest GPAs aren&#39;t the ones who pull all-nighters before finals — they&#39;re the ones who keep up week-by-week.</p>
 <h3>5. Attend every single class</h3>
 <p>This sounds basic, but at most Bangladeshi universities, 5–10% of your grade is attendance, and another 20% is class tests that punish absentees. Just by attending every class, you protect 25–30% of your final score.</p>
-
 <h3>6. Master the assessment pattern, not just the syllabus</h3>
 <p>Each course has its own grading distribution. Some weigh finals at 50%, others at 30%. Look at the course outline on day one and allocate your effort proportionally. A 10% quiz deserves 10% of your effort, not 30%.</p>
-
 <h3>7. Form one good study group — not three bad ones</h3>
 <p>Two or three serious classmates who meet once a week to swap notes and quiz each other will outperform any individual study plan. Avoid groups where the meeting becomes a social event.</p>
-
 <h3>8. Sleep 7 hours</h3>
 <p>This is non-negotiable for high-GPA performance. Sleep deprivation destroys recall, attention, and exam performance more reliably than any other factor. Pull-an-all-nighter students consistently score 10–15% lower on the same material.</p>
-
-<h2>The 4 things students think will work but don't</h2>
-
+<h2>The 4 things students think will work but don&#39;t</h2>
 <ol>
 <li><strong>Buying coaching center notes.</strong> They cover the same material your professor covered, just less reliably.</li>
 <li><strong>Studying 12 hours a day.</strong> Returns drop off sharply after 5–6 focused hours.</li>
 <li><strong>Re-reading textbooks.</strong> Passive reading is the lowest-yield study technique. Active recall (closed-book practice) beats it by 2–3×.</li>
-<li><strong>"Talking to" the professor for grace marks.</strong> Doesn't work at any serious institution. Use office hours to <em>actually understand</em> the material.</li>
+<li><strong>&quot;Talking to&quot; the professor for grace marks.</strong> Doesn&#39;t work at any serious institution. Use office hours to <em>actually understand</em> the material.</li>
 </ol>
-
 <h2>A realistic one-semester plan</h2>
-
 <p><strong>Weeks 1–3:</strong> Get every textbook, every syllabus, every grading rubric. Calendar every quiz, assignment, midterm, and final.</p>
-
-<p><strong>Weeks 4–6:</strong> Build a 3-hour daily study block, same time every day. Cover the day's lecture + practice problems within 24 hours of class.</p>
-
+<p><strong>Weeks 4–6:</strong> Build a 3-hour daily study block, same time every day. Cover the day&#39;s lecture + practice problems within 24 hours of class.</p>
 <p><strong>Weeks 7–9 (Midterms):</strong> Cut sleep loss to zero. Sleep loss now = poor midterm = panic for finals.</p>
-
 <p><strong>Weeks 10–12:</strong> Start preparing for finals. Solve past papers from senior students.</p>
-
 <p><strong>Weeks 13–14 (Finals):</strong> Focus on practice exams under timed conditions, not re-reading.</p>
-
 <h2>What if your CGPA is below 2.5?</h2>
-
-<p>Many universities have a probation policy that activates below 2.5 — sometimes 2.0. Get a clear picture of your university's rules first. In serious cases, retaking your weakest courses across two semesters is usually the only realistic path back to a 3.0+.</p>
-
+<p>Many universities have a probation policy that activates below 2.5 — sometimes 2.0. Get a clear picture of your university&#39;s rules first. In serious cases, retaking your weakest courses across two semesters is usually the only realistic path back to a 3.0+.</p>
 <p>If you are below 2.0, talk to your academic advisor before registering for the next semester. A semester off, or a reduced load with a focused retake plan, often produces better long-term results than pushing through.</p>
-
 <h2>Related reading</h2>
 <ul>
 <li><a href="/posts/how-gpa-is-calculated-in-bangladesh/">How GPA is Calculated in Bangladesh</a></li>
 <li><a href="/posts/cgpa-to-percentage-bangladesh/">CGPA to Percentage Conversion Guide</a></li>
 <li><a href="/tools/cgpa-calculator/">University CGPA Calculator</a></li>
 </ul>
-
 <h2>FAQ</h2>
-<p><strong>Can I really raise my CGPA from 2.8 to 3.5 in one semester?</strong><br>
-Almost never — the math doesn't allow it after a few semesters of credits. Use the CGPA calculator to see realistic targets.</p>
+<p><strong>Can I really raise my CGPA from 2.8 to 3.5 in one semester?</strong><br>Almost never — the math doesn&#39;t allow it after a few semesters of credits. Use the CGPA calculator to see realistic targets.</p>
+<p><strong>Does retaking a course hurt my transcript?</strong><br>Most Bangladeshi universities note retakes on the transcript but use the higher grade. Check your specific institution&#39;s policy.</p>
+<p><strong>How many credits should I take for an improvement semester?</strong><br>Drop by one course (typically 3 credits). Don&#39;t go below the minimum required for full-time enrolment.</p>
 
-<p><strong>Does retaking a course hurt my transcript?</strong><br>
-Most Bangladeshi universities note retakes on the transcript but use the higher grade. Check your specific institution's policy.</p>
+          </div>
+          <footer class="gp-entry-footer">
+            <div class="gp-entry-footer-row"><span class="gp-footer-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span><a href="/category/academic/">Academic</a></div>
+            <div class="gp-entry-footer-row"><span class="gp-footer-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span><a href="/tag/gpa/">gpa</a>, <a href="/tag/cgpa/">cgpa</a>, <a href="/tag/bangladesh/">bangladesh</a></div>
+          </footer>
+        </article>
+        <aside class="gp-post-card gp-related" aria-label="Related guides">
+          <h2 class="gp-widget-title">Related guides</h2>
+          <ul>
+            <li><a href="/posts/cgpa-to-percentage-bangladesh/">CGPA to Percentage Conversion — Complete Guide for BD Students</a></li>
+            <li><a href="/posts/how-gpa-is-calculated-in-bangladesh/">How GPA is Calculated in Bangladesh (SSC, HSC, University)</a></li>
+            <li><a href="/posts/student-visa-interview-questions/">Student Visa Interview: 12 Common Questions and How to Answer Them</a></li>
+          </ul>
+        </aside>
+        <nav aria-label="Post navigation" class="gp-post-card gp-post-nav">
+          <div class="gp-post-nav-prev"><a href="/posts/student-visa-interview-questions/">&larr; Student Visa Interview: 12 Common Questions and How to Answer Them</a></div>
+          <div class="gp-post-nav-next"><a href="/posts/ielts-writing-task-2-band-7/">IELTS Writing Task 2 — Band 7+ Structure with Sample &rarr;</a></div>
+        </nav>
+      </div>
+    <aside class="gp-sidebar" aria-label="Sidebar">
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Recent Posts</span></h2>
+        <ul class="gp-recent-list">
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/application-letter-formats-bangladeshi-students/"><span class="gp-media-tile" style="background:#0f9b8e" aria-hidden="true">AL</span></a>
+            <a class="gp-recent-link" href="/posts/application-letter-formats-bangladeshi-students/">Application Letter Formats Every Bangladeshi Student Should Know</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/common-grammar-mistakes-bangladeshi-students/"><span class="gp-media-tile" style="background:#e8542f" aria-hidden="true">1C</span></a>
+            <a class="gp-recent-link" href="/posts/common-grammar-mistakes-bangladeshi-students/">15 Common Grammar Mistakes Bangladeshi Students Make in English</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/ielts-speaking-topics-model-answers/"><span class="gp-media-tile" style="background:#c2185b" aria-hidden="true">IS</span></a>
+            <a class="gp-recent-link" href="/posts/ielts-speaking-topics-model-answers/">IELTS Speaking — Topics and Model Answers for All 3 Parts</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/ielts-writing-task-2-band-7/"><span class="gp-media-tile" style="background:#c2185b" aria-hidden="true">IW</span></a>
+            <a class="gp-recent-link" href="/posts/ielts-writing-task-2-band-7/">IELTS Writing Task 2 — Band 7+ Structure with Sample</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/how-to-improve-cgpa-in-one-semester/"><span class="gp-media-tile" style="background:#e8542f" aria-hidden="true">HT</span></a>
+            <a class="gp-recent-link" href="/posts/how-to-improve-cgpa-in-one-semester/">How to Improve Your CGPA in 1 Semester — A Realistic Plan</a>
+          </li>
+        </ul>
+      </div>
 
-<p><strong>How many credits should I take for an improvement semester?</strong><br>
-Drop by one course (typically 3 credits). Don't go below the minimum required for full-time enrolment.</p>
-</div><footer class="mt-20 border-t border-border pt-10"><a class="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground" href="/posts"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left mr-2 h-4 w-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>All posts</a><div class="mt-10"><h2 class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Keep reading</h2><div class="mt-5 grid gap-6 sm:grid-cols-2"><a class="group rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-primary/40" href="/posts/how-to-study-abroad-from-bangladesh"><p class="text-xs font-medium uppercase tracking-wider text-primary">Study Abroad</p><h3 class="mt-2 font-serif text-lg leading-snug tracking-tight text-foreground group-hover:text-primary">How to Study Abroad from Bangladesh — Complete Guide 2026</h3></a><a class="group rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-primary/40" href="/posts/affordable-countries-for-bangladeshi-students"><p class="text-xs font-medium uppercase tracking-wider text-primary">Study Abroad</p><h3 class="mt-2 font-serif text-lg leading-snug tracking-tight text-foreground group-hover:text-primary">Top 10 Affordable Countries to Study Abroad for Bangladeshi Students</h3></a></div></div></footer></article></main><footer class="mt-24 border-t border-border bg-background"><div class="mx-auto max-w-6xl px-5 py-12"><div class="grid gap-10 md:grid-cols-3"><div><a class="font-serif text-lg tracking-tight" href="/">Study <span class="text-primary">Koro</span></a><p class="mt-3 max-w-xs text-sm text-muted-foreground leading-relaxed">Free, accurate academic calculators and study guides for students in Bangladesh.</p></div><div class="grid grid-cols-2 gap-8 md:col-span-2 md:grid-cols-3"><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Tools</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/ssc-gpa-calculator">SSC GPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/hsc-gpa-calculator">HSC GPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/cgpa-calculator">University CGPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/ielts-band-score-calculator">IELTS Band</a></li></ul></div><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Learn</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts">Blog</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts/how-to-study-abroad-from-bangladesh">Study Abroad</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts/ielts-preparation-tips">IELTS Tips</a></li></ul></div><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Company</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/about">About</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/contact">Contact</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/privacy-policy">Privacy</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/terms">Terms</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/disclaimer">Disclaimer</a></li></ul></div></div></div><div class="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center"><p>© <!-- -->2026<!-- --> Study Koro. All rights reserved.</p><p>Made for Bangladeshi students.</p></div></div></footer></div><script>window.__staticRouterHydrationData = JSON.parse("{\"loaderData\":{\"0\":null},\"actionData\":null,\"errors\":null}");</script></div>
-<script>window.__VITE_REACT_SSG_HASH__ = 'vvycrwefly'</script>
-  
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Archives</span></h2>
+        <ul>
+          <li><a href="/archive/2026/04/">April 2026</a></li>
+          <li><a href="/archive/2026/03/">March 2026</a></li>
+        </ul>
+      </div>
 
-</body></html>
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Categories</span></h2>
+        <ul>
+          <li><a href="/category/writing/">Writing (2)</a></li>
+          <li><a href="/category/ielts/">IELTS (4)</a></li>
+          <li><a href="/category/academic/">Academic (3)</a></li>
+          <li><a href="/category/study-abroad/">Study Abroad (4)</a></li>
+        </ul>
+      </div>
+    </aside>
+    </div>
+  </main>
+
+  <footer class="gp-footer">
+    <div class="gp-container">
+      <div class="gp-footer-text">&copy; Study Koro. All rights reserved.</div>
+      <nav class="gp-footer-links" aria-label="Footer">
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a>
+        <a href="/disclaimer/">Disclaimer</a>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+<script src="/assets/script.js" defer></script>
+</body>
+</html>

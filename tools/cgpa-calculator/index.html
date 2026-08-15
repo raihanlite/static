@@ -1,31 +1,453 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0b3d6b">
-    <meta name="author" content="Study Koro">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
-    <script>
-      (function () {
-        try {
-          var t = localStorage.getItem("sk-theme");
-          var d = t
-            ? t === "dark"
-            : matchMedia("(prefers-color-scheme: dark)").matches;
-          if (d) document.documentElement.classList.add("dark");
-        } catch (e) {}
-      })();
-    </script>
-    <title>Study Koro</title>
-    <script type="module" crossorigin="" src="/assets/app-B2To5jus.js"></script>
-    <link rel="stylesheet" crossorigin="" href="/assets/app-BPCuTe_Z.css">
-  <link rel="modulepreload" crossorigin="" href="/assets/ToolDetailPage-CQoNYPJT.js"></head>
-  <body>
-    <div id="root" data-server-rendered="true"><div class="flex min-h-screen flex-col"><header class="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70"><div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5"><a class="font-serif text-xl tracking-tight text-foreground" aria-label="Study Koro home" href="/">Study <span class="text-primary">Koro</span></a><nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Main"><a class="transition-colors hover:text-foreground text-muted-foreground" href="/">Home</a><a aria-current="page" class="transition-colors hover:text-foreground text-foreground font-medium" href="/tools">Tools</a><a class="transition-colors hover:text-foreground text-muted-foreground" href="/posts">Blog</a><a class="transition-colors hover:text-foreground text-muted-foreground" href="/about">About</a></nav><div class="flex items-center gap-1"><button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground" aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon h-4 w-4" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><button type="button" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Open menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div></header><main class="flex-1"><div class="mx-auto max-w-6xl px-5 pb-20 pt-10 sm:pt-16"><nav aria-label="Breadcrumb" class="mb-8 flex items-center gap-1.5 text-xs text-muted-foreground"><a class="hover:text-foreground" href="/">Home</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-3 w-3" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><a class="hover:text-foreground" href="/tools">Tools</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-3 w-3" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg><span class="text-foreground">University</span></nav><div class="mx-auto max-w-3xl text-left"><p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary">University</p><h1 class="font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl">University CGPA Calculator</h1><p class="mt-5 text-lg leading-relaxed text-muted-foreground">Semester-wise GPA tracking and cumulative CGPA calculation for all Bangladesh universities. Includes target GPA planner.</p></div><div class="mt-12 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]"><div class="min-w-0"><div class="space-y-6"><div class="grid gap-4 sm:grid-cols-2"><div aria-live="polite" class="mt-6 rounded-2xl border border-primary/15 bg-primary/[0.04] p-8 text-center"><p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Current semester GPA</p><p class="mt-3 font-serif text-6xl font-medium tracking-tight text-foreground">0.00</p></div><div aria-live="polite" class="mt-6 rounded-2xl border border-primary/15 bg-primary/[0.04] p-8 text-center"><p class="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Cumulative CGPA</p><p class="mt-3 font-serif text-6xl font-medium tracking-tight text-foreground">0.00</p><p class="mt-2 text-sm text-muted-foreground">0 total credits</p></div></div><div class="rounded-2xl border border-border bg-surface p-6 sm:p-8 shadow-[0_1px_0_rgba(0,0,0,0.02)]"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Current semester — add each subject</p><form class="mt-5 grid gap-3 sm:grid-cols-[1fr_120px_140px_auto]"><input class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " placeholder="Subject name (e.g. CSE 101)" required="" aria-label="Subject name" value=""><input class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " type="number" min="0.5" step="0.5" aria-label="Credits" placeholder="Credits" value="3"><select class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " aria-label="Grade"><option value="A+" selected="">A+<!-- --> (<!-- -->4.00<!-- -->)</option><option value="A">A<!-- --> (<!-- -->3.75<!-- -->)</option><option value="A-">A-<!-- --> (<!-- -->3.50<!-- -->)</option><option value="B+">B+<!-- --> (<!-- -->3.25<!-- -->)</option><option value="B">B<!-- --> (<!-- -->3.00<!-- -->)</option><option value="B-">B-<!-- --> (<!-- -->2.75<!-- -->)</option><option value="C+">C+<!-- --> (<!-- -->2.50<!-- -->)</option><option value="C">C<!-- --> (<!-- -->2.25<!-- -->)</option><option value="D">D<!-- --> (<!-- -->2.00<!-- -->)</option><option value="F">F<!-- --> (<!-- -->0.00<!-- -->)</option></select><button type="submit" class="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50 disabled:pointer-events-none ">Add</button></form><p class="mt-5 rounded-lg border border-dashed border-border bg-background py-6 text-center text-sm text-muted-foreground">No subjects added yet.</p></div><div class="rounded-2xl border border-border bg-surface p-6 sm:p-8 shadow-[0_1px_0_rgba(0,0,0,0.02)]"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Past semesters — for cumulative CGPA</p><form class="mt-5 grid gap-3 sm:grid-cols-[1fr_120px_140px_auto]"><select class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " aria-label="Semester"><option selected="">Semester 1</option><option>Semester 2</option><option>Semester 3</option><option>Semester 4</option><option>Semester 5</option><option>Semester 6</option><option>Semester 7</option><option>Semester 8</option><option>Semester 9</option><option>Semester 10</option><option>Semester 11</option><option>Semester 12</option></select><input class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " type="number" step="0.01" min="0" max="4" placeholder="GPA" aria-label="GPA" value=""><input class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " type="number" step="0.5" min="0" placeholder="Credits" aria-label="Credits" value=""><button type="submit" class="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50 disabled:pointer-events-none ">Add</button></form><p class="mt-5 rounded-lg border border-dashed border-border bg-background py-6 text-center text-sm text-muted-foreground">No past semesters added.</p></div><div class="rounded-2xl border border-border bg-surface p-6 sm:p-8 shadow-[0_1px_0_rgba(0,0,0,0.02)]"><p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Target CGPA planner</p><div class="mt-5 grid gap-3 sm:grid-cols-[1fr_1fr_auto]"><input class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " type="number" step="0.01" placeholder="Target CGPA (e.g. 3.50)" aria-label="Target CGPA" value=""><input class="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground shadow-none transition-colors placeholder:text-muted-foreground/60 hover:border-foreground/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/40 " type="number" placeholder="Future credits remaining" aria-label="Future credits" value=""><button type="button" class="inline-flex items-center justify-center rounded-lg border border-border bg-background px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-muted ">Plan</button></div></div></div><section class="mt-16 space-y-12"><div><h2 class="font-serif text-2xl tracking-tight text-foreground">How this calculator works</h2><p class="mt-4 text-base leading-relaxed text-muted-foreground">Bangladesh follows the University Grants Commission (UGC) 4.00 scale: A+ = 4.00, A = 3.75, A− = 3.50, B+ = 3.25, B = 3.00, B− = 2.75, C+ = 2.50, C = 2.25, D = 2.00, F = 0.00. Unlike SSC and HSC, university CGPA is credit-weighted — each course is multiplied by its credits, summed, and divided by total credits attempted. The target GPA planner tells you what semester GPA you need to reach a future CGPA goal, given your current CGPA and completed credits.</p></div><div><h2 class="font-serif text-2xl tracking-tight text-foreground">How to use it</h2><ol class="mt-4 list-decimal space-y-2 pl-5 text-base leading-relaxed text-muted-foreground marker:text-primary"><li>Enter each course's credits and the letter grade you received.</li><li>Add as many courses or semesters as needed — the calculator tracks cumulative totals.</li><li>Use the target-GPA planner to enter your goal CGPA and remaining credits, and the calculator tells you the required semester GPA.</li></ol></div><div><h2 class="font-serif text-2xl tracking-tight text-foreground">Frequently asked questions</h2><dl class="mt-6 space-y-6"><div class="border-b border-border pb-6 last:border-0 last:pb-0"><dt class="font-serif text-lg text-foreground">Why is my university CGPA out of 4 and not 5?</dt><dd class="mt-2 text-base leading-relaxed text-muted-foreground">Bangladeshi universities follow the UGC standard, which uses a 4.00 scale. SSC and HSC use a separate 5.00 scale set by the Ministry of Education.</dd></div><div class="border-b border-border pb-6 last:border-0 last:pb-0"><dt class="font-serif text-lg text-foreground">How is CGPA different from semester GPA?</dt><dd class="mt-2 text-base leading-relaxed text-muted-foreground">Semester GPA is for one semester only. CGPA is the credit-weighted average across all semesters you have completed.</dd></div><div class="border-b border-border pb-6 last:border-0 last:pb-0"><dt class="font-serif text-lg text-foreground">Does the calculator handle retakes?</dt><dd class="mt-2 text-base leading-relaxed text-muted-foreground">Most universities replace the lower grade with the higher one. If your university uses this rule, only enter the retake grade — not both attempts.</dd></div><div class="border-b border-border pb-6 last:border-0 last:pb-0"><dt class="font-serif text-lg text-foreground">What CGPA is considered good in Bangladesh?</dt><dd class="mt-2 text-base leading-relaxed text-muted-foreground">3.50+ is strong, 3.00–3.49 is solid, below 3.00 limits scholarship and job options. For study abroad, 3.25+ is often the practical floor.</dd></div><div class="border-b border-border pb-6 last:border-0 last:pb-0"><dt class="font-serif text-lg text-foreground">Can I convert CGPA to percentage with this tool?</dt><dd class="mt-2 text-base leading-relaxed text-muted-foreground">The result page shows an approximate percentage. For an in-depth explanation, read our CGPA-to-percentage guide linked below.</dd></div></dl></div><div><h2 class="font-serif text-2xl tracking-tight text-foreground">Related guides</h2><div class="mt-6 grid gap-4 sm:grid-cols-2"><a class="group rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-primary/40" href="/posts/how-gpa-is-calculated-in-bangladesh"><p class="text-xs font-medium uppercase tracking-wider text-primary">Academic</p><h3 class="mt-2 font-serif text-base leading-snug tracking-tight text-foreground group-hover:text-primary">How GPA is Calculated in Bangladesh (SSC, HSC, University)</h3></a><a class="group rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-primary/40" href="/posts/cgpa-to-percentage-bangladesh"><p class="text-xs font-medium uppercase tracking-wider text-primary">Academic</p><h3 class="mt-2 font-serif text-base leading-snug tracking-tight text-foreground group-hover:text-primary">CGPA to Percentage Conversion — Complete Guide for BD Students</h3></a><a class="group rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-primary/40" href="/posts/how-to-improve-cgpa-in-one-semester"><p class="text-xs font-medium uppercase tracking-wider text-primary">Academic</p><h3 class="mt-2 font-serif text-base leading-snug tracking-tight text-foreground group-hover:text-primary">How to Improve Your CGPA in 1 Semester — A Realistic Plan</h3></a></div></div></section></div><aside class="lg:pt-2"><div class="space-y-8"><section><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-muted-foreground">Other tools</h3><ul class="mt-4 space-y-1"><li><a class="block rounded-md px-2 py-1.5 -mx-2 text-sm text-foreground hover:bg-muted" href="/tools/ssc-gpa-calculator">SSC GPA Calculator</a></li><li><a class="block rounded-md px-2 py-1.5 -mx-2 text-sm text-foreground hover:bg-muted" href="/tools/hsc-gpa-calculator">HSC GPA Calculator</a></li><li><a class="block rounded-md px-2 py-1.5 -mx-2 text-sm text-foreground hover:bg-muted" href="/tools/ielts-band-score-calculator">IELTS Band Score Calculator</a></li></ul></section><section><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-muted-foreground">From the blog</h3><ul class="mt-4 space-y-3"><li><a class="group block" href="/posts/how-to-study-abroad-from-bangladesh"><p class="text-sm font-medium text-foreground group-hover:text-primary">How to Study Abroad from Bangladesh — Complete Guide 2026</p><p class="mt-1 text-xs text-muted-foreground">March 2026<!-- --> · <!-- -->15 min read</p></a></li><li><a class="group block" href="/posts/affordable-countries-for-bangladeshi-students"><p class="text-sm font-medium text-foreground group-hover:text-primary">Top 10 Affordable Countries to Study Abroad for Bangladeshi Students</p><p class="mt-1 text-xs text-muted-foreground">April 2026<!-- --> · <!-- -->10 min read</p></a></li><li><a class="group block" href="/posts/how-to-write-sop-bangladeshi-students"><p class="text-sm font-medium text-foreground group-hover:text-primary">How to Write a Statement of Purpose (SOP) — With Examples</p><p class="mt-1 text-xs text-muted-foreground">April 2026<!-- --> · <!-- -->11 min read</p></a></li></ul></section></div></aside></div></div></main><footer class="mt-24 border-t border-border bg-background"><div class="mx-auto max-w-6xl px-5 py-12"><div class="grid gap-10 md:grid-cols-3"><div><a class="font-serif text-lg tracking-tight" href="/">Study <span class="text-primary">Koro</span></a><p class="mt-3 max-w-xs text-sm text-muted-foreground leading-relaxed">Free, accurate academic calculators and study guides for students in Bangladesh.</p></div><div class="grid grid-cols-2 gap-8 md:col-span-2 md:grid-cols-3"><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Tools</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/ssc-gpa-calculator">SSC GPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/hsc-gpa-calculator">HSC GPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/cgpa-calculator">University CGPA</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/tools/ielts-band-score-calculator">IELTS Band</a></li></ul></div><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Learn</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts">Blog</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts/how-to-study-abroad-from-bangladesh">Study Abroad</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/posts/ielts-preparation-tips">IELTS Tips</a></li></ul></div><div><h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-foreground">Company</h3><ul class="mt-4 space-y-2.5 text-sm"><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/about">About</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/contact">Contact</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/privacy-policy">Privacy</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/terms">Terms</a></li><li><a class="text-muted-foreground transition-colors hover:text-foreground" href="/disclaimer">Disclaimer</a></li></ul></div></div></div><div class="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center"><p>© <!-- -->2026<!-- --> Study Koro. All rights reserved.</p><p>Made for Bangladeshi students.</p></div></div></footer></div><script>window.__staticRouterHydrationData = JSON.parse("{\"loaderData\":{\"0\":null},\"actionData\":null,\"errors\":null}");</script></div>
-<script>window.__VITE_REACT_SSG_HASH__ = 'vvycrwefly'</script>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>CGPA Calculator for Bangladeshi Universities</title>
+  <meta name="description" content="Semester-wise GPA tracking and cumulative CGPA calculation for all Bangladesh universities. Includes target GPA planner." />
+  <link rel="canonical" href="https://studykoro.me/tools/cgpa-calculator/" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:site_name" content="Study Koro" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CGPA Calculator for Bangladeshi Universities" />
+  <meta property="og:description" content="Semester-wise GPA tracking and cumulative CGPA calculation for all Bangladesh universities. Includes target GPA planner." />
+  <meta property="og:url" content="https://studykoro.me/tools/cgpa-calculator/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CGPA Calculator for Bangladeshi Universities" />
+  <meta name="twitter:description" content="Semester-wise GPA tracking and cumulative CGPA calculation for all Bangladesh universities. Includes target GPA planner." />
+  <link rel="alternate" type="application/rss+xml" title="Study Koro RSS Feed" href="/feed.xml" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  <link rel="apple-touch-icon" href="/media/favicon.png" />
+  <link rel="preload" as="style" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <style>
+.sk-tool { margin: 1.5rem 0 2.5rem; }
+.sk-card { border: 1px solid var(--gp-border, #e2e5ea); border-radius: 14px; padding: 1.25rem 1.25rem 1.4rem; margin-bottom: 1rem; background: #fff; }
+.sk-card > .sk-legend { font-size: .72rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: #6b7280; margin: 0 0 .85rem; }
+.sk-hint { font-size: .8rem; color: #6b7280; margin: -.5rem 0 .9rem; }
+.sk-grid { display: grid; gap: .9rem; }
+@media (min-width: 620px) { .sk-grid.sk-2 { grid-template-columns: 1fr 1fr; } }
+.sk-field { display: flex; flex-direction: column; gap: .35rem; }
+.sk-field label { font-size: .85rem; color: #374151; }
+.sk-tool select, .sk-tool input {
+  width: 100%; box-sizing: border-box; padding: .55rem .7rem; font: inherit; font-size: .92rem;
+  color: #111827; background: #fff; border: 1px solid #d3d8e0; border-radius: 8px;
+}
+.sk-tool select:focus, .sk-tool input:focus { outline: 2px solid #93b4ff; outline-offset: 1px; border-color: #6b8cff; }
+.sk-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: .25rem 0 1rem; }
+.sk-btn { font: inherit; font-size: .9rem; font-weight: 600; padding: .6rem 1.15rem; border-radius: 8px; cursor: pointer; border: 1px solid transparent; background: #16324f; color: #fff; }
+.sk-btn:hover { background: #1e4a72; }
+.sk-btn-ghost { background: #fff; color: #16324f; border-color: #d3d8e0; }
+.sk-btn-ghost:hover { background: #f3f5f8; }
+.sk-result { border: 1px solid #cddcf0; background: #f5f8fd; border-radius: 14px; padding: 1.6rem 1rem; text-align: center; margin-bottom: 1rem; }
+.sk-result .sk-result-label { font-size: .72rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: #6b7280; margin: 0; }
+.sk-result .sk-result-value { font-size: 2.6rem; line-height: 1.1; font-weight: 600; color: #12263a; margin: .5rem 0 0; }
+.sk-result .sk-result-note { font-size: .88rem; color: #4b5563; margin: .5rem 0 0; }
+.sk-result .sk-ok { color: #10725a; font-weight: 600; }
+.sk-result .sk-bad { color: #b3261e; font-weight: 600; }
+.sk-row { display: grid; gap: .6rem; align-items: center; margin-bottom: .7rem; }
+@media (min-width: 620px) { .sk-row { grid-template-columns: 1fr 11rem 10rem; } }
+.sk-list { list-style: none; margin: 1rem 0 0; padding: 0; border: 1px solid #e2e5ea; border-radius: 10px; }
+.sk-list li { display: flex; justify-content: space-between; gap: .75rem; align-items: center; padding: .6rem .85rem; font-size: .9rem; border-bottom: 1px solid #eef0f4; }
+.sk-list li:last-child { border-bottom: 0; }
+.sk-empty { margin: 1rem 0 0; padding: 1.1rem; text-align: center; font-size: .88rem; color: #6b7280; border: 1px dashed #d3d8e0; border-radius: 10px; }
+.sk-remove { border: 0; background: none; color: #9aa1ac; cursor: pointer; font-size: 1rem; line-height: 1; padding: .15rem .35rem; }
+.sk-remove:hover { color: #b3261e; }
+.sk-msg { margin: .9rem 0 0; padding: .85rem 1rem; background: #f3f5f8; border-radius: 8px; font-size: .9rem; }
+.sk-toggle { display: inline-flex; padding: .25rem; border: 1px solid #d3d8e0; border-radius: 10px; gap: .25rem; }
+.sk-toggle button { font: inherit; font-size: .88rem; font-weight: 600; border: 0; background: none; color: #6b7280; padding: .4rem .95rem; border-radius: 7px; cursor: pointer; }
+.sk-toggle button[aria-pressed="true"] { background: #16324f; color: #fff; }
 
-</body></html>
+  </style>
+</head>
+<body>
+<div class="gp-page-wrap">
+
+  <header class="gp-header">
+    <div class="gp-container gp-header-inner">
+      <div class="gp-site-brand">
+        <a href="/" class="gp-site-title">Study Koro</a>
+      </div>
+
+      <div class="gp-header-right">
+        <nav aria-label="Primary" class="gp-desktop-nav">
+        <a href="/" class="gp-nav-link">Home</a>
+        <div class="gp-nav-item">
+          <button class="gp-nav-link is-active" aria-haspopup="true" aria-expanded="false">
+            Tools <span class="gp-nav-caret" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="gp-dropdown-menu" role="menu">
+            <a href="/tools/ssc-gpa-calculator/" class="gp-dropdown-item" role="menuitem">SSC GPA Calculator</a>
+            <a href="/tools/hsc-gpa-calculator/" class="gp-dropdown-item" role="menuitem">HSC GPA Calculator</a>
+            <a href="/tools/cgpa-calculator/" class="gp-dropdown-item is-active" role="menuitem">CGPA Calculator</a>
+            <a href="/tools/ielts-band-score-calculator/" class="gp-dropdown-item" role="menuitem">IELTS Band Score Calculator</a>
+          </div>
+        </div>
+        <a href="/posts/" class="gp-nav-link">Blog</a>
+        <a href="/about/" class="gp-nav-link">About</a>
+        <a href="/contact/" class="gp-nav-link">Contact</a>
+        </nav>
+
+        <button id="header-search-toggle" class="gp-header-search-toggle" aria-label="Open search" aria-expanded="false" aria-controls="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <button id="mobile-toggle" class="gp-mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="header-search" class="gp-header-search" hidden>
+      <form class="gp-search-form gp-container" role="search" aria-label="Site search" action="/search/" method="get">
+        <label for="header-search-input" class="sr-only">Search</label>
+        <input id="header-search-input" type="search" name="q" class="gp-search-input" placeholder="Search …" />
+      </form>
+    </div>
+
+    <nav id="mobile-nav" class="gp-mobile-nav" style="display:none" aria-label="Mobile">
+      <a href="/" class="gp-mobile-nav-link">Home</a>
+      <div class="gp-mobile-nav-group">
+        <button type="button" class="gp-mobile-nav-parent" aria-expanded="false" aria-controls="mobile-submenu-1">
+          <span class="gp-mobile-nav-parent-label">Tools</span>
+          <span class="gp-mobile-nav-caret" aria-hidden="true">&#9660;</span>
+        </button>
+        <div id="mobile-submenu-1" class="gp-mobile-nav-children" hidden>
+          <a href="/tools/ssc-gpa-calculator/" class="gp-mobile-nav-child">SSC GPA Calculator</a>
+          <a href="/tools/hsc-gpa-calculator/" class="gp-mobile-nav-child">HSC GPA Calculator</a>
+          <a href="/tools/cgpa-calculator/" class="gp-mobile-nav-child">CGPA Calculator</a>
+          <a href="/tools/ielts-band-score-calculator/" class="gp-mobile-nav-child">IELTS Band Score Calculator</a>
+        </div>
+      </div>
+      <a href="/posts/" class="gp-mobile-nav-link">Blog</a>
+      <a href="/about/" class="gp-mobile-nav-link">About</a>
+      <a href="/contact/" class="gp-mobile-nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="gp-main">
+    <div class="gp-container gp-content-row">
+      <div class="gp-primary">
+        <nav class="gp-breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="gp-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+          <a href="/tools/">Free Study Tools</a>
+          <span class="gp-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+          <span aria-current="page">University CGPA Calculator</span>
+        </nav>
+        <article class="gp-post-card">
+          <header class="gp-single-header">
+            <h1 class="gp-single-title">University CGPA Calculator</h1>
+          </header>
+          <div class="gp-post-content">
+<p>Semester-wise GPA tracking and cumulative CGPA calculation for all Bangladesh universities. Includes target GPA planner.</p>
+<div class="sk-tool" id="cgpa-tool">
+  <div class="sk-card">
+    <p class="sk-legend">Current semester courses</p>
+    <div class="sk-grid sk-2">
+      <div class="sk-field">
+        <label for="cg-name">Course name</label>
+        <input type="text" id="cg-name" placeholder="e.g. CSE 101">
+      </div>
+      <div class="sk-field">
+        <label for="cg-credit">Credit hours</label>
+        <input type="number" id="cg-credit" min="0" step="0.5" placeholder="3">
+      </div>
+      <div class="sk-field">
+        <label for="cg-grade">Grade</label>
+        <select id="cg-grade"></select>
+      </div>
+      <div class="sk-field" style="justify-content:flex-end">
+        <button type="button" class="sk-btn" id="cg-add">Add course</button>
+      </div>
+    </div>
+    <ul class="sk-list" id="cg-courses" hidden></ul>
+    <p class="sk-empty" id="cg-courses-empty">No courses added yet.</p>
+  </div>
+
+  <div class="sk-card">
+    <p class="sk-legend">Previous semesters (optional)</p>
+    <p class="sk-hint">Add your completed semesters to get a cumulative CGPA.</p>
+    <div class="sk-grid sk-2">
+      <div class="sk-field">
+        <label for="cg-sem-name">Semester</label>
+        <input type="text" id="cg-sem-name" placeholder="e.g. Spring 2025">
+      </div>
+      <div class="sk-field">
+        <label for="cg-sem-gpa">GPA</label>
+        <input type="number" id="cg-sem-gpa" min="0" max="4" step="0.01" placeholder="3.50">
+      </div>
+      <div class="sk-field">
+        <label for="cg-sem-credit">Credits</label>
+        <input type="number" id="cg-sem-credit" min="0" step="0.5" placeholder="15">
+      </div>
+      <div class="sk-field" style="justify-content:flex-end">
+        <button type="button" class="sk-btn sk-btn-ghost" id="cg-sem-add">Add semester</button>
+      </div>
+    </div>
+    <ul class="sk-list" id="cg-semesters" hidden></ul>
+  </div>
+
+  <div id="cg-result" aria-live="polite"></div>
+
+  <div class="sk-card">
+    <p class="sk-legend">Target CGPA planner</p>
+    <div class="sk-grid sk-2">
+      <div class="sk-field">
+        <label for="cg-target">Target CGPA</label>
+        <input type="number" id="cg-target" min="0" max="4" step="0.01" placeholder="3.50">
+      </div>
+      <div class="sk-field">
+        <label for="cg-future">Remaining credits</label>
+        <input type="number" id="cg-future" min="0" step="0.5" placeholder="30">
+      </div>
+    </div>
+    <div id="cg-target-result"></div>
+  </div>
+</div>
+
+<h2>How this calculator works</h2>
+<p>Bangladesh follows the University Grants Commission (UGC) 4.00 scale: A+ = 4.00, A = 3.75, A− = 3.50, B+ = 3.25, B = 3.00, B− = 2.75, C+ = 2.50, C = 2.25, D = 2.00, F = 0.00. Unlike SSC and HSC, university CGPA is credit-weighted — each course is multiplied by its credits, summed, and divided by total credits attempted. The target GPA planner tells you what semester GPA you need to reach a future CGPA goal, given your current CGPA and completed credits.</p>
+<h2>How to use it</h2>
+<ol>
+<li>Enter each course&#39;s credits and the letter grade you received.</li>
+<li>Add as many courses or semesters as needed — the calculator tracks cumulative totals.</li>
+<li>Use the target-GPA planner to enter your goal CGPA and remaining credits, and the calculator tells you the required semester GPA.</li>
+</ol>
+<h2>Frequently asked questions</h2>
+<h3>Why is my university CGPA out of 4 and not 5?</h3>
+<p>Bangladeshi universities follow the UGC standard, which uses a 4.00 scale. SSC and HSC use a separate 5.00 scale set by the Ministry of Education.</p>
+<h3>How is CGPA different from semester GPA?</h3>
+<p>Semester GPA is for one semester only. CGPA is the credit-weighted average across all semesters you have completed.</p>
+<h3>Does the calculator handle retakes?</h3>
+<p>Most universities replace the lower grade with the higher one. If your university uses this rule, only enter the retake grade — not both attempts.</p>
+<h3>What CGPA is considered good in Bangladesh?</h3>
+<p>3.50+ is strong, 3.00–3.49 is solid, below 3.00 limits scholarship and job options. For study abroad, 3.25+ is often the practical floor.</p>
+<h3>Can I convert CGPA to percentage with this tool?</h3>
+<p>The result page shows an approximate percentage. For an in-depth explanation, read our CGPA-to-percentage guide linked below.</p>
+<h2>Related guides</h2>
+<ul>
+<li><a href="/posts/cgpa-to-percentage-bangladesh/">CGPA to Percentage Conversion — Complete Guide for BD Students</a></li>
+<li><a href="/posts/how-to-improve-cgpa-in-one-semester/">How to Improve Your CGPA in 1 Semester — A Realistic Plan</a></li>
+<li><a href="/posts/how-gpa-is-calculated-in-bangladesh/">How GPA is Calculated in Bangladesh (SSC, HSC, University)</a></li>
+</ul>
+
+          </div>
+        </article>
+      </div>
+    <aside class="gp-sidebar" aria-label="Sidebar">
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Recent Posts</span></h2>
+        <ul class="gp-recent-list">
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/application-letter-formats-bangladeshi-students/"><span class="gp-media-tile" style="background:#0f9b8e" aria-hidden="true">AL</span></a>
+            <a class="gp-recent-link" href="/posts/application-letter-formats-bangladeshi-students/">Application Letter Formats Every Bangladeshi Student Should Know</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/common-grammar-mistakes-bangladeshi-students/"><span class="gp-media-tile" style="background:#e8542f" aria-hidden="true">1C</span></a>
+            <a class="gp-recent-link" href="/posts/common-grammar-mistakes-bangladeshi-students/">15 Common Grammar Mistakes Bangladeshi Students Make in English</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/ielts-speaking-topics-model-answers/"><span class="gp-media-tile" style="background:#c2185b" aria-hidden="true">IS</span></a>
+            <a class="gp-recent-link" href="/posts/ielts-speaking-topics-model-answers/">IELTS Speaking — Topics and Model Answers for All 3 Parts</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/ielts-writing-task-2-band-7/"><span class="gp-media-tile" style="background:#c2185b" aria-hidden="true">IW</span></a>
+            <a class="gp-recent-link" href="/posts/ielts-writing-task-2-band-7/">IELTS Writing Task 2 — Band 7+ Structure with Sample</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/how-to-improve-cgpa-in-one-semester/"><span class="gp-media-tile" style="background:#e8542f" aria-hidden="true">HT</span></a>
+            <a class="gp-recent-link" href="/posts/how-to-improve-cgpa-in-one-semester/">How to Improve Your CGPA in 1 Semester — A Realistic Plan</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Archives</span></h2>
+        <ul>
+          <li><a href="/archive/2026/04/">April 2026</a></li>
+          <li><a href="/archive/2026/03/">March 2026</a></li>
+        </ul>
+      </div>
+
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Categories</span></h2>
+        <ul>
+          <li><a href="/category/writing/">Writing (2)</a></li>
+          <li><a href="/category/ielts/">IELTS (4)</a></li>
+          <li><a href="/category/academic/">Academic (3)</a></li>
+          <li><a href="/category/study-abroad/">Study Abroad (4)</a></li>
+        </ul>
+      </div>
+    </aside>
+    </div>
+  </main>
+
+  <footer class="gp-footer">
+    <div class="gp-container">
+      <div class="gp-footer-text">&copy; Study Koro. All rights reserved.</div>
+      <nav class="gp-footer-links" aria-label="Footer">
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a>
+        <a href="/disclaimer/">Disclaimer</a>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+<script src="/assets/script.js" defer></script>
+<script>
+(function () {
+  var root = document.getElementById('cgpa-tool');
+  if (!root) return;
+
+  var GRADES = [
+    { label: 'A+ (4.00)', value: 4 },
+    { label: 'A (3.75)', value: 3.75 },
+    { label: 'A- (3.50)', value: 3.5 },
+    { label: 'B+ (3.25)', value: 3.25 },
+    { label: 'B (3.00)', value: 3 },
+    { label: 'B- (2.75)', value: 2.75 },
+    { label: 'C+ (2.50)', value: 2.5 },
+    { label: 'C (2.25)', value: 2.25 },
+    { label: 'D (2.00)', value: 2 },
+    { label: 'F (0.00)', value: 0 }
+  ];
+
+  var courses = [];
+  var semesters = [];
+
+  var gradeEl = document.getElementById('cg-grade');
+  gradeEl.innerHTML = GRADES.map(function (g, i) {
+    return '<option value="' + g.value + '"' + (i === 0 ? ' selected' : '') + '>' + g.label + '</option>';
+  }).join('');
+
+  var nameEl = document.getElementById('cg-name');
+  var creditEl = document.getElementById('cg-credit');
+  var coursesEl = document.getElementById('cg-courses');
+  var coursesEmptyEl = document.getElementById('cg-courses-empty');
+  var semNameEl = document.getElementById('cg-sem-name');
+  var semGpaEl = document.getElementById('cg-sem-gpa');
+  var semCreditEl = document.getElementById('cg-sem-credit');
+  var semestersEl = document.getElementById('cg-semesters');
+  var resultEl = document.getElementById('cg-result');
+  var targetEl = document.getElementById('cg-target');
+  var futureEl = document.getElementById('cg-future');
+  var targetResultEl = document.getElementById('cg-target-result');
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function semesterGpa() {
+    var credits = courses.reduce(function (a, c) { return a + c.credit; }, 0);
+    if (!credits) return null;
+    var points = courses.reduce(function (a, c) { return a + c.credit * c.grade; }, 0);
+    return { gpa: points / credits, credits: credits, points: points };
+  }
+
+  function cumulative() {
+    var current = semesterGpa();
+    var credits = semesters.reduce(function (a, s) { return a + s.credits; }, 0) + (current ? current.credits : 0);
+    if (!credits) return null;
+    var points = semesters.reduce(function (a, s) { return a + s.credits * s.gpa; }, 0) + (current ? current.points : 0);
+    return { cgpa: points / credits, credits: credits, points: points };
+  }
+
+  function renderLists() {
+    coursesEl.hidden = courses.length === 0;
+    coursesEmptyEl.hidden = courses.length > 0;
+    coursesEl.innerHTML = courses.map(function (c, i) {
+      var label = GRADES.filter(function (g) { return g.value === c.grade; })[0];
+      return '<li><span>' + esc(c.name) + '</span><span>' + c.credit + ' cr - ' +
+        (label ? esc(label.label) : c.grade) +
+        '</span><button type="button" class="sk-remove" data-course="' + i + '" aria-label="Remove course">&times;</button></li>';
+    }).join('');
+
+    semestersEl.hidden = semesters.length === 0;
+    semestersEl.innerHTML = semesters.map(function (s, i) {
+      return '<li><span>' + esc(s.name) + '</span><span>GPA ' + s.gpa.toFixed(2) + ' - ' + s.credits + ' cr' +
+        '</span><button type="button" class="sk-remove" data-semester="' + i + '" aria-label="Remove semester">&times;</button></li>';
+    }).join('');
+  }
+
+  function renderResult() {
+    var current = semesterGpa();
+    var cum = cumulative();
+    if (!current && !cum) { resultEl.innerHTML = ''; renderTarget(); return; }
+    resultEl.innerHTML =
+      '<div class="sk-result">' +
+      (current ? '<p class="sk-result-label">Semester GPA</p><p class="sk-result-value">' + current.gpa.toFixed(2) + '</p>' : '') +
+      (cum ? '<p class="sk-result-note">Cumulative CGPA: <strong>' + cum.cgpa.toFixed(2) +
+        '</strong> over ' + cum.credits + ' credits</p>' : '') +
+      '</div>';
+    renderTarget();
+  }
+
+  function renderTarget() {
+    var target = parseFloat(targetEl.value);
+    var future = parseFloat(futureEl.value);
+    var cum = cumulative();
+    if (isNaN(target) || isNaN(future) || future <= 0 || !cum) { targetResultEl.innerHTML = ''; return; }
+    var needed = (target * (cum.credits + future) - cum.points) / future;
+    var message;
+    if (needed > 4) {
+      message = 'A ' + target.toFixed(2) + ' CGPA is not reachable in the next ' + future +
+        ' credits - you would need a ' + needed.toFixed(2) + ' GPA, above the 4.00 maximum.';
+    } else if (needed <= 0) {
+      message = 'You have already secured a ' + target.toFixed(2) + ' CGPA even if the remaining ' + future + ' credits go badly.';
+    } else {
+      message = 'You need an average GPA of <strong>' + needed.toFixed(2) + '</strong> over the next ' +
+        future + ' credits to reach a ' + target.toFixed(2) + ' CGPA.';
+    }
+    targetResultEl.innerHTML = '<p class="sk-msg">' + message + '</p>';
+  }
+
+  document.getElementById('cg-add').addEventListener('click', function () {
+    var credit = parseFloat(creditEl.value);
+    if (isNaN(credit) || credit <= 0) return;
+    courses.push({
+      name: nameEl.value.trim() || 'Course ' + (courses.length + 1),
+      credit: credit,
+      grade: parseFloat(gradeEl.value)
+    });
+    nameEl.value = '';
+    creditEl.value = '';
+    renderLists();
+    renderResult();
+  });
+
+  document.getElementById('cg-sem-add').addEventListener('click', function () {
+    var gpa = parseFloat(semGpaEl.value);
+    var credits = parseFloat(semCreditEl.value);
+    if (isNaN(gpa) || isNaN(credits) || credits <= 0) return;
+    semesters.push({ name: semNameEl.value.trim() || 'Semester ' + (semesters.length + 1), gpa: gpa, credits: credits });
+    semNameEl.value = '';
+    semGpaEl.value = '';
+    semCreditEl.value = '';
+    renderLists();
+    renderResult();
+  });
+
+  root.addEventListener('click', function (event) {
+    var courseIndex = event.target.getAttribute && event.target.getAttribute('data-course');
+    var semesterIndex = event.target.getAttribute && event.target.getAttribute('data-semester');
+    if (courseIndex !== null && courseIndex !== undefined) { courses.splice(Number(courseIndex), 1); renderLists(); renderResult(); }
+    if (semesterIndex !== null && semesterIndex !== undefined) { semesters.splice(Number(semesterIndex), 1); renderLists(); renderResult(); }
+  });
+
+  targetEl.addEventListener('input', renderTarget);
+  futureEl.addEventListener('input', renderTarget);
+  renderLists();
+})();
+
+</script>
+</body>
+</html>

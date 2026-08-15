@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Search</title>
+  <meta name="description" content="Search posts and pages" />
+  <meta name="robots" content="noindex, follow" />
+  <meta property="og:site_name" content="Study Koro" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Search" />
+  <meta property="og:description" content="Search posts and pages" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Search" />
+  <meta name="twitter:description" content="Search posts and pages" />
+  <link rel="alternate" type="application/rss+xml" title="Study Koro RSS Feed" href="/feed.xml" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  <link rel="apple-touch-icon" href="/media/favicon.png" />
+  <link rel="preload" as="style" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<div class="gp-page-wrap">
+
+  <header class="gp-header">
+    <div class="gp-container gp-header-inner">
+      <div class="gp-site-brand">
+        <a href="/" class="gp-site-title">Study Koro</a>
+      </div>
+
+      <div class="gp-header-right">
+        <nav aria-label="Primary" class="gp-desktop-nav">
+        <a href="/" class="gp-nav-link">Home</a>
+        <div class="gp-nav-item">
+          <button class="gp-nav-link" aria-haspopup="true" aria-expanded="false">
+            Tools <span class="gp-nav-caret" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="gp-dropdown-menu" role="menu">
+            <a href="/tools/ssc-gpa-calculator/" class="gp-dropdown-item" role="menuitem">SSC GPA Calculator</a>
+            <a href="/tools/hsc-gpa-calculator/" class="gp-dropdown-item" role="menuitem">HSC GPA Calculator</a>
+            <a href="/tools/cgpa-calculator/" class="gp-dropdown-item" role="menuitem">CGPA Calculator</a>
+            <a href="/tools/ielts-band-score-calculator/" class="gp-dropdown-item" role="menuitem">IELTS Band Score Calculator</a>
+          </div>
+        </div>
+        <a href="/posts/" class="gp-nav-link">Blog</a>
+        <a href="/about/" class="gp-nav-link">About</a>
+        <a href="/contact/" class="gp-nav-link">Contact</a>
+        </nav>
+
+        <button id="header-search-toggle" class="gp-header-search-toggle" aria-label="Open search" aria-expanded="false" aria-controls="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <button id="mobile-toggle" class="gp-mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="header-search" class="gp-header-search" hidden>
+      <form class="gp-search-form gp-container" role="search" aria-label="Site search" action="/search/" method="get">
+        <label for="header-search-input" class="sr-only">Search</label>
+        <input id="header-search-input" type="search" name="q" class="gp-search-input" placeholder="Search …" />
+      </form>
+    </div>
+
+    <nav id="mobile-nav" class="gp-mobile-nav" style="display:none" aria-label="Mobile">
+      <a href="/" class="gp-mobile-nav-link">Home</a>
+      <div class="gp-mobile-nav-group">
+        <button type="button" class="gp-mobile-nav-parent" aria-expanded="false" aria-controls="mobile-submenu-1">
+          <span class="gp-mobile-nav-parent-label">Tools</span>
+          <span class="gp-mobile-nav-caret" aria-hidden="true">&#9660;</span>
+        </button>
+        <div id="mobile-submenu-1" class="gp-mobile-nav-children" hidden>
+          <a href="/tools/ssc-gpa-calculator/" class="gp-mobile-nav-child">SSC GPA Calculator</a>
+          <a href="/tools/hsc-gpa-calculator/" class="gp-mobile-nav-child">HSC GPA Calculator</a>
+          <a href="/tools/cgpa-calculator/" class="gp-mobile-nav-child">CGPA Calculator</a>
+          <a href="/tools/ielts-band-score-calculator/" class="gp-mobile-nav-child">IELTS Band Score Calculator</a>
+        </div>
+      </div>
+      <a href="/posts/" class="gp-mobile-nav-link">Blog</a>
+      <a href="/about/" class="gp-mobile-nav-link">About</a>
+      <a href="/contact/" class="gp-mobile-nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="gp-main">
+    <div class="gp-container gp-content-row">
+      <div class="gp-primary">
+      <header class="gp-post-card gp-term-header" aria-label="Search results">
+        <p class="gp-term-label">Search</p>
+        <h1 class="gp-term-title">Search Results</h1>
+        <p class="gp-term-description" id="search-status" aria-live="polite"></p>
+      </header>
+
+      <div id="search-results"></div>
+
+      <script>(function () {
+  "use strict";
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  /* Case-insensitive highlight using split/join – no regex escaping needed */
+  function highlight(text, q) {
+    if (!q) return esc(text);
+    var lower = text.toLowerCase();
+    var ql    = q.toLowerCase();
+    var parts = [];
+    var pos   = 0;
+    var idx;
+    while ((idx = lower.indexOf(ql, pos)) !== -1) {
+      parts.push(esc(text.slice(pos, idx)));
+      parts.push("<mark>" + esc(text.slice(idx, idx + q.length)) + "</mark>");
+      pos = idx + q.length;
+    }
+    parts.push(esc(text.slice(pos)));
+    return parts.join("");
+  }
+
+  function snippet(text, q, maxLen) {
+    maxLen = maxLen || 220;
+    var plain = text.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    if (!q) return esc(plain.slice(0, maxLen)) + (plain.length > maxLen ? "\u2026" : "");
+    var idx   = plain.toLowerCase().indexOf(q.toLowerCase());
+    var start = Math.max(0, idx - 60);
+    var end   = Math.min(plain.length, start + maxLen);
+    var s     = plain.slice(start, end);
+    if (start > 0) s = "\u2026" + s;
+    if (end < plain.length) s += "\u2026";
+    return highlight(s, q);
+  }
+
+  var params    = new URLSearchParams(window.location.search);
+  var q         = (params.get("q") || "").trim();
+  var statusEl  = document.getElementById("search-status");
+  var resultsEl = document.getElementById("search-results");
+
+  /* pre-fill all search boxes on the page */
+  document.querySelectorAll(".gp-search-input").forEach(function (inp) {
+    inp.value = q;
+  });
+
+  if (!q) {
+    statusEl.textContent = "Enter a search term above to find posts and pages.";
+    return;
+  }
+
+  statusEl.textContent = "Searching\u2026";
+
+  fetch("/search-index.json")
+    .then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
+    .then(function (index) {
+      var ql = q.toLowerCase();
+      var matches = index.filter(function (item) {
+        return (
+          item.title.toLowerCase().indexOf(ql) !== -1 ||
+          item.plainContent.toLowerCase().indexOf(ql) !== -1 ||
+          (item.category && item.category.toLowerCase().indexOf(ql) !== -1) ||
+          (item.tags && item.tags.some(function (t) { return t.toLowerCase().indexOf(ql) !== -1; }))
+        );
+      });
+
+      if (!matches.length) {
+        statusEl.textContent = "No results found for \u201c" + esc(q) + "\u201d.";
+        resultsEl.innerHTML  = "";
+        return;
+      }
+
+      statusEl.textContent = matches.length + " result" + (matches.length !== 1 ? "s" : "") + " for \u201c" + esc(q) + "\u201d";
+
+      resultsEl.innerHTML = matches.map(function (item) {
+        var url     = item.type === "post" ? "/posts/" + item.slug + "/" : "/" + item.path + "/";
+        var dateStr = item.date ? "<time datetime=\"" + esc(item.date) + "\">" + esc(item.date) + "</time>" : "";
+        var catStr  = item.category ? " &bull; <span class=\"gp-cat\">" + esc(item.category) + "</span>" : "";
+        var meta    = (dateStr || catStr) ? "<p class=\"gp-post-meta\">" + dateStr + catStr + "</p>" : "";
+        var body    = item.excerpt ? highlight(item.excerpt, q) : snippet(item.plainContent, q);
+
+        return "<article class=\"gp-post-card\">"
+          + "<header class=\"gp-post-header\">"
+          + "<h2 class=\"gp-post-title\"><a href=\"" + esc(url) + "\">" + highlight(item.title, q) + "</a></h2>"
+          + meta
+          + "</header>"
+          + "<div class=\"gp-post-excerpt\"><p>" + body + "</p></div>"
+          + "<a class=\"gp-read-more\" href=\"" + esc(url) + "\">Read more</a>"
+          + "</article>";
+      }).join("\n");
+    })
+    .catch(function () {
+      statusEl.textContent = "Search index could not be loaded. Try rebuilding the site.";
+    });
+})();</script>
+      </div>
+    <aside class="gp-sidebar" aria-label="Sidebar">
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Recent Posts</span></h2>
+        <ul class="gp-recent-list">
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/application-letter-formats-bangladeshi-students/"><span class="gp-media-tile" style="background:#0f9b8e" aria-hidden="true">AL</span></a>
+            <a class="gp-recent-link" href="/posts/application-letter-formats-bangladeshi-students/">Application Letter Formats Every Bangladeshi Student Should Know</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/common-grammar-mistakes-bangladeshi-students/"><span class="gp-media-tile" style="background:#e8542f" aria-hidden="true">1C</span></a>
+            <a class="gp-recent-link" href="/posts/common-grammar-mistakes-bangladeshi-students/">15 Common Grammar Mistakes Bangladeshi Students Make in English</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/ielts-speaking-topics-model-answers/"><span class="gp-media-tile" style="background:#c2185b" aria-hidden="true">IS</span></a>
+            <a class="gp-recent-link" href="/posts/ielts-speaking-topics-model-answers/">IELTS Speaking — Topics and Model Answers for All 3 Parts</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/ielts-writing-task-2-band-7/"><span class="gp-media-tile" style="background:#c2185b" aria-hidden="true">IW</span></a>
+            <a class="gp-recent-link" href="/posts/ielts-writing-task-2-band-7/">IELTS Writing Task 2 — Band 7+ Structure with Sample</a>
+          </li>
+          <li class="gp-recent-item">
+            <a class="gp-recent-thumb" href="/posts/how-to-improve-cgpa-in-one-semester/"><span class="gp-media-tile" style="background:#e8542f" aria-hidden="true">HT</span></a>
+            <a class="gp-recent-link" href="/posts/how-to-improve-cgpa-in-one-semester/">How to Improve Your CGPA in 1 Semester — A Realistic Plan</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Archives</span></h2>
+        <ul>
+          <li><a href="/archive/2026/04/">April 2026</a></li>
+          <li><a href="/archive/2026/03/">March 2026</a></li>
+        </ul>
+      </div>
+
+      <div class="gp-widget">
+        <h2 class="gp-widget-title"><span>Categories</span></h2>
+        <ul>
+          <li><a href="/category/writing/">Writing (2)</a></li>
+          <li><a href="/category/ielts/">IELTS (4)</a></li>
+          <li><a href="/category/academic/">Academic (3)</a></li>
+          <li><a href="/category/study-abroad/">Study Abroad (4)</a></li>
+        </ul>
+      </div>
+    </aside>
+    </div>
+  </main>
+
+  <footer class="gp-footer">
+    <div class="gp-container">
+      <div class="gp-footer-text">&copy; Study Koro. All rights reserved.</div>
+      <nav class="gp-footer-links" aria-label="Footer">
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a>
+        <a href="/disclaimer/">Disclaimer</a>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+<script src="/assets/script.js" defer></script>
+</body>
+</html>

@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://studykoro.me/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://studykoro.me/tools/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://studykoro.me/posts/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
-
-  <url><loc>https://studykoro.me/tools/ssc-gpa-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studykoro.me/tools/hsc-gpa-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studykoro.me/tools/cgpa-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://studykoro.me/tools/ielts-band-score-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-  <url><loc>https://studykoro.me/posts/how-to-study-abroad-from-bangladesh/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/affordable-countries-for-bangladeshi-students/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/how-to-write-sop-bangladeshi-students/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/student-visa-interview-questions/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/ielts-preparation-tips/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/ielts-writing-task-2-band-7/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/ielts-speaking-topics-model-answers/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/common-grammar-mistakes-bangladeshi-students/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/how-gpa-is-calculated-in-bangladesh/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/cgpa-to-percentage-bangladesh/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/how-to-improve-cgpa-in-one-semester/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/study-tour-application/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://studykoro.me/posts/application-letter-formats-bangladeshi-students/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
-  <url><loc>https://studykoro.me/about/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studykoro.me/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://studykoro.me/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://studykoro.me/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://studykoro.me/disclaimer/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://studykoro.me/post-sitemap.xml</loc>
+    <lastmod>2026-04-28T12:00:00+00:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://studykoro.me/page-sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://studykoro.me/misc-sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
